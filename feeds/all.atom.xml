@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>OSCA (Open Science COVID19 Analysis)</title><link href="https://fangohr.github.io/coronavirus/" rel="alternate"></link><link href="https://fangohr.github.io/coronavirus/feeds/all.atom.xml" rel="self"></link><id>https://fangohr.github.io/coronavirus/</id><updated>2020-04-13T10:57:00+02:00</updated><entry><title>Germany</title><link href="https://fangohr.github.io/coronavirus/germany.html" rel="alternate"></link><published>2020-04-13T10:57:00+02:00</published><updated>2020-04-13T10:57:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-13:/coronavirus/germany.html</id><summary type="html">&lt;p&gt;Landkreise in Germany&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OSCOVIDA: Open Science COVID Analysis)</title><link href="https://oscovida.github.io/" rel="alternate"></link><link href="https://oscovida.github.io/feeds/all.atom.xml" rel="self"></link><id>https://oscovida.github.io/</id><updated>2020-04-15T14:39:00+02:00</updated><entry><title>Germany</title><link href="https://oscovida.github.io/germany.html" rel="alternate"></link><published>2020-04-15T14:39:00+02:00</published><updated>2020-04-15T14:39:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-15:/germany.html</id><summary type="html">&lt;p&gt;Landkreise in Germany&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="html/Germany-Baden-Württemberg-LK-Alb-Donau-Kreis.html"&gt;Germany: Baden-Württemberg : LK Alb-Donau-Kreis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Germany-Baden-Württemberg-LK-Biberach.html"&gt;Germany: Baden-Württemberg : LK Biberach&lt;/a&gt;&lt;/li&gt;
@@ -426,7 +426,7 @@
 &lt;li&gt;&lt;a href="html/Germany-Thüringen-SK-Jena.html"&gt;Germany: Thüringen : SK Jena&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Germany-Thüringen-SK-Suhl.html"&gt;Germany: Thüringen : SK Suhl&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Germany-Thüringen-SK-Weimar.html"&gt;Germany: Thüringen : SK Weimar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>World</title><link href="https://fangohr.github.io/coronavirus/world.html" rel="alternate"></link><published>2020-04-13T08:26:00+02:00</published><updated>2020-04-13T08:26:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-13:/coronavirus/world.html</id><summary type="html">&lt;p&gt;Countries&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>World</title><link href="https://oscovida.github.io/world.html" rel="alternate"></link><published>2020-04-15T13:01:00+02:00</published><updated>2020-04-15T13:01:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-15:/world.html</id><summary type="html">&lt;p&gt;Countries&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="html/Afghanistan.html"&gt;Afghanistan&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Albania.html"&gt;Albania&lt;/a&gt;&lt;/li&gt;
@@ -654,7 +654,7 @@
 &lt;li&gt;&lt;a href="html/Yemen.html"&gt;Yemen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Zambia.html"&gt;Zambia&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Zimbabwe.html"&gt;Zimbabwe&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>Data sources</title><link href="https://fangohr.github.io/coronavirus/data-sources.html" rel="alternate"></link><published>2020-04-10T22:03:00+02:00</published><updated>2020-04-10T22:03:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-10:/coronavirus/data-sources.html</id><content type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>Data sources</title><link href="https://oscovida.github.io/data-sources.html" rel="alternate"></link><published>2020-04-10T22:03:00+02:00</published><updated>2020-04-10T22:03:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/data-sources.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;We use data 
   from the &lt;a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data"&gt;Johns Hopkins university&lt;/a&gt;
   for countries, &lt;/li&gt;
@@ -666,7 +666,7 @@
 &lt;li&gt;All computational steps and code are available
   &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/coronavirus.py"&gt;here&lt;/a&gt;
   -- contributions and corrections welcome.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Contributions welcome!</title><link href="https://fangohr.github.io/coronavirus/contribute.html" rel="alternate"></link><published>2020-04-10T22:00:00+02:00</published><updated>2020-04-10T22:00:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-10:/coronavirus/contribute.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Contributions welcome!</title><link href="https://oscovida.github.io/contribute.html" rel="alternate"></link><published>2020-04-10T22:00:00+02:00</published><updated>2020-04-10T22:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/contribute.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;We gather some
   &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/ideas.md"&gt;ideas&lt;/a&gt; for
@@ -699,10 +699,10 @@
   issue"&lt;/a&gt; -- a
   github account is necessary.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Team</title><link href="https://fangohr.github.io/coronavirus/team.html" rel="alternate"></link><published>2020-04-10T21:00:00+02:00</published><updated>2020-04-10T21:00:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-10:/coronavirus/team.html</id><content type="html">&lt;p&gt;Following early work by Hans Fangohr, members of the European research project
+&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Team</title><link href="https://oscovida.github.io/team.html" rel="alternate"></link><published>2020-04-10T21:00:00+02:00</published><updated>2020-04-10T21:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/team.html</id><content type="html">&lt;p&gt;Following early work by Hans Fangohr, members of the European research project
 &lt;a href="http://panosc.eu"&gt;Photon and Neutron Open Science Cloud (PANOSC)&lt;/a&gt; and the Data
 Analysis Group of &lt;a href="https://xfel.eu"&gt;European XFEL&lt;/a&gt; contribute and sustain the
-project here.&lt;/p&gt;</content><category term="About"></category></entry><entry><title>Open Science</title><link href="https://fangohr.github.io/coronavirus/open-science.html" rel="alternate"></link><published>2020-04-10T19:00:00+02:00</published><updated>2020-04-10T19:00:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-10:/coronavirus/open-science.html</id><summary type="html">&lt;p&gt;To use the analysis provided here, some Python knowledge is required, ideally
+project here.&lt;/p&gt;</content><category term="About"></category></entry><entry><title>Open Science</title><link href="https://oscovida.github.io/open-science.html" rel="alternate"></link><published>2020-04-10T19:00:00+02:00</published><updated>2020-04-10T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/open-science.html</id><summary type="html">&lt;p&gt;To use the analysis provided here, some Python knowledge is required, ideally
 additional experience (or willingness to learn) about the Pandas data science
 library and the Jupyter Notebook.&lt;/p&gt;
 &lt;h2&gt;Source code&lt;/h2&gt;
@@ -734,7 +734,7 @@ library and the Jupyter Notebook.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This will provide a fully functional computing environment, that can be used
-  from your browser. &lt;/p&gt;</content><category term="About"></category><category term="Open Science"></category><category term="source code"></category></entry><entry><title>Our motivation</title><link href="https://fangohr.github.io/coronavirus/motivation.html" rel="alternate"></link><published>2020-04-10T10:20:00+02:00</published><updated>2020-04-10T10:20:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-10:/coronavirus/motivation.html</id><summary type="html">&lt;h2&gt;Motivation&lt;/h2&gt;
+  from your browser. &lt;/p&gt;</content><category term="About"></category><category term="Open Science"></category><category term="source code"></category></entry><entry><title>Our motivation</title><link href="https://oscovida.github.io/motivation.html" rel="alternate"></link><published>2020-04-10T10:20:00+02:00</published><updated>2020-04-10T10:20:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/motivation.html</id><summary type="html">&lt;h2&gt;Motivation&lt;/h2&gt;
 &lt;h3&gt;Understanding the situation&lt;/h3&gt;
 &lt;p&gt;The reporting in the media on the #COVID19 situation is not always providing
 sufficient context to interpret the numbers: we hear many news reports about how
@@ -775,7 +775,7 @@ monitor such indicators for some time (months or years?) to come.&lt;/p&gt;
   the source (to create the same or new plots) from within a web browser, by
   clicking &lt;a href="https://mybinder.org/v2/gh/fangohr/coronavirus/master"&gt;this link&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Frequently Asked Questions (FAQ)</title><link href="https://fangohr.github.io/coronavirus/faq.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-09:/coronavirus/faq.html</id><summary type="html">&lt;h1&gt;What about errors in the data?&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Frequently Asked Questions (FAQ)</title><link href="https://oscovida.github.io/faq.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-09:/faq.html</id><summary type="html">&lt;h1&gt;What about errors in the data?&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;The data we have available is likely to be in accurate:&lt;/li&gt;
 &lt;li&gt;Infections can only be confirmed if they are being tested: the more testing
@@ -811,15 +811,15 @@ monitor such indicators for some time (months or years?) to come.&lt;/p&gt;
   source code is available for anyone to check. (Please feedback any
   observations.)&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category><category term="data"></category></entry><entry><title>Standard Plots</title><link href="https://fangohr.github.io/coronavirus/plots.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-09:/coronavirus/plots.html</id><summary type="html">&lt;p&gt;We discuss the plots from the top (number 1) to the bottom (number 7) that are
-available for &lt;a href="pages/world"&gt;every country&lt;/a&gt;.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="About"></category><category term="data"></category></entry><entry><title>Standard Plots</title><link href="https://oscovida.github.io/plots.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-09:/plots.html</id><summary type="html">&lt;p&gt;We discuss the plots from the top (number 1) to the bottom (number 7) that are
+available for &lt;a href="world.html"&gt;every country&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Plot 1: accumulated cases and deaths as function of time&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea1.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Shows how many people have been confirmed to be infected (blue) or have died (red) as a function of time …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;We discuss the plots from the top (number 1) to the bottom (number 7) that are
-available for &lt;a href="pages/world"&gt;every country&lt;/a&gt;.&lt;/p&gt;
+available for &lt;a href="world.html"&gt;every country&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Plot 1: accumulated cases and deaths as function of time&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea1.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Shows how many people have been confirmed to be infected (blue) or have died (red) as a function of time.&lt;/li&gt;
 &lt;li&gt;The y-axis is logarithmic, that means from one grid line to the next, the
@@ -830,11 +830,12 @@ available for &lt;a href="pages/world"&gt;every country&lt;/a&gt;.&lt;/p&gt;
 &lt;li&gt;The interesting question is: how fast do they grow?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Plot 2: daily changes in cases&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea2.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea2.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Shows how many new confirmed cases are reported per day, shown as blue bars.&lt;/li&gt;
-&lt;li&gt;Blue lines shows a seven day (rolling) average over the bar data - this
-  produces smoother data, and in particular removes the effect of the weekend
+&lt;li&gt;Blue lines shows a seven day (rolling) average over the bar data (using a Gaussian
+  window with a standard deviation of 3 days) - this
+  produces smoother data. It also helps to removes the effect of the weekend
   (in some countries reported numbers drop during and just after the weekend)&lt;/li&gt;
 &lt;li&gt;We would like to see these numbers of daily changes decrease from day to day.
   The faster they go down the better. &lt;/li&gt;
@@ -843,7 +844,7 @@ available for &lt;a href="pages/world"&gt;every country&lt;/a&gt;.&lt;/p&gt;
   decreased to around 100 per day for the second half of March.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Plot 3: daily changes in deaths&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea3.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea3.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Red bars shows how many new deaths were reported for each day.&lt;/li&gt;
 &lt;li&gt;Red line shows a seven day (rolling) average over the bar data.&lt;/li&gt;
@@ -852,25 +853,27 @@ available for &lt;a href="pages/world"&gt;every country&lt;/a&gt;.&lt;/p&gt;
   rate&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Plot 4: growth factors&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea4.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea4.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The growth factor is the ratio of new cases (or deaths) today relative to new
   cases (or deaths) yesterday&lt;/li&gt;
-&lt;li&gt;Blue (red) dots show these ratios for cases (deaths), and are computed as the
-  ratio over a week to reduce noise&lt;/li&gt;
+&lt;li&gt;Blue (red) dots show these ratios for cases (deaths), and are computed based 
+  on the smoothed data shown in plot 2 and 3.&lt;/li&gt;
 &lt;li&gt;The solid line is a 7-day rolling mean over these points to provide smoother data.&lt;/li&gt;
 &lt;li&gt;As long as the growth value is greater than 1.0, the number of new infections
-  is increasing&lt;/li&gt;
+  is increasing.&lt;/li&gt;
 &lt;li&gt;If the growth value would is exactly 1.0, we have the same number of new
-  infections every day&lt;/li&gt;
+  infections every day.&lt;/li&gt;
 &lt;li&gt;The growth factor needs to be below 1.0 for the spread to slow down.&lt;/li&gt;
-&lt;li&gt;As this number is computed on the relative change from yesterday to today, we
-  can get high fluctuations where the numbers of new cases and deaths is small
-  (imagine there was 1 case yesterday, and 7 cases today, this would give a
-  growth factor of 7). &lt;/li&gt;
+&lt;li&gt;As the growth factor does not depend on the total number of new cases/deaths
+  (but only on the relative change from yesterday to today), we can get high
+  fluctuations where the numbers of new cases and deaths is small (imagine there
+  was 1 case yesterday, and 7 cases today, this would give a growth factor of
+  7). In short: where the number of daily new cases/deaths is small, the growth
+  factor can appear to change quickly.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Plot 5: Doubling times&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea5.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea5.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;This plot computes the doubling time of the cases (blue) and deaths (red),
@@ -923,7 +926,7 @@ days for the numbers of cases (or deaths) to double.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Plot 6: Comparison of daily new cases with other countries&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea6.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea6.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;X-axis shows the number of days since a particular number of new cases per day
@@ -950,10 +953,10 @@ days for the numbers of cases (or deaths) to double.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Plot 7: Comparison of daily new deaths with other countries&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="south-korea data" src="https://fangohr.github.io/coronavirus/fig-south-korea7.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="south-korea data" src="https://oscovida.github.io/fig-south-korea7.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;As Plot 6, but for deaths not cases. For South Korea, there are not enough
   deaths per day to show a meaningful line here.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category><category term="data"></category><category term="plots"></category></entry><entry><title>Interactive plots</title><link href="https://fangohr.github.io/coronavirus/interactive-plots.html" rel="alternate"></link><published>2020-04-08T08:30:00+02:00</published><updated>2020-04-08T08:30:00+02:00</updated><author><name>OSCA team</name></author><id>tag:fangohr.github.io,2020-04-08:/coronavirus/interactive-plots.html</id><content type="html">&lt;p&gt;&lt;a href="https://mybinder.org/v2/gh/fangohr/coronavirus-2020/master?urlpath=voila%2Frender%2Fdashboard.ipynb"&gt;Click here and wait a minute or so&lt;/a&gt; to select a country to plot from drop down menu.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="About"></category><category term="data"></category><category term="plots"></category></entry><entry><title>Interactive plots</title><link href="https://oscovida.github.io/interactive-plots.html" rel="alternate"></link><published>2020-04-08T08:30:00+02:00</published><updated>2020-04-08T08:30:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-08:/interactive-plots.html</id><content type="html">&lt;p&gt;&lt;a href="https://mybinder.org/v2/gh/fangohr/coronavirus-2020/master?urlpath=voila%2Frender%2Fdashboard.ipynb"&gt;Click here and wait a minute or so&lt;/a&gt; to select a country to plot from drop down menu.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img alt="Preview" src="https://fangohr.github.io/coronavirus/interactive.png"&gt;&lt;/p&gt;</content><category term="Data"></category><category term="plots"></category><category term="GUI"></category><category term="voila"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Preview" src="https://oscovida.github.io/interactive.png"&gt;&lt;/p&gt;</content><category term="Data"></category><category term="plots"></category><category term="GUI"></category><category term="voila"></category></entry></feed>

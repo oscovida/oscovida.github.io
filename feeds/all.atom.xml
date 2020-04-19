@@ -28,7 +28,32 @@ library and the Jupyter Notebook.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;This will provide a fully functional computing environment, that can be used
   from your browser. (But you need to download your notebook at the end of the
-  session if you want to archive it or want to continue working on it later.)&lt;/p&gt;</content><category term="About"></category><category term="Open Science"></category><category term="source code"></category></entry><entry><title>Germany</title><link href="https://oscovida.github.io/germany.html" rel="alternate"></link><published>2020-04-19T11:14:00+02:00</published><updated>2020-04-19T11:14:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-19:/germany.html</id><summary type="html">&lt;p&gt;Landkreise in Germany&lt;/p&gt;
+  session if you want to archive it or want to continue working on it later.)&lt;/p&gt;</content><category term="About"></category><category term="Open Science"></category><category term="source code"></category></entry><entry><title>License</title><link href="https://oscovida.github.io/license.html" rel="alternate"></link><published>2020-04-19T13:00:00+02:00</published><updated>2020-04-19T13:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-19:/license.html</id><summary type="html">&lt;p&gt;The materials available from the &lt;a href="https://oscovida.github.io"&gt;Open Science COVID19 Analysis&lt;/a&gt; project are licensed as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href="http://github.com/fangohr/coronavirus-2020"&gt;software&lt;/a&gt; is &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/LICENSE"&gt;licensed under
+  the BSD 3-Clause New license&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other material, including plots, are licensed under the 
+&lt;a href="http://creativecommons.org/licenses/by/4.0/"&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Informally, this means that (i) everything is provided as-is, without any …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The materials available from the &lt;a href="https://oscovida.github.io"&gt;Open Science COVID19 Analysis&lt;/a&gt; project are licensed as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href="http://github.com/fangohr/coronavirus-2020"&gt;software&lt;/a&gt; is &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/LICENSE"&gt;licensed under
+  the BSD 3-Clause New license&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other material, including plots, are licensed under the 
+&lt;a href="http://creativecommons.org/licenses/by/4.0/"&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Informally, this means that (i) everything is provided as-is, without any warranties, and (ii)
+you can use the materials as you like but should
+attribute where they come from (for example by mentioning the OSCOVIDA project
+and ideally pointing to its URL &lt;a href="http://oscovida.github.io"&gt;http://oscovida.github.io&lt;/a&gt;).&lt;/p&gt;</content><category term="About"></category><category term="data"></category><category term="code"></category><category term="license"></category></entry><entry><title>Germany</title><link href="https://oscovida.github.io/germany.html" rel="alternate"></link><published>2020-04-19T11:14:00+02:00</published><updated>2020-04-19T11:14:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-19:/germany.html</id><summary type="html">&lt;p&gt;Landkreise in Germany&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="html/Germany-Baden-Württemberg-LK-Alb-Donau-Kreis.html"&gt;Germany: Baden-Württemberg : LK Alb-Donau-Kreis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Germany-Baden-Württemberg-LK-Biberach.html"&gt;Germany: Baden-Württemberg : LK Biberach&lt;/a&gt;&lt;/li&gt;
@@ -775,7 +800,7 @@ of a Python function; this may help other scientists to build better models or d
   issue"&lt;/a&gt; - a
   &lt;a href="http://github.com"&gt;github&lt;/a&gt; account is necessary.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Team</title><link href="https://oscovida.github.io/team.html" rel="alternate"></link><published>2020-04-10T21:00:00+02:00</published><updated>2020-04-10T21:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/team.html</id><content type="html">&lt;p&gt;Following early work by Hans Fangohr, members of the European research project
+&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Team</title><link href="https://oscovida.github.io/team.html" rel="alternate"></link><published>2020-04-10T21:00:00+02:00</published><updated>2020-04-10T21:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/team.html</id><content type="html">&lt;p&gt;Following early work by &lt;a href="http://fangohr.github.io"&gt;Hans Fangohr&lt;/a&gt;, members of the European research project
 &lt;a href="http://panosc.eu"&gt;Photon and Neutron Open Science Cloud (PANOSC)&lt;/a&gt; and the Data
 Analysis Group of &lt;a href="https://xfel.eu"&gt;European XFEL&lt;/a&gt; contribute and sustain the
 project here.&lt;/p&gt;</content><category term="About"></category></entry><entry><title>Frequently Asked Questions (FAQ)</title><link href="https://oscovida.github.io/faq.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-09:/faq.html</id><summary type="html">&lt;h1&gt;What about errors in the data?&lt;/h1&gt;
@@ -960,6 +985,4 @@ days for the numbers of cases (or deaths) to double.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;As Plot 6, but for deaths not cases. For South Korea, there are not enough
   deaths per day to show a meaningful line here.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category><category term="data"></category><category term="plots"></category></entry><entry><title>Interactive plots</title><link href="https://oscovida.github.io/interactive-plots.html" rel="alternate"></link><published>2020-04-08T08:30:00+02:00</published><updated>2020-04-08T08:30:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-08:/interactive-plots.html</id><content type="html">&lt;p&gt;&lt;a href="https://mybinder.org/v2/gh/fangohr/coronavirus-2020/master?urlpath=voila%2Frender%2Fdashboard.ipynb"&gt;Click here and wait a minute or so&lt;/a&gt; to select a country to plot from drop down menu.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="Preview" src="https://oscovida.github.io/interactive.png"&gt;&lt;/p&gt;</content><category term="Data"></category><category term="plots"></category><category term="GUI"></category><category term="voila"></category></entry></feed>
+&lt;/ul&gt;</content><category term="About"></category><category term="data"></category><category term="plots"></category></entry></feed>

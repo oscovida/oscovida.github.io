@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>OSCOVIDA: Open Science COVID Analysis</title><link href="https://oscovida.github.io/" rel="alternate"></link><link href="https://oscovida.github.io/feeds/all.atom.xml" rel="self"></link><id>https://oscovida.github.io/</id><updated>2020-04-18T09:29:00+02:00</updated><entry><title>Germany</title><link href="https://oscovida.github.io/germany.html" rel="alternate"></link><published>2020-04-18T09:29:00+02:00</published><updated>2020-04-18T09:29:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-18:/germany.html</id><summary type="html">&lt;p&gt;Landkreise in Germany&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OSCOVIDA: Open Science COVID Analysis</title><link href="https://oscovida.github.io/" rel="alternate"></link><link href="https://oscovida.github.io/feeds/all.atom.xml" rel="self"></link><id>https://oscovida.github.io/</id><updated>2020-04-19T19:00:00+02:00</updated><entry><title>Open Science</title><link href="https://oscovida.github.io/open-science.html" rel="alternate"></link><published>2020-04-19T19:00:00+02:00</published><updated>2020-04-19T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-19:/open-science.html</id><summary type="html">&lt;p&gt;To use the analysis provided here, some Python knowledge is required, ideally
+additional experience (or willingness to learn) about the Pandas data science
+library and the Jupyter Notebook.&lt;/p&gt;
+&lt;h2&gt;Source code&lt;/h2&gt;
+&lt;p&gt;All the computational steps and code are available
+&lt;a href="https://github.com/fangohr/coronavirus-2020/tree/master/coronavirus"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Ways to use and execute the source code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you know …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;To use the analysis provided here, some Python knowledge is required, ideally
+additional experience (or willingness to learn) about the Pandas data science
+library and the Jupyter Notebook.&lt;/p&gt;
+&lt;h2&gt;Source code&lt;/h2&gt;
+&lt;p&gt;All the computational steps and code are available
+&lt;a href="https://github.com/fangohr/coronavirus-2020/tree/master/coronavirus"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Ways to use and execute the source code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you know your way around Github, you can fork &lt;a href="https://github.com/fangohr/coronavirus-2020/"&gt;the
+  repository&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All of the plots and tables can be recomputed using the Binder service (link
+  in each webpage with plots and data, or use &lt;a href="https://mybinder.org/v2/gh/oscovida/oscovida.github.io/master?filepath=ipynb"&gt;go here and select the relevant
+  notebook yourself&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This will provide a fully functional computing environment, that can be used
+  from your browser. (But you need to download your notebook at the end of the
+  session if you want to archive it or want to continue working on it later.)&lt;/p&gt;</content><category term="About"></category><category term="Open Science"></category><category term="source code"></category></entry><entry><title>Germany</title><link href="https://oscovida.github.io/germany.html" rel="alternate"></link><published>2020-04-19T11:14:00+02:00</published><updated>2020-04-19T11:14:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-19:/germany.html</id><summary type="html">&lt;p&gt;Landkreise in Germany&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="html/Germany-Baden-Württemberg-LK-Alb-Donau-Kreis.html"&gt;Germany: Baden-Württemberg : LK Alb-Donau-Kreis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Germany-Baden-Württemberg-LK-Biberach.html"&gt;Germany: Baden-Württemberg : LK Biberach&lt;/a&gt;&lt;/li&gt;
@@ -426,7 +455,7 @@
 &lt;li&gt;&lt;a href="html/Germany-Thüringen-SK-Jena.html"&gt;Germany: Thüringen : SK Jena&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Germany-Thüringen-SK-Suhl.html"&gt;Germany: Thüringen : SK Suhl&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Germany-Thüringen-SK-Weimar.html"&gt;Germany: Thüringen : SK Weimar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>World</title><link href="https://oscovida.github.io/world.html" rel="alternate"></link><published>2020-04-18T09:11:00+02:00</published><updated>2020-04-18T09:11:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-18:/world.html</id><summary type="html">&lt;p&gt;Countries&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>World</title><link href="https://oscovida.github.io/world.html" rel="alternate"></link><published>2020-04-19T10:40:00+02:00</published><updated>2020-04-19T10:40:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-19:/world.html</id><summary type="html">&lt;p&gt;Countries&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="html/Afghanistan.html"&gt;Afghanistan&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Albania.html"&gt;Albania&lt;/a&gt;&lt;/li&gt;
@@ -654,7 +683,55 @@
 &lt;li&gt;&lt;a href="html/Yemen.html"&gt;Yemen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Zambia.html"&gt;Zambia&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="html/Zimbabwe.html"&gt;Zimbabwe&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>Data sources</title><link href="https://oscovida.github.io/data-sources.html" rel="alternate"></link><published>2020-04-10T22:03:00+02:00</published><updated>2020-04-10T22:03:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/data-sources.html</id><content type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="Data"></category><category term="data"></category><category term="plots"></category></entry><entry><title>Our motivation</title><link href="https://oscovida.github.io/motivation.html" rel="alternate"></link><published>2020-04-19T10:20:00+02:00</published><updated>2020-04-19T10:20:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-19:/motivation.html</id><summary type="html">&lt;h2&gt;Motivation&lt;/h2&gt;
+&lt;h3&gt;1. Understanding the situation&lt;/h3&gt;
+&lt;p&gt;The reporting in the media on the #COVID19 situation is not always providing
+sufficient context to interpret the numbers: we hear many news reports about how
+many people have been confirmed to be infected by the virus, or have died on a
+particular day.&lt;/p&gt;
+&lt;p&gt;The …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Motivation&lt;/h2&gt;
+&lt;h3&gt;1. Understanding the situation&lt;/h3&gt;
+&lt;p&gt;The reporting in the media on the #COVID19 situation is not always providing
+sufficient context to interpret the numbers: we hear many news reports about how
+many people have been confirmed to be infected by the virus, or have died on a
+particular day.&lt;/p&gt;
+&lt;p&gt;The relevant questions are though: how do these numbers compare to yesterday,
+and the week before? Can we see and understand how quickly infections are
+spreading? Can we see if the containment measures of people staying at home,
+schools and universities closing etc are showing any effect and if so, how
+strong is it? What can we learn from countries that have managed to reduce the
+number of new infections? &lt;/p&gt;
+&lt;p&gt;With the plots and data available here, we hope to contribute to this.&lt;/p&gt;
+&lt;p&gt;Discussion and contributions are welcome.&lt;/p&gt;
+&lt;h3&gt;2. Preparing for later stages of the outbreaks&lt;/h3&gt;
+&lt;p&gt;Once the epidemic growth of infections is brought under control, we will need to
+find a fine balance between measures (such as social distancing, closure of
+schools, restaurants, shops, etc) and permitting work and live as was possible
+before the pandemic to avoid repeated exponential growth of infections. &lt;/p&gt;
+&lt;p&gt;We can start to see this in the data for countries such as China and South
+Korea. We need to learn to better read these data. It will be essential to
+monitor such indicators for some time (months or years?) to come.&lt;/p&gt;
+&lt;h3&gt;3. Enable citizen science&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href="https://github.com/fangohr/coronavirus-2020"&gt;source code&lt;/a&gt; that creates
+  the plots is available here, can be inspected, downloaded, modified and
+  improved.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using &lt;a href="https://jupyter.org/"&gt;Jupyter Notebooks&lt;/a&gt; and the &lt;a href="https://mybinder.org"&gt;MyBinder
+  project&lt;/a&gt; project, anyone with a web browser can execute
+  the source (to create the same or new plots) from within a web browser, by
+  clicking &lt;a href="https://mybinder.org/v2/gh/oscovida/oscovida.github.io/master?filepath=ipynb"&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;See also &lt;a href="open-science.html"&gt;related post on open science&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;4. Simplify use of the existing data sets for experts&lt;/h3&gt;
+&lt;p&gt;Our project can be used to get access to the COVID19 data from the convenience
+of a Python function; this may help other scientists to build better models or data analysis. &lt;/p&gt;
+&lt;p&gt;(&lt;a href="contribute.html"&gt;Contributions&lt;/a&gt; to our plots and software are welcome.)&lt;/p&gt;</content><category term="About"></category></entry><entry><title>Data sources</title><link href="https://oscovida.github.io/data-sources.html" rel="alternate"></link><published>2020-04-10T22:03:00+02:00</published><updated>2020-04-10T22:03:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/data-sources.html</id><content type="html">&lt;ul&gt;
 &lt;li&gt;We use data 
   from the &lt;a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data"&gt;Johns Hopkins university&lt;/a&gt;
   for countries, &lt;/li&gt;
@@ -663,8 +740,7 @@
 &lt;/ul&gt;
 &lt;h2&gt;Data Analysis&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;All computational steps and code are available
-  &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/coronavirus.py"&gt;here&lt;/a&gt;
+&lt;li&gt;All computational steps and code are available (see &lt;a href="open-science.html"&gt;Open Science&lt;/a&gt;)
   -- contributions and corrections welcome.&lt;/li&gt;
 &lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Contributions welcome!</title><link href="https://oscovida.github.io/contribute.html" rel="alternate"></link><published>2020-04-10T22:00:00+02:00</published><updated>2020-04-10T22:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/contribute.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
@@ -680,8 +756,8 @@
   list&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Bugs and ideas can be reported as a &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/issues"&gt;"New
-  issue"&lt;/a&gt; -- a …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;p&gt;Bugs and ideas can be reported as a &lt;a href="https://github.com/oscovida/feedback/issues"&gt;"New
+  issue"&lt;/a&gt; - a …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;We gather some
   &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/ideas.md"&gt;ideas&lt;/a&gt; for
@@ -695,87 +771,14 @@
   list&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Bugs and ideas can be reported as a &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/issues"&gt;"New
-  issue"&lt;/a&gt; -- a
-  github account is necessary.&lt;/p&gt;
+&lt;p&gt;Bugs and ideas can be reported as a &lt;a href="https://github.com/oscovida/feedback/issues"&gt;"New
+  issue"&lt;/a&gt; - a
+  &lt;a href="http://github.com"&gt;github&lt;/a&gt; account is necessary.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Team</title><link href="https://oscovida.github.io/team.html" rel="alternate"></link><published>2020-04-10T21:00:00+02:00</published><updated>2020-04-10T21:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/team.html</id><content type="html">&lt;p&gt;Following early work by Hans Fangohr, members of the European research project
 &lt;a href="http://panosc.eu"&gt;Photon and Neutron Open Science Cloud (PANOSC)&lt;/a&gt; and the Data
 Analysis Group of &lt;a href="https://xfel.eu"&gt;European XFEL&lt;/a&gt; contribute and sustain the
-project here.&lt;/p&gt;</content><category term="About"></category></entry><entry><title>Open Science</title><link href="https://oscovida.github.io/open-science.html" rel="alternate"></link><published>2020-04-10T19:00:00+02:00</published><updated>2020-04-10T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/open-science.html</id><summary type="html">&lt;p&gt;To use the analysis provided here, some Python knowledge is required, ideally
-additional experience (or willingness to learn) about the Pandas data science
-library and the Jupyter Notebook.&lt;/p&gt;
-&lt;h2&gt;Source code&lt;/h2&gt;
-&lt;p&gt;All the computational steps and code are available
-&lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/coronavirus.py"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Ways to use and execute the source code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;If you know …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;To use the analysis provided here, some Python knowledge is required, ideally
-additional experience (or willingness to learn) about the Pandas data science
-library and the Jupyter Notebook.&lt;/p&gt;
-&lt;h2&gt;Source code&lt;/h2&gt;
-&lt;p&gt;All the computational steps and code are available
-&lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/coronavirus.py"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Ways to use and execute the source code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;If you know your way around Github, you can fork the repository.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Or you download the
-  &lt;a href="https://github.com/fangohr/coronavirus-2020/blob/master/coronavirus.py"&gt;coronavirus.py&lt;/a&gt;
-  Python program, and execute it on your own machine. We provide some Jupyter Notebook templates.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;All of the plots and tables can be recomputed using the Binder service (link
-  in each webpage with plots and data, or use &lt;a href="https://mybinder.org/v2/gh/fangohr/coronavirus/master"&gt;go here and select the relevant
-  notebook yourself&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This will provide a fully functional computing environment, that can be used
-  from your browser. &lt;/p&gt;</content><category term="About"></category><category term="Open Science"></category><category term="source code"></category></entry><entry><title>Our motivation</title><link href="https://oscovida.github.io/motivation.html" rel="alternate"></link><published>2020-04-10T10:20:00+02:00</published><updated>2020-04-10T10:20:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-10:/motivation.html</id><summary type="html">&lt;h2&gt;Motivation&lt;/h2&gt;
-&lt;h3&gt;Understanding the situation&lt;/h3&gt;
-&lt;p&gt;The reporting in the media on the #COVID19 situation is not always providing
-sufficient context to interpret the numbers: we hear many news reports about how
-many people have been confirmed to be infected by the virus, or have died on a
-particular day.&lt;/p&gt;
-&lt;p&gt;The relevant …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Motivation&lt;/h2&gt;
-&lt;h3&gt;Understanding the situation&lt;/h3&gt;
-&lt;p&gt;The reporting in the media on the #COVID19 situation is not always providing
-sufficient context to interpret the numbers: we hear many news reports about how
-many people have been confirmed to be infected by the virus, or have died on a
-particular day.&lt;/p&gt;
-&lt;p&gt;The relevant questions are though: how do these numbers compare to yesterday,
-and the week before? Can we see and understand how quickly infections are
-spreading? Can we see if the containment measures of people staying at home,
-schools and universities closing etc are showing any effect and if so, how
-strong is it? What can we learn from countries that have managed to reduce the
-number of new infections? &lt;/p&gt;
-&lt;p&gt;With the plots and data available here, we hope to contribute to this.&lt;/p&gt;
-&lt;p&gt;Discussion and contributions are welcome.&lt;/p&gt;
-&lt;h3&gt;Preparing for later stages of the outbreaks&lt;/h3&gt;
-&lt;p&gt;Once the epidemic growth of infections is brought under control, we will need to
-find a fine balance between measures (such as social distancing, closure of
-schools, restaurants, shops, etc) and permitting work and live as was possible
-before the pandemic to avoid repeated exponential growth of infections. &lt;/p&gt;
-&lt;p&gt;We can start to see this in the data for countries such as China and South
-Korea. We need to learn to better read these data. It will be essential to
-monitor such indicators for some time (months or years?) to come.&lt;/p&gt;
-&lt;h3&gt;Enable citizen science&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The &lt;a href="https://github.com/fangohr/coronavirus-2020"&gt;source code&lt;/a&gt; that creates
-  the plots is available here, can be inspected, downloaded, modified and
-  improved.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Using &lt;a href="https://jupyter.org/"&gt;Jupyter Notebooks&lt;/a&gt; and the &lt;a href="https://mybinder.org"&gt;MyBinder
-  project&lt;/a&gt; project, anyone with a web browser can execute
-  the source (to create the same or new plots) from within a web browser, by
-  clicking &lt;a href="https://mybinder.org/v2/gh/fangohr/coronavirus/master"&gt;this link&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="About"></category></entry><entry><title>Frequently Asked Questions (FAQ)</title><link href="https://oscovida.github.io/faq.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-09:/faq.html</id><summary type="html">&lt;h1&gt;What about errors in the data?&lt;/h1&gt;
+project here.&lt;/p&gt;</content><category term="About"></category></entry><entry><title>Frequently Asked Questions (FAQ)</title><link href="https://oscovida.github.io/faq.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2020-04-09:/faq.html</id><summary type="html">&lt;h1&gt;What about errors in the data?&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;The data we have available is likely to be in accurate:&lt;/li&gt;
 &lt;li&gt;Infections can only be confirmed if they are being tested: the more testing

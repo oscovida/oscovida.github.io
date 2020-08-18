@@ -1252,6 +1252,41 @@ h6:hover .anchor-link {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Notebook executed on: </span><span class="si">{</span><span class="n">start</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y %H:%M:%S%Z&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">tzname</span><span class="p">[</span><span class="n">time</span><span class="o">.</span><span class="n">daylight</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Notebook executed on: 18/08/2020 09:25:37 CEST
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1261,7 +1296,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1308,10 +1343,11 @@ h6:hover .anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Downloaded data: last data point 8/14/20 from https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
+<pre>Downloaded data: last data point 8/17/20 from https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv
+Downloaded data: last data point 8/17/20 from https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
 Skip Diamond Princess
 Skip MS Zaandam
-Last updated Sat Aug 15 19:02:54 2020
+Last updated Tue Aug 18 09:25:43 2020
 </pre>
 </div>
 </div>
@@ -1329,1197 +1365,10 @@ Last updated Sat Aug 15 19:02:54 2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[2]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>population</th>
-      <th>new cases</th>
-      <th>14-day-incidence</th>
-    </tr>
-    <tr>
-      <th>country</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Afghanistan</th>
-      <td>38928341</td>
-      <td>756</td>
-      <td>1.9</td>
-    </tr>
-    <tr>
-      <th>Albania</th>
-      <td>2877800</td>
-      <td>1841</td>
-      <td>64.0</td>
-    </tr>
-    <tr>
-      <th>Algeria</th>
-      <td>43851043</td>
-      <td>7270</td>
-      <td>16.6</td>
-    </tr>
-    <tr>
-      <th>Andorra</th>
-      <td>77265</td>
-      <td>64</td>
-      <td>82.8</td>
-    </tr>
-    <tr>
-      <th>Angola</th>
-      <td>32866268</td>
-      <td>704</td>
-      <td>2.1</td>
-    </tr>
-    <tr>
-      <th>Antigua and Barbuda</th>
-      <td>97928</td>
-      <td>2</td>
-      <td>2.0</td>
-    </tr>
-    <tr>
-      <th>Argentina</th>
-      <td>45195777</td>
-      <td>91135</td>
-      <td>201.6</td>
-    </tr>
-    <tr>
-      <th>Armenia</th>
-      <td>2963234</td>
-      <td>2749</td>
-      <td>92.8</td>
-    </tr>
-    <tr>
-      <th>Australia</th>
-      <td>25459700</td>
-      <td>5755</td>
-      <td>22.6</td>
-    </tr>
-    <tr>
-      <th>Austria</th>
-      <td>9006400</td>
-      <td>1746</td>
-      <td>19.4</td>
-    </tr>
-    <tr>
-      <th>Azerbaijan</th>
-      <td>10139175</td>
-      <td>2140</td>
-      <td>21.1</td>
-    </tr>
-    <tr>
-      <th>Bahamas</th>
-      <td>393248</td>
-      <td>545</td>
-      <td>138.6</td>
-    </tr>
-    <tr>
-      <th>Bahrain</th>
-      <td>1701583</td>
-      <td>5070</td>
-      <td>298.0</td>
-    </tr>
-    <tr>
-      <th>Bangladesh</th>
-      <td>164689383</td>
-      <td>34220</td>
-      <td>20.8</td>
-    </tr>
-    <tr>
-      <th>Barbados</th>
-      <td>287371</td>
-      <td>38</td>
-      <td>13.2</td>
-    </tr>
-    <tr>
-      <th>Belarus</th>
-      <td>9449321</td>
-      <td>1500</td>
-      <td>15.9</td>
-    </tr>
-    <tr>
-      <th>Belgium</th>
-      <td>11589616</td>
-      <td>8362</td>
-      <td>72.2</td>
-    </tr>
-    <tr>
-      <th>Belize</th>
-      <td>397621</td>
-      <td>308</td>
-      <td>77.5</td>
-    </tr>
-    <tr>
-      <th>Benin</th>
-      <td>12123198</td>
-      <td>209</td>
-      <td>1.7</td>
-    </tr>
-    <tr>
-      <th>Bhutan</th>
-      <td>771612</td>
-      <td>32</td>
-      <td>4.1</td>
-    </tr>
-    <tr>
-      <th>Bolivia</th>
-      <td>11673029</td>
-      <td>21161</td>
-      <td>181.3</td>
-    </tr>
-    <tr>
-      <th>Bosnia and Herzegovina</th>
-      <td>3280815</td>
-      <td>3659</td>
-      <td>111.5</td>
-    </tr>
-    <tr>
-      <th>Botswana</th>
-      <td>2351625</td>
-      <td>410</td>
-      <td>17.4</td>
-    </tr>
-    <tr>
-      <th>Brazil</th>
-      <td>212559409</td>
-      <td>563958</td>
-      <td>265.3</td>
-    </tr>
-    <tr>
-      <th>Brunei</th>
-      <td>437483</td>
-      <td>1</td>
-      <td>0.2</td>
-    </tr>
-    <tr>
-      <th>Bulgaria</th>
-      <td>6948445</td>
-      <td>2553</td>
-      <td>36.7</td>
-    </tr>
-    <tr>
-      <th>Burkina Faso</th>
-      <td>20903278</td>
-      <td>132</td>
-      <td>0.6</td>
-    </tr>
-    <tr>
-      <th>Burma</th>
-      <td>54409794</td>
-      <td>21</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Burundi</th>
-      <td>11890781</td>
-      <td>25</td>
-      <td>0.2</td>
-    </tr>
-    <tr>
-      <th>Cabo Verde</th>
-      <td>555988</td>
-      <td>685</td>
-      <td>123.2</td>
-    </tr>
-    <tr>
-      <th>Cambodia</th>
-      <td>16718971</td>
-      <td>34</td>
-      <td>0.2</td>
-    </tr>
-    <tr>
-      <th>Cameroon</th>
-      <td>26545864</td>
-      <td>1214</td>
-      <td>4.6</td>
-    </tr>
-    <tr>
-      <th>Canada</th>
-      <td>37855702</td>
-      <td>5324</td>
-      <td>14.1</td>
-    </tr>
-    <tr>
-      <th>Central African Republic</th>
-      <td>4829764</td>
-      <td>44</td>
-      <td>0.9</td>
-    </tr>
-    <tr>
-      <th>Chad</th>
-      <td>16425859</td>
-      <td>15</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Chile</th>
-      <td>19116209</td>
-      <td>26444</td>
-      <td>138.3</td>
-    </tr>
-    <tr>
-      <th>China</th>
-      <td>1404676330</td>
-      <td>1559</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Colombia</th>
-      <td>50882884</td>
-      <td>149603</td>
-      <td>294.0</td>
-    </tr>
-    <tr>
-      <th>Comoros</th>
-      <td>869595</td>
-      <td>25</td>
-      <td>2.9</td>
-    </tr>
-    <tr>
-      <th>Congo (Brazzaville)</th>
-      <td>5518092</td>
-      <td>545</td>
-      <td>9.9</td>
-    </tr>
-    <tr>
-      <th>Congo (Kinshasa)</th>
-      <td>89561404</td>
-      <td>535</td>
-      <td>0.6</td>
-    </tr>
-    <tr>
-      <th>Costa Rica</th>
-      <td>5094114</td>
-      <td>9111</td>
-      <td>178.9</td>
-    </tr>
-    <tr>
-      <th>Cote d'Ivoire</th>
-      <td>26378275</td>
-      <td>888</td>
-      <td>3.4</td>
-    </tr>
-    <tr>
-      <th>Croatia</th>
-      <td>4105268</td>
-      <td>1119</td>
-      <td>27.3</td>
-    </tr>
-    <tr>
-      <th>Cuba</th>
-      <td>11326616</td>
-      <td>621</td>
-      <td>5.5</td>
-    </tr>
-    <tr>
-      <th>Cyprus</th>
-      <td>1207361</td>
-      <td>204</td>
-      <td>16.9</td>
-    </tr>
-    <tr>
-      <th>Czechia</th>
-      <td>10708982</td>
-      <td>3119</td>
-      <td>29.1</td>
-    </tr>
-    <tr>
-      <th>Denmark</th>
-      <td>5792203</td>
-      <td>1730</td>
-      <td>29.9</td>
-    </tr>
-    <tr>
-      <th>Djibouti</th>
-      <td>988002</td>
-      <td>283</td>
-      <td>28.6</td>
-    </tr>
-    <tr>
-      <th>Dominica</th>
-      <td>71991</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Dominican Republic</th>
-      <td>10847904</td>
-      <td>14839</td>
-      <td>136.8</td>
-    </tr>
-    <tr>
-      <th>Ecuador</th>
-      <td>17643060</td>
-      <td>14054</td>
-      <td>79.7</td>
-    </tr>
-    <tr>
-      <th>Egypt</th>
-      <td>102334403</td>
-      <td>2142</td>
-      <td>2.1</td>
-    </tr>
-    <tr>
-      <th>El Salvador</th>
-      <td>6486201</td>
-      <td>5682</td>
-      <td>87.6</td>
-    </tr>
-    <tr>
-      <th>Equatorial Guinea</th>
-      <td>1402985</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Eritrea</th>
-      <td>3546427</td>
-      <td>6</td>
-      <td>0.2</td>
-    </tr>
-    <tr>
-      <th>Estonia</th>
-      <td>1326539</td>
-      <td>113</td>
-      <td>8.5</td>
-    </tr>
-    <tr>
-      <th>Eswatini</th>
-      <td>1160164</td>
-      <td>1022</td>
-      <td>88.1</td>
-    </tr>
-    <tr>
-      <th>Ethiopia</th>
-      <td>114963583</td>
-      <td>9712</td>
-      <td>8.4</td>
-    </tr>
-    <tr>
-      <th>Fiji</th>
-      <td>896444</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Finland</th>
-      <td>5540718</td>
-      <td>268</td>
-      <td>4.8</td>
-    </tr>
-    <tr>
-      <th>France</th>
-      <td>65273512</td>
-      <td>24458</td>
-      <td>37.5</td>
-    </tr>
-    <tr>
-      <th>Gabon</th>
-      <td>2225728</td>
-      <td>873</td>
-      <td>39.2</td>
-    </tr>
-    <tr>
-      <th>Gambia</th>
-      <td>2416664</td>
-      <td>1125</td>
-      <td>46.6</td>
-    </tr>
-    <tr>
-      <th>Georgia</th>
-      <td>3989175</td>
-      <td>138</td>
-      <td>3.5</td>
-    </tr>
-    <tr>
-      <th>Germany</th>
-      <td>83128805</td>
-      <td>13392</td>
-      <td>16.1</td>
-    </tr>
-    <tr>
-      <th>Ghana</th>
-      <td>31072945</td>
-      <td>6346</td>
-      <td>20.4</td>
-    </tr>
-    <tr>
-      <th>Greece</th>
-      <td>10423056</td>
-      <td>2155</td>
-      <td>20.7</td>
-    </tr>
-    <tr>
-      <th>Grenada</th>
-      <td>112519</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Guatemala</th>
-      <td>17915567</td>
-      <td>11639</td>
-      <td>65.0</td>
-    </tr>
-    <tr>
-      <th>Guinea</th>
-      <td>13132792</td>
-      <td>952</td>
-      <td>7.2</td>
-    </tr>
-    <tr>
-      <th>Guinea-Bissau</th>
-      <td>1967998</td>
-      <td>107</td>
-      <td>5.4</td>
-    </tr>
-    <tr>
-      <th>Guyana</th>
-      <td>786559</td>
-      <td>236</td>
-      <td>30.0</td>
-    </tr>
-    <tr>
-      <th>Haiti</th>
-      <td>11402533</td>
-      <td>386</td>
-      <td>3.4</td>
-    </tr>
-    <tr>
-      <th>Holy See</th>
-      <td>809</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Honduras</th>
-      <td>9904608</td>
-      <td>7453</td>
-      <td>75.2</td>
-    </tr>
-    <tr>
-      <th>Hungary</th>
-      <td>9660350</td>
-      <td>348</td>
-      <td>3.6</td>
-    </tr>
-    <tr>
-      <th>Iceland</th>
-      <td>341250</td>
-      <td>98</td>
-      <td>28.7</td>
-    </tr>
-    <tr>
-      <th>India</th>
-      <td>1380004385</td>
-      <td>829934</td>
-      <td>60.1</td>
-    </tr>
-    <tr>
-      <th>Indonesia</th>
-      <td>273523621</td>
-      <td>26747</td>
-      <td>9.8</td>
-    </tr>
-    <tr>
-      <th>Iran</th>
-      <td>83992953</td>
-      <td>34621</td>
-      <td>41.2</td>
-    </tr>
-    <tr>
-      <th>Iraq</th>
-      <td>40222503</td>
-      <td>43681</td>
-      <td>108.6</td>
-    </tr>
-    <tr>
-      <th>Ireland</th>
-      <td>4937796</td>
-      <td>930</td>
-      <td>18.8</td>
-    </tr>
-    <tr>
-      <th>Israel</th>
-      <td>8655541</td>
-      <td>20110</td>
-      <td>232.3</td>
-    </tr>
-    <tr>
-      <th>Italy</th>
-      <td>60461828</td>
-      <td>5272</td>
-      <td>8.7</td>
-    </tr>
-    <tr>
-      <th>Jamaica</th>
-      <td>2961161</td>
-      <td>204</td>
-      <td>6.9</td>
-    </tr>
-    <tr>
-      <th>Japan</th>
-      <td>126476458</td>
-      <td>17584</td>
-      <td>13.9</td>
-    </tr>
-    <tr>
-      <th>Jordan</th>
-      <td>10203140</td>
-      <td>136</td>
-      <td>1.3</td>
-    </tr>
-    <tr>
-      <th>Kazakhstan</th>
-      <td>18776707</td>
-      <td>11920</td>
-      <td>63.5</td>
-    </tr>
-    <tr>
-      <th>Kenya</th>
-      <td>53771300</td>
-      <td>8698</td>
-      <td>16.2</td>
-    </tr>
-    <tr>
-      <th>Korea, South</th>
-      <td>51269183</td>
-      <td>703</td>
-      <td>1.4</td>
-    </tr>
-    <tr>
-      <th>Kosovo</th>
-      <td>1810366</td>
-      <td>3026</td>
-      <td>167.1</td>
-    </tr>
-    <tr>
-      <th>Kuwait</th>
-      <td>4270563</td>
-      <td>8228</td>
-      <td>192.7</td>
-    </tr>
-    <tr>
-      <th>Kyrgyzstan</th>
-      <td>6524191</td>
-      <td>5568</td>
-      <td>85.3</td>
-    </tr>
-    <tr>
-      <th>Laos</th>
-      <td>7275556</td>
-      <td>2</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Latvia</th>
-      <td>1886202</td>
-      <td>77</td>
-      <td>4.1</td>
-    </tr>
-    <tr>
-      <th>Lebanon</th>
-      <td>6825442</td>
-      <td>3490</td>
-      <td>51.1</td>
-    </tr>
-    <tr>
-      <th>Lesotho</th>
-      <td>2142252</td>
-      <td>280</td>
-      <td>13.1</td>
-    </tr>
-    <tr>
-      <th>Liberia</th>
-      <td>5057677</td>
-      <td>66</td>
-      <td>1.3</td>
-    </tr>
-    <tr>
-      <th>Libya</th>
-      <td>6871287</td>
-      <td>3706</td>
-      <td>53.9</td>
-    </tr>
-    <tr>
-      <th>Liechtenstein</th>
-      <td>38137</td>
-      <td>3</td>
-      <td>7.9</td>
-    </tr>
-    <tr>
-      <th>Lithuania</th>
-      <td>2722291</td>
-      <td>277</td>
-      <td>10.2</td>
-    </tr>
-    <tr>
-      <th>Luxembourg</th>
-      <td>625976</td>
-      <td>710</td>
-      <td>113.4</td>
-    </tr>
-    <tr>
-      <th>Madagascar</th>
-      <td>27691019</td>
-      <td>2775</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>Malawi</th>
-      <td>19129955</td>
-      <td>910</td>
-      <td>4.8</td>
-    </tr>
-    <tr>
-      <th>Malaysia</th>
-      <td>32365998</td>
-      <td>173</td>
-      <td>0.5</td>
-    </tr>
-    <tr>
-      <th>Maldives</th>
-      <td>540542</td>
-      <td>1779</td>
-      <td>329.1</td>
-    </tr>
-    <tr>
-      <th>Mali</th>
-      <td>20250834</td>
-      <td>62</td>
-      <td>0.3</td>
-    </tr>
-    <tr>
-      <th>Malta</th>
-      <td>441539</td>
-      <td>452</td>
-      <td>102.4</td>
-    </tr>
-    <tr>
-      <th>Mauritania</th>
-      <td>4649660</td>
-      <td>366</td>
-      <td>7.9</td>
-    </tr>
-    <tr>
-      <th>Mauritius</th>
-      <td>1271767</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Mexico</th>
-      <td>127792286</td>
-      <td>86732</td>
-      <td>67.9</td>
-    </tr>
-    <tr>
-      <th>Moldova</th>
-      <td>4033963</td>
-      <td>4750</td>
-      <td>117.8</td>
-    </tr>
-    <tr>
-      <th>Monaco</th>
-      <td>39244</td>
-      <td>26</td>
-      <td>66.3</td>
-    </tr>
-    <tr>
-      <th>Mongolia</th>
-      <td>3278292</td>
-      <td>7</td>
-      <td>0.2</td>
-    </tr>
-    <tr>
-      <th>Montenegro</th>
-      <td>628062</td>
-      <td>857</td>
-      <td>136.5</td>
-    </tr>
-    <tr>
-      <th>Morocco</th>
-      <td>36910558</td>
-      <td>14919</td>
-      <td>40.4</td>
-    </tr>
-    <tr>
-      <th>Mozambique</th>
-      <td>31255435</td>
-      <td>844</td>
-      <td>2.7</td>
-    </tr>
-    <tr>
-      <th>Namibia</th>
-      <td>2540916</td>
-      <td>1597</td>
-      <td>62.9</td>
-    </tr>
-    <tr>
-      <th>Nepal</th>
-      <td>29136808</td>
-      <td>5780</td>
-      <td>19.8</td>
-    </tr>
-    <tr>
-      <th>Netherlands</th>
-      <td>17134873</td>
-      <td>8537</td>
-      <td>49.8</td>
-    </tr>
-    <tr>
-      <th>New Zealand</th>
-      <td>4822233</td>
-      <td>47</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>Nicaragua</th>
-      <td>6624554</td>
-      <td>443</td>
-      <td>6.7</td>
-    </tr>
-    <tr>
-      <th>Niger</th>
-      <td>24206636</td>
-      <td>27</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Nigeria</th>
-      <td>206139587</td>
-      <td>5294</td>
-      <td>2.6</td>
-    </tr>
-    <tr>
-      <th>North Macedonia</th>
-      <td>2083380</td>
-      <td>1761</td>
-      <td>84.5</td>
-    </tr>
-    <tr>
-      <th>Norway</th>
-      <td>5421242</td>
-      <td>668</td>
-      <td>12.3</td>
-    </tr>
-    <tr>
-      <th>Oman</th>
-      <td>5106622</td>
-      <td>3584</td>
-      <td>70.2</td>
-    </tr>
-    <tr>
-      <th>Pakistan</th>
-      <td>220892331</td>
-      <td>8995</td>
-      <td>4.1</td>
-    </tr>
-    <tr>
-      <th>Panama</th>
-      <td>4314768</td>
-      <td>14146</td>
-      <td>327.9</td>
-    </tr>
-    <tr>
-      <th>Papua New Guinea</th>
-      <td>8947027</td>
-      <td>199</td>
-      <td>2.2</td>
-    </tr>
-    <tr>
-      <th>Paraguay</th>
-      <td>7132530</td>
-      <td>3684</td>
-      <td>51.7</td>
-    </tr>
-    <tr>
-      <th>Peru</th>
-      <td>32971846</td>
-      <td>108804</td>
-      <td>330.0</td>
-    </tr>
-    <tr>
-      <th>Philippines</th>
-      <td>109581085</td>
-      <td>60306</td>
-      <td>55.0</td>
-    </tr>
-    <tr>
-      <th>Poland</th>
-      <td>37846605</td>
-      <td>9631</td>
-      <td>25.4</td>
-    </tr>
-    <tr>
-      <th>Portugal</th>
-      <td>10196707</td>
-      <td>2711</td>
-      <td>26.6</td>
-    </tr>
-    <tr>
-      <th>Qatar</th>
-      <td>2881060</td>
-      <td>3837</td>
-      <td>133.2</td>
-    </tr>
-    <tr>
-      <th>Romania</th>
-      <td>19237682</td>
-      <td>17160</td>
-      <td>89.2</td>
-    </tr>
-    <tr>
-      <th>Russia</th>
-      <td>145934460</td>
-      <td>72317</td>
-      <td>49.6</td>
-    </tr>
-    <tr>
-      <th>Rwanda</th>
-      <td>12952209</td>
-      <td>271</td>
-      <td>2.1</td>
-    </tr>
-    <tr>
-      <th>Saint Kitts and Nevis</th>
-      <td>53192</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Saint Lucia</th>
-      <td>183629</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Saint Vincent and the Grenadines</th>
-      <td>110947</td>
-      <td>3</td>
-      <td>2.7</td>
-    </tr>
-    <tr>
-      <th>San Marino</th>
-      <td>33938</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Sao Tome and Principe</th>
-      <td>219161</td>
-      <td>14</td>
-      <td>6.4</td>
-    </tr>
-    <tr>
-      <th>Saudi Arabia</th>
-      <td>34813867</td>
-      <td>19997</td>
-      <td>57.4</td>
-    </tr>
-    <tr>
-      <th>Senegal</th>
-      <td>16743930</td>
-      <td>1640</td>
-      <td>9.8</td>
-    </tr>
-    <tr>
-      <th>Serbia</th>
-      <td>8737370</td>
-      <td>3681</td>
-      <td>42.1</td>
-    </tr>
-    <tr>
-      <th>Seychelles</th>
-      <td>98340</td>
-      <td>13</td>
-      <td>13.2</td>
-    </tr>
-    <tr>
-      <th>Sierra Leone</th>
-      <td>7976985</td>
-      <td>124</td>
-      <td>1.6</td>
-    </tr>
-    <tr>
-      <th>Singapore</th>
-      <td>5850343</td>
-      <td>3375</td>
-      <td>57.7</td>
-    </tr>
-    <tr>
-      <th>Slovakia</th>
-      <td>5459643</td>
-      <td>509</td>
-      <td>9.3</td>
-    </tr>
-    <tr>
-      <th>Slovenia</th>
-      <td>2078932</td>
-      <td>213</td>
-      <td>10.2</td>
-    </tr>
-    <tr>
-      <th>Somalia</th>
-      <td>15893219</td>
-      <td>38</td>
-      <td>0.2</td>
-    </tr>
-    <tr>
-      <th>South Africa</th>
-      <td>59308690</td>
-      <td>85957</td>
-      <td>144.9</td>
-    </tr>
-    <tr>
-      <th>South Sudan</th>
-      <td>11193729</td>
-      <td>160</td>
-      <td>1.4</td>
-    </tr>
-    <tr>
-      <th>Spain</th>
-      <td>46754783</td>
-      <td>54291</td>
-      <td>116.1</td>
-    </tr>
-    <tr>
-      <th>Sri Lanka</th>
-      <td>21413250</td>
-      <td>71</td>
-      <td>0.3</td>
-    </tr>
-    <tr>
-      <th>Sudan</th>
-      <td>43849269</td>
-      <td>518</td>
-      <td>1.2</td>
-    </tr>
-    <tr>
-      <th>Suriname</th>
-      <td>586634</td>
-      <td>1188</td>
-      <td>202.5</td>
-    </tr>
-    <tr>
-      <th>Sweden</th>
-      <td>10099270</td>
-      <td>3872</td>
-      <td>38.3</td>
-    </tr>
-    <tr>
-      <th>Switzerland</th>
-      <td>8654618</td>
-      <td>2439</td>
-      <td>28.2</td>
-    </tr>
-    <tr>
-      <th>Syria</th>
-      <td>17500657</td>
-      <td>758</td>
-      <td>4.3</td>
-    </tr>
-    <tr>
-      <th>Taiwan*</th>
-      <td>23816775</td>
-      <td>14</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Tajikistan</th>
-      <td>9537642</td>
-      <td>580</td>
-      <td>6.1</td>
-    </tr>
-    <tr>
-      <th>Tanzania</th>
-      <td>59734213</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Thailand</th>
-      <td>69799978</td>
-      <td>66</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Timor-Leste</th>
-      <td>1318442</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Togo</th>
-      <td>8278737</td>
-      <td>183</td>
-      <td>2.2</td>
-    </tr>
-    <tr>
-      <th>Trinidad and Tobago</th>
-      <td>1399491</td>
-      <td>257</td>
-      <td>18.4</td>
-    </tr>
-    <tr>
-      <th>Tunisia</th>
-      <td>11818618</td>
-      <td>368</td>
-      <td>3.1</td>
-    </tr>
-    <tr>
-      <th>Turkey</th>
-      <td>84339067</td>
-      <td>15988</td>
-      <td>19.0</td>
-    </tr>
-    <tr>
-      <th>US</th>
-      <td>329466283</td>
-      <td>750948</td>
-      <td>227.9</td>
-    </tr>
-    <tr>
-      <th>Uganda</th>
-      <td>45741000</td>
-      <td>231</td>
-      <td>0.5</td>
-    </tr>
-    <tr>
-      <th>Ukraine</th>
-      <td>43733759</td>
-      <td>18513</td>
-      <td>42.3</td>
-    </tr>
-    <tr>
-      <th>United Arab Emirates</th>
-      <td>9890400</td>
-      <td>3313</td>
-      <td>33.5</td>
-    </tr>
-    <tr>
-      <th>United Kingdom</th>
-      <td>67886004</td>
-      <td>10828</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>Uruguay</th>
-      <td>3473727</td>
-      <td>157</td>
-      <td>4.5</td>
-    </tr>
-    <tr>
-      <th>Uzbekistan</th>
-      <td>33469199</td>
-      <td>9812</td>
-      <td>29.3</td>
-    </tr>
-    <tr>
-      <th>Venezuela</th>
-      <td>28435943</td>
-      <td>12807</td>
-      <td>45.0</td>
-    </tr>
-    <tr>
-      <th>Vietnam</th>
-      <td>97338583</td>
-      <td>372</td>
-      <td>0.4</td>
-    </tr>
-    <tr>
-      <th>West Bank and Gaza</th>
-      <td>5101416</td>
-      <td>3997</td>
-      <td>78.4</td>
-    </tr>
-    <tr>
-      <th>Western Sahara</th>
-      <td>597330</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Yemen</th>
-      <td>29825968</td>
-      <td>130</td>
-      <td>0.4</td>
-    </tr>
-    <tr>
-      <th>Zambia</th>
-      <td>18383956</td>
-      <td>3058</td>
-      <td>16.6</td>
-    </tr>
-    <tr>
-      <th>Zimbabwe</th>
-      <td>14862927</td>
-      <td>1903</td>
-      <td>12.8</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Table-sorted-by-14-day-incidence">Table sorted by 14-day-incidence<a class="anchor-link" href="#Table-sorted-by-14-day-incidence">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -2568,586 +1417,892 @@ Last updated Sat Aug 15 19:02:54 2020
   </thead>
   <tbody>
     <tr>
-      <th>Peru</th>
-      <td>32971846</td>
-      <td>108804</td>
-      <td>330.0</td>
-    </tr>
-    <tr>
-      <th>Maldives</th>
-      <td>540542</td>
-      <td>1779</td>
-      <td>329.1</td>
-    </tr>
-    <tr>
-      <th>Panama</th>
-      <td>4314768</td>
-      <td>14146</td>
-      <td>327.9</td>
-    </tr>
-    <tr>
-      <th>Bahrain</th>
-      <td>1701583</td>
-      <td>5070</td>
-      <td>298.0</td>
-    </tr>
-    <tr>
-      <th>Colombia</th>
-      <td>50882884</td>
-      <td>149603</td>
-      <td>294.0</td>
-    </tr>
-    <tr>
-      <th>Brazil</th>
-      <td>212559409</td>
-      <td>563958</td>
-      <td>265.3</td>
-    </tr>
-    <tr>
-      <th>Israel</th>
-      <td>8655541</td>
-      <td>20110</td>
-      <td>232.3</td>
-    </tr>
-    <tr>
-      <th>US</th>
-      <td>329466283</td>
-      <td>750948</td>
-      <td>227.9</td>
-    </tr>
-    <tr>
-      <th>Suriname</th>
-      <td>586634</td>
-      <td>1188</td>
-      <td>202.5</td>
-    </tr>
-    <tr>
-      <th>Argentina</th>
-      <td>45195777</td>
-      <td>91135</td>
-      <td>201.6</td>
-    </tr>
-    <tr>
-      <th>Kuwait</th>
-      <td>4270563</td>
-      <td>8228</td>
-      <td>192.7</td>
-    </tr>
-    <tr>
-      <th>Bolivia</th>
-      <td>11673029</td>
-      <td>21161</td>
-      <td>181.3</td>
-    </tr>
-    <tr>
-      <th>Costa Rica</th>
-      <td>5094114</td>
-      <td>9111</td>
-      <td>178.9</td>
-    </tr>
-    <tr>
-      <th>Kosovo</th>
-      <td>1810366</td>
-      <td>3026</td>
-      <td>167.1</td>
-    </tr>
-    <tr>
-      <th>South Africa</th>
-      <td>59308690</td>
-      <td>85957</td>
-      <td>144.9</td>
-    </tr>
-    <tr>
-      <th>Bahamas</th>
-      <td>393248</td>
-      <td>545</td>
-      <td>138.6</td>
-    </tr>
-    <tr>
-      <th>Chile</th>
-      <td>19116209</td>
-      <td>26444</td>
-      <td>138.3</td>
-    </tr>
-    <tr>
-      <th>Dominican Republic</th>
-      <td>10847904</td>
-      <td>14839</td>
-      <td>136.8</td>
-    </tr>
-    <tr>
-      <th>Montenegro</th>
-      <td>628062</td>
-      <td>857</td>
-      <td>136.5</td>
-    </tr>
-    <tr>
-      <th>Qatar</th>
-      <td>2881060</td>
-      <td>3837</td>
-      <td>133.2</td>
-    </tr>
-    <tr>
-      <th>Cabo Verde</th>
-      <td>555988</td>
-      <td>685</td>
-      <td>123.2</td>
-    </tr>
-    <tr>
-      <th>Moldova</th>
-      <td>4033963</td>
-      <td>4750</td>
-      <td>117.8</td>
-    </tr>
-    <tr>
-      <th>Spain</th>
-      <td>46754783</td>
-      <td>54291</td>
-      <td>116.1</td>
-    </tr>
-    <tr>
-      <th>Luxembourg</th>
-      <td>625976</td>
-      <td>710</td>
-      <td>113.4</td>
-    </tr>
-    <tr>
-      <th>Bosnia and Herzegovina</th>
-      <td>3280815</td>
-      <td>3659</td>
-      <td>111.5</td>
-    </tr>
-    <tr>
-      <th>Iraq</th>
-      <td>40222503</td>
-      <td>43681</td>
-      <td>108.6</td>
-    </tr>
-    <tr>
-      <th>Malta</th>
-      <td>441539</td>
-      <td>452</td>
-      <td>102.4</td>
-    </tr>
-    <tr>
-      <th>Armenia</th>
-      <td>2963234</td>
-      <td>2749</td>
-      <td>92.8</td>
-    </tr>
-    <tr>
-      <th>Romania</th>
-      <td>19237682</td>
-      <td>17160</td>
-      <td>89.2</td>
-    </tr>
-    <tr>
-      <th>Eswatini</th>
-      <td>1160164</td>
-      <td>1022</td>
-      <td>88.1</td>
-    </tr>
-    <tr>
-      <th>El Salvador</th>
-      <td>6486201</td>
-      <td>5682</td>
-      <td>87.6</td>
-    </tr>
-    <tr>
-      <th>Kyrgyzstan</th>
-      <td>6524191</td>
-      <td>5568</td>
-      <td>85.3</td>
-    </tr>
-    <tr>
-      <th>North Macedonia</th>
-      <td>2083380</td>
-      <td>1761</td>
-      <td>84.5</td>
-    </tr>
-    <tr>
-      <th>Andorra</th>
-      <td>77265</td>
-      <td>64</td>
-      <td>82.8</td>
-    </tr>
-    <tr>
-      <th>Ecuador</th>
-      <td>17643060</td>
-      <td>14054</td>
-      <td>79.7</td>
-    </tr>
-    <tr>
-      <th>West Bank and Gaza</th>
-      <td>5101416</td>
-      <td>3997</td>
-      <td>78.4</td>
-    </tr>
-    <tr>
-      <th>Belize</th>
-      <td>397621</td>
-      <td>308</td>
-      <td>77.5</td>
-    </tr>
-    <tr>
-      <th>Honduras</th>
-      <td>9904608</td>
-      <td>7453</td>
-      <td>75.2</td>
-    </tr>
-    <tr>
-      <th>Belgium</th>
-      <td>11589616</td>
-      <td>8362</td>
-      <td>72.2</td>
-    </tr>
-    <tr>
-      <th>Oman</th>
-      <td>5106622</td>
-      <td>3584</td>
-      <td>70.2</td>
-    </tr>
-    <tr>
-      <th>Mexico</th>
-      <td>127792286</td>
-      <td>86732</td>
-      <td>67.9</td>
-    </tr>
-    <tr>
-      <th>Monaco</th>
-      <td>39244</td>
-      <td>26</td>
-      <td>66.3</td>
-    </tr>
-    <tr>
-      <th>Guatemala</th>
-      <td>17915567</td>
-      <td>11639</td>
-      <td>65.0</td>
+      <th>Afghanistan</th>
+      <td>38928341</td>
+      <td>852</td>
+      <td>2.2</td>
     </tr>
     <tr>
       <th>Albania</th>
       <td>2877800</td>
-      <td>1841</td>
-      <td>64.0</td>
+      <td>1879</td>
+      <td>65.3</td>
     </tr>
     <tr>
-      <th>Kazakhstan</th>
-      <td>18776707</td>
-      <td>11920</td>
-      <td>63.5</td>
+      <th>Algeria</th>
+      <td>43851043</td>
+      <td>7053</td>
+      <td>16.1</td>
     </tr>
     <tr>
-      <th>Namibia</th>
-      <td>2540916</td>
-      <td>1597</td>
-      <td>62.9</td>
+      <th>Andorra</th>
+      <td>77265</td>
+      <td>68</td>
+      <td>88.0</td>
     </tr>
     <tr>
-      <th>India</th>
-      <td>1380004385</td>
-      <td>829934</td>
-      <td>60.1</td>
+      <th>Angola</th>
+      <td>32866268</td>
+      <td>655</td>
+      <td>2.0</td>
     </tr>
     <tr>
-      <th>Singapore</th>
-      <td>5850343</td>
-      <td>3375</td>
-      <td>57.7</td>
+      <th>Antigua and Barbuda</th>
+      <td>97928</td>
+      <td>1</td>
+      <td>1.0</td>
     </tr>
     <tr>
-      <th>Saudi Arabia</th>
-      <td>34813867</td>
-      <td>19997</td>
-      <td>57.4</td>
+      <th>Argentina</th>
+      <td>45195777</td>
+      <td>92383</td>
+      <td>204.4</td>
     </tr>
     <tr>
-      <th>Philippines</th>
-      <td>109581085</td>
-      <td>60306</td>
-      <td>55.0</td>
-    </tr>
-    <tr>
-      <th>Libya</th>
-      <td>6871287</td>
-      <td>3706</td>
-      <td>53.9</td>
-    </tr>
-    <tr>
-      <th>Paraguay</th>
-      <td>7132530</td>
-      <td>3684</td>
-      <td>51.7</td>
-    </tr>
-    <tr>
-      <th>Lebanon</th>
-      <td>6825442</td>
-      <td>3490</td>
-      <td>51.1</td>
-    </tr>
-    <tr>
-      <th>Netherlands</th>
-      <td>17134873</td>
-      <td>8537</td>
-      <td>49.8</td>
-    </tr>
-    <tr>
-      <th>Russia</th>
-      <td>145934460</td>
-      <td>72317</td>
-      <td>49.6</td>
-    </tr>
-    <tr>
-      <th>Gambia</th>
-      <td>2416664</td>
-      <td>1125</td>
-      <td>46.6</td>
-    </tr>
-    <tr>
-      <th>Venezuela</th>
-      <td>28435943</td>
-      <td>12807</td>
-      <td>45.0</td>
-    </tr>
-    <tr>
-      <th>Ukraine</th>
-      <td>43733759</td>
-      <td>18513</td>
-      <td>42.3</td>
-    </tr>
-    <tr>
-      <th>Serbia</th>
-      <td>8737370</td>
-      <td>3681</td>
-      <td>42.1</td>
-    </tr>
-    <tr>
-      <th>Iran</th>
-      <td>83992953</td>
-      <td>34621</td>
-      <td>41.2</td>
-    </tr>
-    <tr>
-      <th>Morocco</th>
-      <td>36910558</td>
-      <td>14919</td>
-      <td>40.4</td>
-    </tr>
-    <tr>
-      <th>Gabon</th>
-      <td>2225728</td>
-      <td>873</td>
-      <td>39.2</td>
-    </tr>
-    <tr>
-      <th>Sweden</th>
-      <td>10099270</td>
-      <td>3872</td>
-      <td>38.3</td>
-    </tr>
-    <tr>
-      <th>France</th>
-      <td>65273512</td>
-      <td>24458</td>
-      <td>37.5</td>
-    </tr>
-    <tr>
-      <th>Bulgaria</th>
-      <td>6948445</td>
-      <td>2553</td>
-      <td>36.7</td>
-    </tr>
-    <tr>
-      <th>United Arab Emirates</th>
-      <td>9890400</td>
-      <td>3313</td>
-      <td>33.5</td>
-    </tr>
-    <tr>
-      <th>Guyana</th>
-      <td>786559</td>
-      <td>236</td>
-      <td>30.0</td>
-    </tr>
-    <tr>
-      <th>Denmark</th>
-      <td>5792203</td>
-      <td>1730</td>
-      <td>29.9</td>
-    </tr>
-    <tr>
-      <th>Uzbekistan</th>
-      <td>33469199</td>
-      <td>9812</td>
-      <td>29.3</td>
-    </tr>
-    <tr>
-      <th>Czechia</th>
-      <td>10708982</td>
-      <td>3119</td>
-      <td>29.1</td>
-    </tr>
-    <tr>
-      <th>Iceland</th>
-      <td>341250</td>
-      <td>98</td>
-      <td>28.7</td>
-    </tr>
-    <tr>
-      <th>Djibouti</th>
-      <td>988002</td>
-      <td>283</td>
-      <td>28.6</td>
-    </tr>
-    <tr>
-      <th>Switzerland</th>
-      <td>8654618</td>
-      <td>2439</td>
-      <td>28.2</td>
-    </tr>
-    <tr>
-      <th>Croatia</th>
-      <td>4105268</td>
-      <td>1119</td>
-      <td>27.3</td>
-    </tr>
-    <tr>
-      <th>Portugal</th>
-      <td>10196707</td>
-      <td>2711</td>
-      <td>26.6</td>
-    </tr>
-    <tr>
-      <th>Poland</th>
-      <td>37846605</td>
-      <td>9631</td>
-      <td>25.4</td>
+      <th>Armenia</th>
+      <td>2963234</td>
+      <td>2599</td>
+      <td>87.7</td>
     </tr>
     <tr>
       <th>Australia</th>
       <td>25459700</td>
-      <td>5755</td>
-      <td>22.6</td>
-    </tr>
-    <tr>
-      <th>Azerbaijan</th>
-      <td>10139175</td>
-      <td>2140</td>
-      <td>21.1</td>
-    </tr>
-    <tr>
-      <th>Bangladesh</th>
-      <td>164689383</td>
-      <td>34220</td>
-      <td>20.8</td>
-    </tr>
-    <tr>
-      <th>Greece</th>
-      <td>10423056</td>
-      <td>2155</td>
-      <td>20.7</td>
-    </tr>
-    <tr>
-      <th>Ghana</th>
-      <td>31072945</td>
-      <td>6346</td>
-      <td>20.4</td>
-    </tr>
-    <tr>
-      <th>Nepal</th>
-      <td>29136808</td>
-      <td>5780</td>
+      <td>5043</td>
       <td>19.8</td>
     </tr>
     <tr>
       <th>Austria</th>
       <td>9006400</td>
-      <td>1746</td>
-      <td>19.4</td>
+      <td>2149</td>
+      <td>23.9</td>
     </tr>
     <tr>
-      <th>Turkey</th>
-      <td>84339067</td>
-      <td>15988</td>
-      <td>19.0</td>
+      <th>Azerbaijan</th>
+      <td>10139175</td>
+      <td>1659</td>
+      <td>16.4</td>
     </tr>
     <tr>
-      <th>Ireland</th>
-      <td>4937796</td>
-      <td>930</td>
-      <td>18.8</td>
+      <th>Bahamas</th>
+      <td>393248</td>
+      <td>650</td>
+      <td>165.3</td>
     </tr>
     <tr>
-      <th>Trinidad and Tobago</th>
-      <td>1399491</td>
-      <td>257</td>
-      <td>18.4</td>
+      <th>Bahrain</th>
+      <td>1701583</td>
+      <td>5350</td>
+      <td>314.4</td>
     </tr>
     <tr>
-      <th>Botswana</th>
-      <td>2351625</td>
-      <td>410</td>
-      <td>17.4</td>
-    </tr>
-    <tr>
-      <th>Cyprus</th>
-      <td>1207361</td>
-      <td>204</td>
-      <td>16.9</td>
-    </tr>
-    <tr>
-      <th>Algeria</th>
-      <td>43851043</td>
-      <td>7270</td>
-      <td>16.6</td>
-    </tr>
-    <tr>
-      <th>Zambia</th>
-      <td>18383956</td>
-      <td>3058</td>
-      <td>16.6</td>
-    </tr>
-    <tr>
-      <th>Kenya</th>
-      <td>53771300</td>
-      <td>8698</td>
-      <td>16.2</td>
-    </tr>
-    <tr>
-      <th>Germany</th>
-      <td>83128805</td>
-      <td>13392</td>
-      <td>16.1</td>
-    </tr>
-    <tr>
-      <th>United Kingdom</th>
-      <td>67886004</td>
-      <td>10828</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>Belarus</th>
-      <td>9449321</td>
-      <td>1500</td>
-      <td>15.9</td>
-    </tr>
-    <tr>
-      <th>Canada</th>
-      <td>37855702</td>
-      <td>5324</td>
-      <td>14.1</td>
-    </tr>
-    <tr>
-      <th>Japan</th>
-      <td>126476458</td>
-      <td>17584</td>
-      <td>13.9</td>
+      <th>Bangladesh</th>
+      <td>164689383</td>
+      <td>37042</td>
+      <td>22.5</td>
     </tr>
     <tr>
       <th>Barbados</th>
       <td>287371</td>
+      <td>20</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>Belarus</th>
+      <td>9449321</td>
+      <td>1423</td>
+      <td>15.1</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <td>11589616</td>
+      <td>8220</td>
+      <td>70.9</td>
+    </tr>
+    <tr>
+      <th>Belize</th>
+      <td>397621</td>
+      <td>418</td>
+      <td>105.1</td>
+    </tr>
+    <tr>
+      <th>Benin</th>
+      <td>12123198</td>
+      <td>258</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <th>Bhutan</th>
+      <td>771612</td>
       <td>38</td>
-      <td>13.2</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <th>Bolivia</th>
+      <td>11673029</td>
+      <td>19377</td>
+      <td>166.0</td>
+    </tr>
+    <tr>
+      <th>Bosnia and Herzegovina</th>
+      <td>3280815</td>
+      <td>3649</td>
+      <td>111.2</td>
+    </tr>
+    <tr>
+      <th>Botswana</th>
+      <td>2351625</td>
+      <td>504</td>
+      <td>21.4</td>
+    </tr>
+    <tr>
+      <th>Brazil</th>
+      <td>212559409</td>
+      <td>609252</td>
+      <td>286.6</td>
+    </tr>
+    <tr>
+      <th>Brunei</th>
+      <td>437483</td>
+      <td>1</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>Bulgaria</th>
+      <td>6948445</td>
+      <td>2341</td>
+      <td>33.7</td>
+    </tr>
+    <tr>
+      <th>Burkina Faso</th>
+      <td>20903278</td>
+      <td>130</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>Burma</th>
+      <td>54409794</td>
+      <td>21</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Burundi</th>
+      <td>11890781</td>
+      <td>18</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>Cabo Verde</th>
+      <td>555988</td>
+      <td>620</td>
+      <td>111.5</td>
+    </tr>
+    <tr>
+      <th>Cambodia</th>
+      <td>16718971</td>
+      <td>33</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>Cameroon</th>
+      <td>26545864</td>
+      <td>1327</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>Canada</th>
+      <td>37855702</td>
+      <td>5245</td>
+      <td>13.9</td>
+    </tr>
+    <tr>
+      <th>Central African Republic</th>
+      <td>4829764</td>
+      <td>53</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <th>Chad</th>
+      <td>16425859</td>
+      <td>23</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Chile</th>
+      <td>19116209</td>
+      <td>26009</td>
+      <td>136.1</td>
+    </tr>
+    <tr>
+      <th>China</th>
+      <td>1404676330</td>
+      <td>1342</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Colombia</th>
+      <td>50882884</td>
+      <td>148810</td>
+      <td>292.5</td>
+    </tr>
+    <tr>
+      <th>Comoros</th>
+      <td>869595</td>
+      <td>19</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <th>Congo (Brazzaville)</th>
+      <td>5518092</td>
+      <td>285</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>Congo (Kinshasa)</th>
+      <td>89561404</td>
+      <td>573</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>Costa Rica</th>
+      <td>5094114</td>
+      <td>9682</td>
+      <td>190.1</td>
+    </tr>
+    <tr>
+      <th>Cote d'Ivoire</th>
+      <td>26378275</td>
+      <td>887</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <th>Croatia</th>
+      <td>4105268</td>
+      <td>1362</td>
+      <td>33.2</td>
+    </tr>
+    <tr>
+      <th>Cuba</th>
+      <td>11326616</td>
+      <td>694</td>
+      <td>6.1</td>
+    </tr>
+    <tr>
+      <th>Cyprus</th>
+      <td>1207361</td>
+      <td>196</td>
+      <td>16.2</td>
+    </tr>
+    <tr>
+      <th>Czechia</th>
+      <td>10708982</td>
+      <td>3194</td>
+      <td>29.8</td>
+    </tr>
+    <tr>
+      <th>Denmark</th>
+      <td>5792203</td>
+      <td>1892</td>
+      <td>32.7</td>
+    </tr>
+    <tr>
+      <th>Djibouti</th>
+      <td>988002</td>
+      <td>132</td>
+      <td>13.4</td>
+    </tr>
+    <tr>
+      <th>Dominica</th>
+      <td>71991</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Dominican Republic</th>
+      <td>10847904</td>
+      <td>13620</td>
+      <td>125.6</td>
+    </tr>
+    <tr>
+      <th>Ecuador</th>
+      <td>17643060</td>
+      <td>14710</td>
+      <td>83.4</td>
+    </tr>
+    <tr>
+      <th>Egypt</th>
+      <td>102334403</td>
+      <td>1950</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <th>El Salvador</th>
+      <td>6486201</td>
+      <td>5350</td>
+      <td>82.5</td>
+    </tr>
+    <tr>
+      <th>Equatorial Guinea</th>
+      <td>1402985</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Eritrea</th>
+      <td>3546427</td>
+      <td>3</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Estonia</th>
+      <td>1326539</td>
+      <td>112</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <th>Eswatini</th>
+      <td>1160164</td>
+      <td>1056</td>
+      <td>91.0</td>
+    </tr>
+    <tr>
+      <th>Ethiopia</th>
+      <td>114963583</td>
+      <td>12047</td>
+      <td>10.5</td>
+    </tr>
+    <tr>
+      <th>Fiji</th>
+      <td>896444</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Finland</th>
+      <td>5540718</td>
+      <td>286</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <td>65273512</td>
+      <td>31335</td>
+      <td>48.0</td>
+    </tr>
+    <tr>
+      <th>Gabon</th>
+      <td>2225728</td>
+      <td>624</td>
+      <td>28.0</td>
+    </tr>
+    <tr>
+      <th>Gambia</th>
+      <td>2416664</td>
+      <td>1374</td>
+      <td>56.9</td>
+    </tr>
+    <tr>
+      <th>Georgia</th>
+      <td>3989175</td>
+      <td>162</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <td>83128805</td>
+      <td>14589</td>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <th>Ghana</th>
+      <td>31072945</td>
+      <td>4841</td>
+      <td>15.6</td>
+    </tr>
+    <tr>
+      <th>Greece</th>
+      <td>10423056</td>
+      <td>2485</td>
+      <td>23.8</td>
+    </tr>
+    <tr>
+      <th>Grenada</th>
+      <td>112519</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Guatemala</th>
+      <td>17915567</td>
+      <td>11402</td>
+      <td>63.6</td>
+    </tr>
+    <tr>
+      <th>Guinea</th>
+      <td>13132792</td>
+      <td>1256</td>
+      <td>9.6</td>
+    </tr>
+    <tr>
+      <th>Guinea-Bissau</th>
+      <td>1967998</td>
+      <td>136</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <th>Guyana</th>
+      <td>786559</td>
+      <td>235</td>
+      <td>29.9</td>
+    </tr>
+    <tr>
+      <th>Haiti</th>
+      <td>11402533</td>
+      <td>386</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <th>Holy See</th>
+      <td>809</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Honduras</th>
+      <td>9904608</td>
+      <td>7201</td>
+      <td>72.7</td>
+    </tr>
+    <tr>
+      <th>Hungary</th>
+      <td>9660350</td>
+      <td>402</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <th>Iceland</th>
+      <td>341250</td>
+      <td>99</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>India</th>
+      <td>1380004385</td>
+      <td>846936</td>
+      <td>61.4</td>
+    </tr>
+    <tr>
+      <th>Indonesia</th>
+      <td>273523621</td>
+      <td>28236</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <th>Iran</th>
+      <td>83992953</td>
+      <td>33415</td>
+      <td>39.8</td>
+    </tr>
+    <tr>
+      <th>Iraq</th>
+      <td>40222503</td>
+      <td>48247</td>
+      <td>120.0</td>
+    </tr>
+    <tr>
+      <th>Ireland</th>
+      <td>4937796</td>
+      <td>1105</td>
+      <td>22.4</td>
+    </tr>
+    <tr>
+      <th>Israel</th>
+      <td>8655541</td>
+      <td>20321</td>
+      <td>234.8</td>
+    </tr>
+    <tr>
+      <th>Italy</th>
+      <td>60461828</td>
+      <td>6006</td>
+      <td>9.9</td>
+    </tr>
+    <tr>
+      <th>Jamaica</th>
+      <td>2961161</td>
+      <td>224</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <th>Japan</th>
+      <td>126476458</td>
+      <td>16618</td>
+      <td>13.1</td>
+    </tr>
+    <tr>
+      <th>Jordan</th>
+      <td>10203140</td>
+      <td>180</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <th>Kazakhstan</th>
+      <td>18776707</td>
+      <td>9480</td>
+      <td>50.5</td>
+    </tr>
+    <tr>
+      <th>Kenya</th>
+      <td>53771300</td>
+      <td>7768</td>
+      <td>14.4</td>
+    </tr>
+    <tr>
+      <th>Korea, South</th>
+      <td>51269183</td>
+      <td>1338</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <th>Kosovo</th>
+      <td>1810366</td>
+      <td>2226</td>
+      <td>123.0</td>
+    </tr>
+    <tr>
+      <th>Kuwait</th>
+      <td>4270563</td>
+      <td>8528</td>
+      <td>199.7</td>
+    </tr>
+    <tr>
+      <th>Kyrgyzstan</th>
+      <td>6524191</td>
+      <td>4862</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <th>Laos</th>
+      <td>7275556</td>
+      <td>2</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Latvia</th>
+      <td>1886202</td>
+      <td>77</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th>Lebanon</th>
+      <td>6825442</td>
+      <td>4275</td>
+      <td>62.6</td>
+    </tr>
+    <tr>
+      <th>Lesotho</th>
+      <td>2142252</td>
+      <td>228</td>
+      <td>10.6</td>
+    </tr>
+    <tr>
+      <th>Liberia</th>
+      <td>5057677</td>
+      <td>63</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <th>Libya</th>
+      <td>6871287</td>
+      <td>4516</td>
+      <td>65.7</td>
+    </tr>
+    <tr>
+      <th>Liechtenstein</th>
+      <td>38137</td>
+      <td>5</td>
+      <td>13.1</td>
+    </tr>
+    <tr>
+      <th>Lithuania</th>
+      <td>2722291</td>
+      <td>316</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <th>Luxembourg</th>
+      <td>625976</td>
+      <td>605</td>
+      <td>96.6</td>
+    </tr>
+    <tr>
+      <th>Madagascar</th>
+      <td>27691019</td>
+      <td>2226</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>Malawi</th>
+      <td>19129955</td>
+      <td>853</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <th>Malaysia</th>
+      <td>32365998</td>
+      <td>211</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <th>Maldives</th>
+      <td>540542</td>
+      <td>1616</td>
+      <td>299.0</td>
+    </tr>
+    <tr>
+      <th>Mali</th>
+      <td>20250834</td>
+      <td>97</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>Malta</th>
+      <td>441539</td>
+      <td>501</td>
+      <td>113.5</td>
+    </tr>
+    <tr>
+      <th>Mauritania</th>
+      <td>4649660</td>
+      <td>380</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <th>Mauritius</th>
+      <td>1271767</td>
+      <td>2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>Mexico</th>
+      <td>127792286</td>
+      <td>81920</td>
+      <td>64.1</td>
+    </tr>
+    <tr>
+      <th>Moldova</th>
+      <td>4033963</td>
+      <td>4895</td>
+      <td>121.3</td>
+    </tr>
+    <tr>
+      <th>Monaco</th>
+      <td>39244</td>
+      <td>27</td>
+      <td>68.8</td>
+    </tr>
+    <tr>
+      <th>Mongolia</th>
+      <td>3278292</td>
+      <td>5</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>Montenegro</th>
+      <td>628062</td>
+      <td>784</td>
+      <td>124.8</td>
+    </tr>
+    <tr>
+      <th>Morocco</th>
+      <td>36910558</td>
+      <td>17362</td>
+      <td>47.0</td>
+    </tr>
+    <tr>
+      <th>Mozambique</th>
+      <td>31255435</td>
+      <td>941</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>Namibia</th>
+      <td>2540916</td>
+      <td>1938</td>
+      <td>76.3</td>
+    </tr>
+    <tr>
+      <th>Nepal</th>
+      <td>29136808</td>
+      <td>6491</td>
+      <td>22.3</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <td>17134873</td>
+      <td>9194</td>
+      <td>53.7</td>
+    </tr>
+    <tr>
+      <th>New Zealand</th>
+      <td>4822233</td>
+      <td>76</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>Nicaragua</th>
+      <td>6624554</td>
+      <td>443</td>
+      <td>6.7</td>
+    </tr>
+    <tr>
+      <th>Niger</th>
+      <td>24206636</td>
+      <td>15</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Nigeria</th>
+      <td>206139587</td>
+      <td>5356</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <th>North Macedonia</th>
+      <td>2083380</td>
+      <td>1712</td>
+      <td>82.2</td>
+    </tr>
+    <tr>
+      <th>Norway</th>
+      <td>5421242</td>
+      <td>726</td>
+      <td>13.4</td>
+    </tr>
+    <tr>
+      <th>Oman</th>
+      <td>5106622</td>
+      <td>4067</td>
+      <td>79.6</td>
+    </tr>
+    <tr>
+      <th>Pakistan</th>
+      <td>220892331</td>
+      <td>8754</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>Panama</th>
+      <td>4314768</td>
+      <td>14087</td>
+      <td>326.5</td>
+    </tr>
+    <tr>
+      <th>Papua New Guinea</th>
+      <td>8947027</td>
+      <td>222</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>Paraguay</th>
+      <td>7132530</td>
+      <td>4411</td>
+      <td>61.8</td>
+    </tr>
+    <tr>
+      <th>Peru</th>
+      <td>32971846</td>
+      <td>102846</td>
+      <td>311.9</td>
+    </tr>
+    <tr>
+      <th>Philippines</th>
+      <td>109581085</td>
+      <td>58144</td>
+      <td>53.1</td>
+    </tr>
+    <tr>
+      <th>Poland</th>
+      <td>37846605</td>
+      <td>9810</td>
+      <td>25.9</td>
+    </tr>
+    <tr>
+      <th>Portugal</th>
+      <td>10196707</td>
+      <td>2665</td>
+      <td>26.1</td>
+    </tr>
+    <tr>
+      <th>Qatar</th>
+      <td>2881060</td>
+      <td>4046</td>
+      <td>140.4</td>
+    </tr>
+    <tr>
+      <th>Romania</th>
+      <td>19237682</td>
+      <td>17185</td>
+      <td>89.3</td>
+    </tr>
+    <tr>
+      <th>Russia</th>
+      <td>145934460</td>
+      <td>70917</td>
+      <td>48.6</td>
+    </tr>
+    <tr>
+      <th>Rwanda</th>
+      <td>12952209</td>
+      <td>448</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <th>Saint Kitts and Nevis</th>
+      <td>53192</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Saint Lucia</th>
+      <td>183629</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Saint Vincent and the Grenadines</th>
+      <td>110947</td>
+      <td>3</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <th>San Marino</th>
+      <td>33938</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Sao Tome and Principe</th>
+      <td>219161</td>
+      <td>11</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>Saudi Arabia</th>
+      <td>34813867</td>
+      <td>19821</td>
+      <td>56.9</td>
+    </tr>
+    <tr>
+      <th>Senegal</th>
+      <td>16743930</td>
+      <td>1851</td>
+      <td>11.1</td>
+    </tr>
+    <tr>
+      <th>Serbia</th>
+      <td>8737370</td>
+      <td>3331</td>
+      <td>38.1</td>
     </tr>
     <tr>
       <th>Seychelles</th>
@@ -3156,105 +2311,986 @@ Last updated Sat Aug 15 19:02:54 2020
       <td>13.2</td>
     </tr>
     <tr>
-      <th>Lesotho</th>
-      <td>2142252</td>
-      <td>280</td>
-      <td>13.1</td>
+      <th>Sierra Leone</th>
+      <td>7976985</td>
+      <td>108</td>
+      <td>1.4</td>
     </tr>
     <tr>
-      <th>Zimbabwe</th>
-      <td>14862927</td>
-      <td>1903</td>
-      <td>12.8</td>
-    </tr>
-    <tr>
-      <th>Norway</th>
-      <td>5421242</td>
-      <td>668</td>
-      <td>12.3</td>
-    </tr>
-    <tr>
-      <th>Lithuania</th>
-      <td>2722291</td>
-      <td>277</td>
-      <td>10.2</td>
-    </tr>
-    <tr>
-      <th>Slovenia</th>
-      <td>2078932</td>
-      <td>213</td>
-      <td>10.2</td>
-    </tr>
-    <tr>
-      <th>Madagascar</th>
-      <td>27691019</td>
-      <td>2775</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th>Congo (Brazzaville)</th>
-      <td>5518092</td>
-      <td>545</td>
-      <td>9.9</td>
-    </tr>
-    <tr>
-      <th>Indonesia</th>
-      <td>273523621</td>
-      <td>26747</td>
-      <td>9.8</td>
-    </tr>
-    <tr>
-      <th>Senegal</th>
-      <td>16743930</td>
-      <td>1640</td>
-      <td>9.8</td>
+      <th>Singapore</th>
+      <td>5850343</td>
+      <td>2787</td>
+      <td>47.6</td>
     </tr>
     <tr>
       <th>Slovakia</th>
       <td>5459643</td>
-      <td>509</td>
-      <td>9.3</td>
+      <td>553</td>
+      <td>10.1</td>
     </tr>
     <tr>
-      <th>Italy</th>
-      <td>60461828</td>
-      <td>5272</td>
-      <td>8.7</td>
+      <th>Slovenia</th>
+      <td>2078932</td>
+      <td>248</td>
+      <td>11.9</td>
     </tr>
     <tr>
-      <th>Estonia</th>
-      <td>1326539</td>
-      <td>113</td>
-      <td>8.5</td>
+      <th>Somalia</th>
+      <td>15893219</td>
+      <td>37</td>
+      <td>0.2</td>
     </tr>
     <tr>
-      <th>Ethiopia</th>
-      <td>114963583</td>
-      <td>9712</td>
-      <td>8.4</td>
+      <th>South Africa</th>
+      <td>59308690</td>
+      <td>73024</td>
+      <td>123.1</td>
+    </tr>
+    <tr>
+      <th>South Sudan</th>
+      <td>11193729</td>
+      <td>61</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <td>46754783</td>
+      <td>62028</td>
+      <td>132.7</td>
+    </tr>
+    <tr>
+      <th>Sri Lanka</th>
+      <td>21413250</td>
+      <td>72</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <th>Sudan</th>
+      <td>43849269</td>
+      <td>672</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>Suriname</th>
+      <td>586634</td>
+      <td>1184</td>
+      <td>201.8</td>
+    </tr>
+    <tr>
+      <th>Sweden</th>
+      <td>10099270</td>
+      <td>4033</td>
+      <td>39.9</td>
+    </tr>
+    <tr>
+      <th>Switzerland</th>
+      <td>8654618</td>
+      <td>2636</td>
+      <td>30.5</td>
+    </tr>
+    <tr>
+      <th>Syria</th>
+      <td>17500657</td>
+      <td>917</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>Taiwan*</th>
+      <td>23816775</td>
+      <td>11</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Tajikistan</th>
+      <td>9537642</td>
+      <td>561</td>
+      <td>5.9</td>
+    </tr>
+    <tr>
+      <th>Tanzania</th>
+      <td>59734213</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Thailand</th>
+      <td>69799978</td>
+      <td>58</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Timor-Leste</th>
+      <td>1318442</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Togo</th>
+      <td>8278737</td>
+      <td>178</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <th>Trinidad and Tobago</th>
+      <td>1399491</td>
+      <td>406</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>Tunisia</th>
+      <td>11818618</td>
+      <td>620</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>Turkey</th>
+      <td>84339067</td>
+      <td>16691</td>
+      <td>19.8</td>
+    </tr>
+    <tr>
+      <th>US</th>
+      <td>329466283</td>
+      <td>724785</td>
+      <td>220.0</td>
+    </tr>
+    <tr>
+      <th>Uganda</th>
+      <td>45741000</td>
+      <td>365</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>Ukraine</th>
+      <td>43733759</td>
+      <td>20226</td>
+      <td>46.2</td>
+    </tr>
+    <tr>
+      <th>United Arab Emirates</th>
+      <td>9890400</td>
+      <td>3378</td>
+      <td>34.2</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <td>67886004</td>
+      <td>13813</td>
+      <td>20.3</td>
+    </tr>
+    <tr>
+      <th>Uruguay</th>
+      <td>3473727</td>
+      <td>166</td>
+      <td>4.8</td>
+    </tr>
+    <tr>
+      <th>Uzbekistan</th>
+      <td>33469199</td>
+      <td>9636</td>
+      <td>28.8</td>
+    </tr>
+    <tr>
+      <th>Venezuela</th>
+      <td>28435943</td>
+      <td>14048</td>
+      <td>49.4</td>
+    </tr>
+    <tr>
+      <th>Vietnam</th>
+      <td>97338583</td>
+      <td>331</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <th>West Bank and Gaza</th>
+      <td>5101416</td>
+      <td>4303</td>
+      <td>84.3</td>
+    </tr>
+    <tr>
+      <th>Western Sahara</th>
+      <td>597330</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Yemen</th>
+      <td>29825968</td>
+      <td>148</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>Zambia</th>
+      <td>18383956</td>
+      <td>3259</td>
+      <td>17.7</td>
+    </tr>
+    <tr>
+      <th>Zimbabwe</th>
+      <td>14862927</td>
+      <td>1233</td>
+      <td>8.3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Table-sorted-by-14-day-incidence">Table sorted by 14-day-incidence<a class="anchor-link" href="#Table-sorted-by-14-day-incidence">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>population</th>
+      <th>new cases</th>
+      <th>14-day-incidence</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Panama</th>
+      <td>4314768</td>
+      <td>14087</td>
+      <td>326.5</td>
+    </tr>
+    <tr>
+      <th>Bahrain</th>
+      <td>1701583</td>
+      <td>5350</td>
+      <td>314.4</td>
+    </tr>
+    <tr>
+      <th>Peru</th>
+      <td>32971846</td>
+      <td>102846</td>
+      <td>311.9</td>
+    </tr>
+    <tr>
+      <th>Maldives</th>
+      <td>540542</td>
+      <td>1616</td>
+      <td>299.0</td>
+    </tr>
+    <tr>
+      <th>Colombia</th>
+      <td>50882884</td>
+      <td>148810</td>
+      <td>292.5</td>
+    </tr>
+    <tr>
+      <th>Brazil</th>
+      <td>212559409</td>
+      <td>609252</td>
+      <td>286.6</td>
+    </tr>
+    <tr>
+      <th>Israel</th>
+      <td>8655541</td>
+      <td>20321</td>
+      <td>234.8</td>
+    </tr>
+    <tr>
+      <th>US</th>
+      <td>329466283</td>
+      <td>724785</td>
+      <td>220.0</td>
+    </tr>
+    <tr>
+      <th>Argentina</th>
+      <td>45195777</td>
+      <td>92383</td>
+      <td>204.4</td>
+    </tr>
+    <tr>
+      <th>Suriname</th>
+      <td>586634</td>
+      <td>1184</td>
+      <td>201.8</td>
+    </tr>
+    <tr>
+      <th>Kuwait</th>
+      <td>4270563</td>
+      <td>8528</td>
+      <td>199.7</td>
+    </tr>
+    <tr>
+      <th>Costa Rica</th>
+      <td>5094114</td>
+      <td>9682</td>
+      <td>190.1</td>
+    </tr>
+    <tr>
+      <th>Bolivia</th>
+      <td>11673029</td>
+      <td>19377</td>
+      <td>166.0</td>
+    </tr>
+    <tr>
+      <th>Bahamas</th>
+      <td>393248</td>
+      <td>650</td>
+      <td>165.3</td>
+    </tr>
+    <tr>
+      <th>Qatar</th>
+      <td>2881060</td>
+      <td>4046</td>
+      <td>140.4</td>
+    </tr>
+    <tr>
+      <th>Chile</th>
+      <td>19116209</td>
+      <td>26009</td>
+      <td>136.1</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <td>46754783</td>
+      <td>62028</td>
+      <td>132.7</td>
+    </tr>
+    <tr>
+      <th>Dominican Republic</th>
+      <td>10847904</td>
+      <td>13620</td>
+      <td>125.6</td>
+    </tr>
+    <tr>
+      <th>Montenegro</th>
+      <td>628062</td>
+      <td>784</td>
+      <td>124.8</td>
+    </tr>
+    <tr>
+      <th>South Africa</th>
+      <td>59308690</td>
+      <td>73024</td>
+      <td>123.1</td>
+    </tr>
+    <tr>
+      <th>Kosovo</th>
+      <td>1810366</td>
+      <td>2226</td>
+      <td>123.0</td>
+    </tr>
+    <tr>
+      <th>Moldova</th>
+      <td>4033963</td>
+      <td>4895</td>
+      <td>121.3</td>
+    </tr>
+    <tr>
+      <th>Iraq</th>
+      <td>40222503</td>
+      <td>48247</td>
+      <td>120.0</td>
+    </tr>
+    <tr>
+      <th>Malta</th>
+      <td>441539</td>
+      <td>501</td>
+      <td>113.5</td>
+    </tr>
+    <tr>
+      <th>Cabo Verde</th>
+      <td>555988</td>
+      <td>620</td>
+      <td>111.5</td>
+    </tr>
+    <tr>
+      <th>Bosnia and Herzegovina</th>
+      <td>3280815</td>
+      <td>3649</td>
+      <td>111.2</td>
+    </tr>
+    <tr>
+      <th>Belize</th>
+      <td>397621</td>
+      <td>418</td>
+      <td>105.1</td>
+    </tr>
+    <tr>
+      <th>Luxembourg</th>
+      <td>625976</td>
+      <td>605</td>
+      <td>96.6</td>
+    </tr>
+    <tr>
+      <th>Eswatini</th>
+      <td>1160164</td>
+      <td>1056</td>
+      <td>91.0</td>
+    </tr>
+    <tr>
+      <th>Romania</th>
+      <td>19237682</td>
+      <td>17185</td>
+      <td>89.3</td>
+    </tr>
+    <tr>
+      <th>Andorra</th>
+      <td>77265</td>
+      <td>68</td>
+      <td>88.0</td>
+    </tr>
+    <tr>
+      <th>Armenia</th>
+      <td>2963234</td>
+      <td>2599</td>
+      <td>87.7</td>
+    </tr>
+    <tr>
+      <th>West Bank and Gaza</th>
+      <td>5101416</td>
+      <td>4303</td>
+      <td>84.3</td>
+    </tr>
+    <tr>
+      <th>Ecuador</th>
+      <td>17643060</td>
+      <td>14710</td>
+      <td>83.4</td>
+    </tr>
+    <tr>
+      <th>El Salvador</th>
+      <td>6486201</td>
+      <td>5350</td>
+      <td>82.5</td>
+    </tr>
+    <tr>
+      <th>North Macedonia</th>
+      <td>2083380</td>
+      <td>1712</td>
+      <td>82.2</td>
+    </tr>
+    <tr>
+      <th>Oman</th>
+      <td>5106622</td>
+      <td>4067</td>
+      <td>79.6</td>
+    </tr>
+    <tr>
+      <th>Namibia</th>
+      <td>2540916</td>
+      <td>1938</td>
+      <td>76.3</td>
+    </tr>
+    <tr>
+      <th>Kyrgyzstan</th>
+      <td>6524191</td>
+      <td>4862</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <th>Honduras</th>
+      <td>9904608</td>
+      <td>7201</td>
+      <td>72.7</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <td>11589616</td>
+      <td>8220</td>
+      <td>70.9</td>
+    </tr>
+    <tr>
+      <th>Monaco</th>
+      <td>39244</td>
+      <td>27</td>
+      <td>68.8</td>
+    </tr>
+    <tr>
+      <th>Libya</th>
+      <td>6871287</td>
+      <td>4516</td>
+      <td>65.7</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>2877800</td>
+      <td>1879</td>
+      <td>65.3</td>
+    </tr>
+    <tr>
+      <th>Mexico</th>
+      <td>127792286</td>
+      <td>81920</td>
+      <td>64.1</td>
+    </tr>
+    <tr>
+      <th>Guatemala</th>
+      <td>17915567</td>
+      <td>11402</td>
+      <td>63.6</td>
+    </tr>
+    <tr>
+      <th>Lebanon</th>
+      <td>6825442</td>
+      <td>4275</td>
+      <td>62.6</td>
+    </tr>
+    <tr>
+      <th>Paraguay</th>
+      <td>7132530</td>
+      <td>4411</td>
+      <td>61.8</td>
+    </tr>
+    <tr>
+      <th>India</th>
+      <td>1380004385</td>
+      <td>846936</td>
+      <td>61.4</td>
+    </tr>
+    <tr>
+      <th>Gambia</th>
+      <td>2416664</td>
+      <td>1374</td>
+      <td>56.9</td>
+    </tr>
+    <tr>
+      <th>Saudi Arabia</th>
+      <td>34813867</td>
+      <td>19821</td>
+      <td>56.9</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <td>17134873</td>
+      <td>9194</td>
+      <td>53.7</td>
+    </tr>
+    <tr>
+      <th>Philippines</th>
+      <td>109581085</td>
+      <td>58144</td>
+      <td>53.1</td>
+    </tr>
+    <tr>
+      <th>Kazakhstan</th>
+      <td>18776707</td>
+      <td>9480</td>
+      <td>50.5</td>
+    </tr>
+    <tr>
+      <th>Venezuela</th>
+      <td>28435943</td>
+      <td>14048</td>
+      <td>49.4</td>
+    </tr>
+    <tr>
+      <th>Russia</th>
+      <td>145934460</td>
+      <td>70917</td>
+      <td>48.6</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <td>65273512</td>
+      <td>31335</td>
+      <td>48.0</td>
+    </tr>
+    <tr>
+      <th>Singapore</th>
+      <td>5850343</td>
+      <td>2787</td>
+      <td>47.6</td>
+    </tr>
+    <tr>
+      <th>Morocco</th>
+      <td>36910558</td>
+      <td>17362</td>
+      <td>47.0</td>
+    </tr>
+    <tr>
+      <th>Ukraine</th>
+      <td>43733759</td>
+      <td>20226</td>
+      <td>46.2</td>
+    </tr>
+    <tr>
+      <th>Sweden</th>
+      <td>10099270</td>
+      <td>4033</td>
+      <td>39.9</td>
+    </tr>
+    <tr>
+      <th>Iran</th>
+      <td>83992953</td>
+      <td>33415</td>
+      <td>39.8</td>
+    </tr>
+    <tr>
+      <th>Serbia</th>
+      <td>8737370</td>
+      <td>3331</td>
+      <td>38.1</td>
+    </tr>
+    <tr>
+      <th>United Arab Emirates</th>
+      <td>9890400</td>
+      <td>3378</td>
+      <td>34.2</td>
+    </tr>
+    <tr>
+      <th>Bulgaria</th>
+      <td>6948445</td>
+      <td>2341</td>
+      <td>33.7</td>
+    </tr>
+    <tr>
+      <th>Croatia</th>
+      <td>4105268</td>
+      <td>1362</td>
+      <td>33.2</td>
+    </tr>
+    <tr>
+      <th>Denmark</th>
+      <td>5792203</td>
+      <td>1892</td>
+      <td>32.7</td>
+    </tr>
+    <tr>
+      <th>Switzerland</th>
+      <td>8654618</td>
+      <td>2636</td>
+      <td>30.5</td>
+    </tr>
+    <tr>
+      <th>Guyana</th>
+      <td>786559</td>
+      <td>235</td>
+      <td>29.9</td>
+    </tr>
+    <tr>
+      <th>Czechia</th>
+      <td>10708982</td>
+      <td>3194</td>
+      <td>29.8</td>
+    </tr>
+    <tr>
+      <th>Iceland</th>
+      <td>341250</td>
+      <td>99</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>Trinidad and Tobago</th>
+      <td>1399491</td>
+      <td>406</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>Uzbekistan</th>
+      <td>33469199</td>
+      <td>9636</td>
+      <td>28.8</td>
+    </tr>
+    <tr>
+      <th>Gabon</th>
+      <td>2225728</td>
+      <td>624</td>
+      <td>28.0</td>
+    </tr>
+    <tr>
+      <th>Portugal</th>
+      <td>10196707</td>
+      <td>2665</td>
+      <td>26.1</td>
+    </tr>
+    <tr>
+      <th>Poland</th>
+      <td>37846605</td>
+      <td>9810</td>
+      <td>25.9</td>
+    </tr>
+    <tr>
+      <th>Austria</th>
+      <td>9006400</td>
+      <td>2149</td>
+      <td>23.9</td>
+    </tr>
+    <tr>
+      <th>Greece</th>
+      <td>10423056</td>
+      <td>2485</td>
+      <td>23.8</td>
+    </tr>
+    <tr>
+      <th>Bangladesh</th>
+      <td>164689383</td>
+      <td>37042</td>
+      <td>22.5</td>
+    </tr>
+    <tr>
+      <th>Ireland</th>
+      <td>4937796</td>
+      <td>1105</td>
+      <td>22.4</td>
+    </tr>
+    <tr>
+      <th>Nepal</th>
+      <td>29136808</td>
+      <td>6491</td>
+      <td>22.3</td>
+    </tr>
+    <tr>
+      <th>Botswana</th>
+      <td>2351625</td>
+      <td>504</td>
+      <td>21.4</td>
+    </tr>
+    <tr>
+      <th>United Kingdom</th>
+      <td>67886004</td>
+      <td>13813</td>
+      <td>20.3</td>
+    </tr>
+    <tr>
+      <th>Australia</th>
+      <td>25459700</td>
+      <td>5043</td>
+      <td>19.8</td>
+    </tr>
+    <tr>
+      <th>Turkey</th>
+      <td>84339067</td>
+      <td>16691</td>
+      <td>19.8</td>
+    </tr>
+    <tr>
+      <th>Zambia</th>
+      <td>18383956</td>
+      <td>3259</td>
+      <td>17.7</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <td>83128805</td>
+      <td>14589</td>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <th>Azerbaijan</th>
+      <td>10139175</td>
+      <td>1659</td>
+      <td>16.4</td>
+    </tr>
+    <tr>
+      <th>Cyprus</th>
+      <td>1207361</td>
+      <td>196</td>
+      <td>16.2</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>43851043</td>
+      <td>7053</td>
+      <td>16.1</td>
+    </tr>
+    <tr>
+      <th>Ghana</th>
+      <td>31072945</td>
+      <td>4841</td>
+      <td>15.6</td>
+    </tr>
+    <tr>
+      <th>Belarus</th>
+      <td>9449321</td>
+      <td>1423</td>
+      <td>15.1</td>
+    </tr>
+    <tr>
+      <th>Kenya</th>
+      <td>53771300</td>
+      <td>7768</td>
+      <td>14.4</td>
+    </tr>
+    <tr>
+      <th>Canada</th>
+      <td>37855702</td>
+      <td>5245</td>
+      <td>13.9</td>
+    </tr>
+    <tr>
+      <th>Djibouti</th>
+      <td>988002</td>
+      <td>132</td>
+      <td>13.4</td>
+    </tr>
+    <tr>
+      <th>Norway</th>
+      <td>5421242</td>
+      <td>726</td>
+      <td>13.4</td>
+    </tr>
+    <tr>
+      <th>Seychelles</th>
+      <td>98340</td>
+      <td>13</td>
+      <td>13.2</td>
+    </tr>
+    <tr>
+      <th>Japan</th>
+      <td>126476458</td>
+      <td>16618</td>
+      <td>13.1</td>
     </tr>
     <tr>
       <th>Liechtenstein</th>
       <td>38137</td>
-      <td>3</td>
-      <td>7.9</td>
+      <td>5</td>
+      <td>13.1</td>
     </tr>
     <tr>
-      <th>Mauritania</th>
-      <td>4649660</td>
-      <td>366</td>
-      <td>7.9</td>
+      <th>Slovenia</th>
+      <td>2078932</td>
+      <td>248</td>
+      <td>11.9</td>
+    </tr>
+    <tr>
+      <th>Lithuania</th>
+      <td>2722291</td>
+      <td>316</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <th>Senegal</th>
+      <td>16743930</td>
+      <td>1851</td>
+      <td>11.1</td>
+    </tr>
+    <tr>
+      <th>Lesotho</th>
+      <td>2142252</td>
+      <td>228</td>
+      <td>10.6</td>
+    </tr>
+    <tr>
+      <th>Ethiopia</th>
+      <td>114963583</td>
+      <td>12047</td>
+      <td>10.5</td>
+    </tr>
+    <tr>
+      <th>Indonesia</th>
+      <td>273523621</td>
+      <td>28236</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <th>Slovakia</th>
+      <td>5459643</td>
+      <td>553</td>
+      <td>10.1</td>
+    </tr>
+    <tr>
+      <th>Italy</th>
+      <td>60461828</td>
+      <td>6006</td>
+      <td>9.9</td>
     </tr>
     <tr>
       <th>Guinea</th>
       <td>13132792</td>
-      <td>952</td>
-      <td>7.2</td>
+      <td>1256</td>
+      <td>9.6</td>
+    </tr>
+    <tr>
+      <th>Estonia</th>
+      <td>1326539</td>
+      <td>112</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <th>Zimbabwe</th>
+      <td>14862927</td>
+      <td>1233</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <th>Mauritania</th>
+      <td>4649660</td>
+      <td>380</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <th>Madagascar</th>
+      <td>27691019</td>
+      <td>2226</td>
+      <td>8.0</td>
     </tr>
     <tr>
       <th>Jamaica</th>
       <td>2961161</td>
-      <td>204</td>
+      <td>224</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <th>Barbados</th>
+      <td>287371</td>
+      <td>20</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>Guinea-Bissau</th>
+      <td>1967998</td>
+      <td>136</td>
       <td>6.9</td>
     </tr>
     <tr>
@@ -3264,63 +3300,81 @@ Last updated Sat Aug 15 19:02:54 2020
       <td>6.7</td>
     </tr>
     <tr>
-      <th>Sao Tome and Principe</th>
-      <td>219161</td>
-      <td>14</td>
-      <td>6.4</td>
+      <th>Cuba</th>
+      <td>11326616</td>
+      <td>694</td>
+      <td>6.1</td>
     </tr>
     <tr>
       <th>Tajikistan</th>
       <td>9537642</td>
-      <td>580</td>
-      <td>6.1</td>
+      <td>561</td>
+      <td>5.9</td>
     </tr>
     <tr>
-      <th>Cuba</th>
-      <td>11326616</td>
-      <td>621</td>
-      <td>5.5</td>
-    </tr>
-    <tr>
-      <th>Guinea-Bissau</th>
-      <td>1967998</td>
-      <td>107</td>
-      <td>5.4</td>
+      <th>Congo (Brazzaville)</th>
+      <td>5518092</td>
+      <td>285</td>
+      <td>5.2</td>
     </tr>
     <tr>
       <th>Finland</th>
       <td>5540718</td>
-      <td>268</td>
+      <td>286</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>Syria</th>
+      <td>17500657</td>
+      <td>917</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>Tunisia</th>
+      <td>11818618</td>
+      <td>620</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <th>Cameroon</th>
+      <td>26545864</td>
+      <td>1327</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>Sao Tome and Principe</th>
+      <td>219161</td>
+      <td>11</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>Bhutan</th>
+      <td>771612</td>
+      <td>38</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <th>Uruguay</th>
+      <td>3473727</td>
+      <td>166</td>
       <td>4.8</td>
     </tr>
     <tr>
       <th>Malawi</th>
       <td>19129955</td>
-      <td>910</td>
-      <td>4.8</td>
-    </tr>
-    <tr>
-      <th>Cameroon</th>
-      <td>26545864</td>
-      <td>1214</td>
-      <td>4.6</td>
-    </tr>
-    <tr>
-      <th>Uruguay</th>
-      <td>3473727</td>
-      <td>157</td>
+      <td>853</td>
       <td>4.5</td>
     </tr>
     <tr>
-      <th>Syria</th>
-      <td>17500657</td>
-      <td>758</td>
-      <td>4.3</td>
+      <th>Hungary</th>
+      <td>9660350</td>
+      <td>402</td>
+      <td>4.2</td>
     </tr>
     <tr>
-      <th>Bhutan</th>
-      <td>771612</td>
-      <td>32</td>
+      <th>Georgia</th>
+      <td>3989175</td>
+      <td>162</td>
       <td>4.1</td>
     </tr>
     <tr>
@@ -3332,25 +3386,19 @@ Last updated Sat Aug 15 19:02:54 2020
     <tr>
       <th>Pakistan</th>
       <td>220892331</td>
-      <td>8995</td>
-      <td>4.1</td>
+      <td>8754</td>
+      <td>4.0</td>
     </tr>
     <tr>
-      <th>Hungary</th>
-      <td>9660350</td>
-      <td>348</td>
-      <td>3.6</td>
-    </tr>
-    <tr>
-      <th>Georgia</th>
-      <td>3989175</td>
-      <td>138</td>
+      <th>Rwanda</th>
+      <td>12952209</td>
+      <td>448</td>
       <td>3.5</td>
     </tr>
     <tr>
       <th>Cote d'Ivoire</th>
       <td>26378275</td>
-      <td>888</td>
+      <td>887</td>
       <td>3.4</td>
     </tr>
     <tr>
@@ -3360,22 +3408,10 @@ Last updated Sat Aug 15 19:02:54 2020
       <td>3.4</td>
     </tr>
     <tr>
-      <th>Tunisia</th>
-      <td>11818618</td>
-      <td>368</td>
-      <td>3.1</td>
-    </tr>
-    <tr>
-      <th>Comoros</th>
-      <td>869595</td>
-      <td>25</td>
-      <td>2.9</td>
-    </tr>
-    <tr>
       <th>Mozambique</th>
       <td>31255435</td>
-      <td>844</td>
-      <td>2.7</td>
+      <td>941</td>
+      <td>3.0</td>
     </tr>
     <tr>
       <th>Saint Vincent and the Grenadines</th>
@@ -3384,153 +3420,153 @@ Last updated Sat Aug 15 19:02:54 2020
       <td>2.7</td>
     </tr>
     <tr>
+      <th>Korea, South</th>
+      <td>51269183</td>
+      <td>1338</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
       <th>Nigeria</th>
       <td>206139587</td>
-      <td>5294</td>
+      <td>5356</td>
       <td>2.6</td>
     </tr>
     <tr>
       <th>Papua New Guinea</th>
       <td>8947027</td>
-      <td>199</td>
+      <td>222</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>38928341</td>
+      <td>852</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <th>Comoros</th>
+      <td>869595</td>
+      <td>19</td>
       <td>2.2</td>
     </tr>
     <tr>
       <th>Togo</th>
       <td>8278737</td>
-      <td>183</td>
+      <td>178</td>
       <td>2.2</td>
-    </tr>
-    <tr>
-      <th>Angola</th>
-      <td>32866268</td>
-      <td>704</td>
-      <td>2.1</td>
-    </tr>
-    <tr>
-      <th>Egypt</th>
-      <td>102334403</td>
-      <td>2142</td>
-      <td>2.1</td>
-    </tr>
-    <tr>
-      <th>Rwanda</th>
-      <td>12952209</td>
-      <td>271</td>
-      <td>2.1</td>
-    </tr>
-    <tr>
-      <th>Antigua and Barbuda</th>
-      <td>97928</td>
-      <td>2</td>
-      <td>2.0</td>
-    </tr>
-    <tr>
-      <th>Afghanistan</th>
-      <td>38928341</td>
-      <td>756</td>
-      <td>1.9</td>
     </tr>
     <tr>
       <th>Benin</th>
       <td>12123198</td>
-      <td>209</td>
-      <td>1.7</td>
+      <td>258</td>
+      <td>2.1</td>
     </tr>
     <tr>
-      <th>Sierra Leone</th>
-      <td>7976985</td>
-      <td>124</td>
-      <td>1.6</td>
+      <th>Angola</th>
+      <td>32866268</td>
+      <td>655</td>
+      <td>2.0</td>
     </tr>
     <tr>
-      <th>Korea, South</th>
-      <td>51269183</td>
-      <td>703</td>
-      <td>1.4</td>
-    </tr>
-    <tr>
-      <th>South Sudan</th>
-      <td>11193729</td>
-      <td>160</td>
-      <td>1.4</td>
+      <th>Egypt</th>
+      <td>102334403</td>
+      <td>1950</td>
+      <td>1.9</td>
     </tr>
     <tr>
       <th>Jordan</th>
       <td>10203140</td>
-      <td>136</td>
-      <td>1.3</td>
-    </tr>
-    <tr>
-      <th>Liberia</th>
-      <td>5057677</td>
-      <td>66</td>
-      <td>1.3</td>
-    </tr>
-    <tr>
-      <th>Sudan</th>
-      <td>43849269</td>
-      <td>518</td>
-      <td>1.2</td>
+      <td>180</td>
+      <td>1.8</td>
     </tr>
     <tr>
       <th>New Zealand</th>
       <td>4822233</td>
-      <td>47</td>
-      <td>1.0</td>
+      <td>76</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>Sudan</th>
+      <td>43849269</td>
+      <td>672</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>Sierra Leone</th>
+      <td>7976985</td>
+      <td>108</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>Liberia</th>
+      <td>5057677</td>
+      <td>63</td>
+      <td>1.2</td>
     </tr>
     <tr>
       <th>Central African Republic</th>
       <td>4829764</td>
-      <td>44</td>
-      <td>0.9</td>
+      <td>53</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <th>Antigua and Barbuda</th>
+      <td>97928</td>
+      <td>1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Uganda</th>
+      <td>45741000</td>
+      <td>365</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>Malaysia</th>
+      <td>32365998</td>
+      <td>211</td>
+      <td>0.7</td>
     </tr>
     <tr>
       <th>Burkina Faso</th>
       <td>20903278</td>
-      <td>132</td>
+      <td>130</td>
       <td>0.6</td>
     </tr>
     <tr>
       <th>Congo (Kinshasa)</th>
       <td>89561404</td>
-      <td>535</td>
+      <td>573</td>
       <td>0.6</td>
-    </tr>
-    <tr>
-      <th>Malaysia</th>
-      <td>32365998</td>
-      <td>173</td>
-      <td>0.5</td>
-    </tr>
-    <tr>
-      <th>Uganda</th>
-      <td>45741000</td>
-      <td>231</td>
-      <td>0.5</td>
-    </tr>
-    <tr>
-      <th>Vietnam</th>
-      <td>97338583</td>
-      <td>372</td>
-      <td>0.4</td>
-    </tr>
-    <tr>
-      <th>Yemen</th>
-      <td>29825968</td>
-      <td>130</td>
-      <td>0.4</td>
     </tr>
     <tr>
       <th>Mali</th>
       <td>20250834</td>
-      <td>62</td>
-      <td>0.3</td>
+      <td>97</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>South Sudan</th>
+      <td>11193729</td>
+      <td>61</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>Yemen</th>
+      <td>29825968</td>
+      <td>148</td>
+      <td>0.5</td>
     </tr>
     <tr>
       <th>Sri Lanka</th>
       <td>21413250</td>
-      <td>71</td>
+      <td>72</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <th>Vietnam</th>
+      <td>97338583</td>
+      <td>331</td>
       <td>0.3</td>
     </tr>
     <tr>
@@ -3542,43 +3578,49 @@ Last updated Sat Aug 15 19:02:54 2020
     <tr>
       <th>Burundi</th>
       <td>11890781</td>
-      <td>25</td>
+      <td>18</td>
       <td>0.2</td>
     </tr>
     <tr>
       <th>Cambodia</th>
       <td>16718971</td>
-      <td>34</td>
+      <td>33</td>
       <td>0.2</td>
     </tr>
     <tr>
-      <th>Eritrea</th>
-      <td>3546427</td>
-      <td>6</td>
+      <th>Mauritius</th>
+      <td>1271767</td>
+      <td>2</td>
       <td>0.2</td>
     </tr>
     <tr>
       <th>Mongolia</th>
       <td>3278292</td>
-      <td>7</td>
+      <td>5</td>
       <td>0.2</td>
     </tr>
     <tr>
       <th>Somalia</th>
       <td>15893219</td>
-      <td>38</td>
+      <td>37</td>
       <td>0.2</td>
     </tr>
     <tr>
       <th>Chad</th>
       <td>16425859</td>
-      <td>15</td>
+      <td>23</td>
       <td>0.1</td>
     </tr>
     <tr>
       <th>China</th>
       <td>1404676330</td>
-      <td>1559</td>
+      <td>1342</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>Eritrea</th>
+      <td>3546427</td>
+      <td>3</td>
       <td>0.1</td>
     </tr>
     <tr>
@@ -3588,27 +3630,15 @@ Last updated Sat Aug 15 19:02:54 2020
       <td>0.1</td>
     </tr>
     <tr>
-      <th>Mauritius</th>
-      <td>1271767</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
       <th>Niger</th>
       <td>24206636</td>
-      <td>27</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>Taiwan*</th>
-      <td>23816775</td>
-      <td>14</td>
+      <td>15</td>
       <td>0.1</td>
     </tr>
     <tr>
       <th>Thailand</th>
       <td>69799978</td>
-      <td>66</td>
+      <td>58</td>
       <td>0.1</td>
     </tr>
     <tr>
@@ -3672,6 +3702,12 @@ Last updated Sat Aug 15 19:02:54 2020
       <td>0.0</td>
     </tr>
     <tr>
+      <th>Taiwan*</th>
+      <td>23816775</td>
+      <td>11</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
       <th>Tanzania</th>
       <td>59734213</td>
       <td>0</td>
@@ -3703,7 +3739,7 @@ Last updated Sat Aug 15 19:02:54 2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cases</span><span class="p">,</span> <span class="n">deaths</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="n">get_country_data</span><span class="p">(</span><span class="s2">&quot;Germany&quot;</span><span class="p">)</span>
@@ -3724,53 +3760,11 @@ Last updated Sat Aug 15 19:02:54 2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_y</span> <span class="o">=</span> <span class="n">cases</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">c_y</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>223791</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Cumulative cases 15 days ago (i.e. 14 days before yesterday)</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_15</span> <span class="o">=</span> <span class="n">cases</span><span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">]</span>
-<span class="n">c_15</span>
 </pre></div>
 
     </div>
@@ -3789,7 +3783,7 @@ Last updated Sat Aug 15 19:02:54 2020
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>210399</pre>
+<pre>226700</pre>
 </div>
 
 </div>
@@ -3801,7 +3795,7 @@ Last updated Sat Aug 15 19:02:54 2020
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>New cases from the last 14 days</p>
+<p>Cumulative cases 15 days ago (i.e. 14 days before yesterday)</p>
 
 </div>
 </div>
@@ -3811,8 +3805,8 @@ Last updated Sat Aug 15 19:02:54 2020
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_new</span> <span class="o">=</span> <span class="n">c_y</span> <span class="o">-</span> <span class="n">c_15</span> 
-<span class="n">c_new</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_15</span> <span class="o">=</span> <span class="n">cases</span><span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">]</span>
+<span class="n">c_15</span>
 </pre></div>
 
     </div>
@@ -3831,7 +3825,49 @@ Last updated Sat Aug 15 19:02:54 2020
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>13392</pre>
+<pre>212111</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>New cases from the last 14 days</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_new</span> <span class="o">=</span> <span class="n">c_y</span> <span class="o">-</span> <span class="n">c_15</span> 
+<span class="n">c_new</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>14589</pre>
 </div>
 
 </div>
@@ -3850,7 +3886,7 @@ Last updated Sat Aug 15 19:02:54 2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">population</span> <span class="o">=</span> <span class="n">get_population</span><span class="p">(</span><span class="s2">&quot;Germany&quot;</span><span class="p">)</span>
@@ -3867,7 +3903,7 @@ Last updated Sat Aug 15 19:02:54 2020
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -3892,7 +3928,7 @@ Last updated Sat Aug 15 19:02:54 2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">incidence</span> <span class="o">=</span> <span class="n">c_new</span> <span class="o">/</span> <span class="p">(</span><span class="n">population</span><span class="o">/</span><span class="mi">100000</span><span class="p">)</span>
@@ -3909,13 +3945,13 @@ Last updated Sat Aug 15 19:02:54 2020
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>16.10993926834387</pre>
+<pre>17.54987335617299</pre>
 </div>
 
 </div>
@@ -3942,7 +3978,7 @@ Last updated Sat Aug 15 19:02:54 2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For debugging: When was the data downloaded</span>
@@ -3960,13 +3996,13 @@ Last updated Sat Aug 15 19:02:54 2020
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;15/08/2020 08:50:02&#39;</pre>
+<pre>&#39;18/08/2020 09:25:38&#39;</pre>
 </div>
 
 </div>
@@ -3977,7 +4013,7 @@ Last updated Sat Aug 15 19:02:54 2020
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">oscovida</span><span class="o">.</span><span class="n">display_binder_link</span><span class="p">(</span><span class="s1">&#39;14-day-incidence.ipynb&#39;</span><span class="p">)</span>
@@ -4002,6 +4038,37 @@ Last updated Sat Aug 15 19:02:54 2020
 
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Notebook execution took: </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">-</span><span class="n">start</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Notebook execution took: 0:00:05.502403
+</pre>
+</div>
 </div>
 
 </div>

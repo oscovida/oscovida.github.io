@@ -25,7 +25,20 @@
     <script type="text/javascript" class="init">
       $(document).ready(function() {
           $('#data_table').DataTable( {
-              "order": [[ 3, "desc" ]]
+              "rowCallback": function( row, data, index ) {
+                  if ( data[4] == "True" ) // 4th column is a flag to set the colour red
+                  {
+                      $('td', row).css('background-color', 'LightPink');
+                  }
+              },
+              "order": [[ 3, "desc" ]],
+              "lengthMenu": [[10, 25, 50, 500, -1], [10, 25, 50, 500, "All"]],
+              "pageLength": -1,
+              "columnDefs": [
+                { "type": "string", "targets": 0 },
+                { "type": "num-fmt", "targets": "_all" },
+                { "visible": false,  "targets": [ 4 ] } // hide flag column
+              ]
           } );
       } );
     </script>
@@ -1275,10 +1288,10 @@ h6:hover .anchor-link {
 
 
 
-<div id="7d410cf3-54c1-4e2a-92b4-5de87809a24b"></div>
+<div id="0b5ae904-b18b-4258-9347-278f86ecd69b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#7d410cf3-54c1-4e2a-92b4-5de87809a24b');
+var element = $('#0b5ae904-b18b-4258-9347-278f86ecd69b');
 
 console.log('Starting front end url_querystring_target comm target');
 const comm = Jupyter.notebook.kernel.comm_manager.new_comm('url_querystring_target', {'init': 1});
@@ -6342,10 +6355,10 @@ z
       <p>
               <a href="./category-all.html" rel="tag"
                   data-toggle="tooltip" class="label label-info"
-                  title="24 articles in this category">All</a>
+                  title="28 articles in this category">All</a>
             <a href="/tag-data.html" data-toggle="tooltip"
       class="label label-default"
-      title="16 articles with this tag">Data</a>
+      title="20 articles with this tag">Data</a>
             <a href="/tag-analysis.html" data-toggle="tooltip"
       class="label label-default"
       title="8 articles with this tag">analysis</a>

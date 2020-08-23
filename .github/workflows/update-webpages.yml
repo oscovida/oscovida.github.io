@@ -41,8 +41,8 @@ jobs:
           source .venv/bin/activate
           cd tools
           jupyter-nbconvert generate-individiual-plots.ipynb --execute
-          jupyter nbconvert --ExecutePreprocessor.timeout=600 --inplace --to notebook --execute pelican/content/ipynb/14-day-incidence-germany.ipynb
-          jupyter nbconvert --ExecutePreprocessor.timeout=600 --inplace --to notebook --execute pelican/content/ipynb/14-day-incidence.ipynb
+          #jupyter nbconvert --ExecutePreprocessor.timeout=600 --inplace --to notebook --execute pelican/content/ipynb/14-day-incidence-germany.ipynb
+          #jupyter nbconvert --ExecutePreprocessor.timeout=600 --inplace --to notebook --execute pelican/content/ipynb/14-day-incidence.ipynb
       - name: Update HTML pages
         run: |
           source .venv/bin/activate

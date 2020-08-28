@@ -25,7 +25,20 @@
     <script type="text/javascript" class="init">
       $(document).ready(function() {
           $('#data_table').DataTable( {
-              "order": [[ 3, "desc" ]]
+              "rowCallback": function( row, data, index ) {
+                  if ( data[4] == "True" ) // 4th column is a flag to set the colour red
+                  {
+                      $('td', row).css('background-color', 'LightPink');
+                  }
+              },
+              "order": [[ 3, "desc" ]],
+              "lengthMenu": [[10, 25, 50, 500, -1], [10, 25, 50, 500, "All"]],
+              "pageLength": -1,
+              "columnDefs": [
+                { "type": "string", "targets": 0 },
+                { "type": "num-fmt", "targets": "_all" },
+                { "visible": false,  "targets": [ 4 ] } // hide flag column
+              ]
           } );
       } );
     </script>
@@ -234,16 +247,16 @@ browser</a> </p>
       <p>
               <a href="./category-all.html" rel="tag"
                   data-toggle="tooltip" class="label label-info"
-                  title="24 articles in this category">All</a>
+                  title="29 articles in this category">All</a>
             <a href="/tag-data.html" data-toggle="tooltip"
       class="label label-default"
-      title="16 articles with this tag">Data</a>
+      title="21 articles with this tag">Data</a>
             <a href="/tag-analysis.html" data-toggle="tooltip"
       class="label label-default"
-      title="8 articles with this tag">analysis</a>
+      title="9 articles with this tag">analysis</a>
             <a href="/tag-germany.html" data-toggle="tooltip"
       class="label label-default"
-      title="1 article with this tag">Germany</a>
+      title="2 articles with this tag">germany</a>
             <a href="/tag-numbers-in-news.html" data-toggle="tooltip"
       class="label label-default"
       title="1 article with this tag">Numbers-in-news</a>

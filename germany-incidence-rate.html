@@ -1,0 +1,2751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>  14 Day Incidence Rates: Germany
+ | OSCOVIDA: Open Science COVID Analysis</title>
+
+    <meta name="author" content="OSCOVIDA team"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="./theme/css/pygment-solarized-dark.css"/>
+    <link rel="stylesheet" href="./theme/css/style.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" class="init">
+      $(document).ready(function() {
+          $('#data_table').DataTable( {
+              "rowCallback": function( row, data, index ) {
+                  if ( data[4] == "True" ) // 4th column is a flag to set the colour red
+                  {
+                      $('td', row).css('background-color', 'LightPink');
+                  }
+              },
+              "order": [[ 3, "desc" ]],
+              "lengthMenu": [[10, 25, 50, 500, -1], [10, 25, 50, 500, "All"]],
+              "pageLength": -1,
+              "columnDefs": [
+                { "type": "string", "targets": 0 },
+                { "type": "num-fmt", "targets": "_all" },
+                { "visible": false,  "targets": [ 4 ] } // hide flag column
+              ]
+          } );
+      } );
+    </script>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+      <link href="https://oscovida.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="OSCOVIDA: Open Science COVID Analysis - All posts - Atom Feed"/>
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><a href=".">OSCOVIDA: Open Science COVID Analysis</a> <small></small></h1>
+      </div>
+
+      <nav class="navbar navbar-default">
+
+        <!-- Hamburger menu for mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#plumage-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="." title="">OSCOVIDA: Open Science COVID Analysis</a>
+        </div>
+
+        <!-- Menus and search forms -->
+        <div class="collapse navbar-collapse" id="plumage-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+<li >
+                <a href="index.html">Home</a>
+              </li>
+<li >
+                <a href="all-regions.html">All regions</a>
+              </li>
+<li >
+                <a href="countries.html">Countries</a>
+              </li>
+<li >
+                <a href="germany.html">Germany</a>
+              </li>
+<li >
+                <a href="us.html">US</a>
+              </li>
+<li >
+                <a href="hungary.html">Hungary</a>
+              </li>
+<li >
+                <a href="category-all.html">Articles</a>
+              </li>
+<li >
+                <a href="tag-analysis">Analysis</a>
+              </li>
+<li >
+                <a href="tag-about.html">About</a>
+              </li>
+          </ul>
+
+
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="container main">
+
+
+      <div class="row">
+        <div class=" col-md-9  ">
+  <h1>
+    <a href="./germany-incidence-rate.html" rel="bookmark" title="Permalink to 14 Day Incidence Rates: Germany">14 Day Incidence Rates:  Germany</a>
+  </h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <p>The searchable table below shows 14-day incidence rate per
+100,000 for all countries. (<a href="./14-day-incidence-rate.html">An explanation of the calculation is
+available</a>).</p>
+<p>Two of these pages are provided:</p>
+<ul>
+<li>
+<p><a href="./germany-incidence-rate.html">German region incidence rates</a></p>
+</li>
+<li>
+<p><a href="./countries-incidence-rate.html">Worldwide incidence rates</a></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Location</th>
+<th align="right">Cases in last 14 days</th>
+<th align="left">Population</th>
+<th align="right">14 Day Incidence Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LK Ahrweiler</td>
+<td align="right">32</td>
+<td align="left">129,727</td>
+<td align="right">24.7</td>
+</tr>
+<tr>
+<td align="left">LK Aichach-Friedberg</td>
+<td align="right">17</td>
+<td align="left">133,596</td>
+<td align="right">12.7</td>
+</tr>
+<tr>
+<td align="left">LK Alb-Donau-Kreis</td>
+<td align="right">32</td>
+<td align="left">196,047</td>
+<td align="right">16.3</td>
+</tr>
+<tr>
+<td align="left">LK Altenkirchen</td>
+<td align="right">11</td>
+<td align="left">128,705</td>
+<td align="right">8.5</td>
+</tr>
+<tr>
+<td align="left">LK Altmarkkreis Salzwedel</td>
+<td align="right">3</td>
+<td align="left">83,765</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="left">LK Altötting</td>
+<td align="right">40</td>
+<td align="left">111,210</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td align="left">LK Alzey-Worms</td>
+<td align="right">38</td>
+<td align="left">129,244</td>
+<td align="right">29.4</td>
+</tr>
+<tr>
+<td align="left">LK Amberg-Sulzbach</td>
+<td align="right">10</td>
+<td align="left">103,109</td>
+<td align="right">9.7</td>
+</tr>
+<tr>
+<td align="left">LK Ammerland</td>
+<td align="right">5</td>
+<td align="left">124,071</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td align="left">LK Anhalt-Bitterfeld</td>
+<td align="right">4</td>
+<td align="left">159,854</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="left">LK Ansbach</td>
+<td align="right">1</td>
+<td align="left">183,949</td>
+<td align="right">0.5</td>
+</tr>
+<tr>
+<td align="left">LK Aschaffenburg</td>
+<td align="right">14</td>
+<td align="left">174,208</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="left">LK Augsburg</td>
+<td align="right">54</td>
+<td align="left">251,534</td>
+<td align="right">21.5</td>
+</tr>
+<tr>
+<td align="left">LK Aurich</td>
+<td align="right">25</td>
+<td align="left">189,848</td>
+<td align="right">13.2</td>
+</tr>
+<tr>
+<td align="left">LK Bad Dürkheim</td>
+<td align="right">16</td>
+<td align="left">132,660</td>
+<td align="right">12.1</td>
+</tr>
+<tr>
+<td align="left">LK Bad Kissingen</td>
+<td align="right">9</td>
+<td align="left">103,218</td>
+<td align="right">8.7</td>
+</tr>
+<tr>
+<td align="left">LK Bad Kreuznach</td>
+<td align="right">42</td>
+<td align="left">158,080</td>
+<td align="right">26.6</td>
+</tr>
+<tr>
+<td align="left">LK Bad Tölz-Wolfratshausen</td>
+<td align="right">17</td>
+<td align="left">127,227</td>
+<td align="right">13.4</td>
+</tr>
+<tr>
+<td align="left">LK Bamberg</td>
+<td align="right">6</td>
+<td align="left">147,086</td>
+<td align="right">4.1</td>
+</tr>
+<tr>
+<td align="left">LK Barnim</td>
+<td align="right">4</td>
+<td align="left">182,760</td>
+<td align="right">2.2</td>
+</tr>
+<tr>
+<td align="left">LK Bautzen</td>
+<td align="right">2</td>
+<td align="left">300,880</td>
+<td align="right">0.7</td>
+</tr>
+<tr>
+<td align="left">LK Bayreuth</td>
+<td align="right">3</td>
+<td align="left">103,656</td>
+<td align="right">2.9</td>
+</tr>
+<tr>
+<td align="left">LK Berchtesgadener Land</td>
+<td align="right">14</td>
+<td align="left">105,722</td>
+<td align="right">13.2</td>
+</tr>
+<tr>
+<td align="left">LK Bergstraße</td>
+<td align="right">53</td>
+<td align="left">269,694</td>
+<td align="right">19.7</td>
+</tr>
+<tr>
+<td align="left">LK Bernkastel-Wittlich</td>
+<td align="right">14</td>
+<td align="left">112,262</td>
+<td align="right">12.5</td>
+</tr>
+<tr>
+<td align="left">LK Biberach</td>
+<td align="right">40</td>
+<td align="left">199,742</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td align="left">LK Birkenfeld</td>
+<td align="right">10</td>
+<td align="left">80,720</td>
+<td align="right">12.4</td>
+</tr>
+<tr>
+<td align="left">LK Bitburg-Prüm</td>
+<td align="right">17</td>
+<td align="left">98,561</td>
+<td align="right">17.2</td>
+</tr>
+<tr>
+<td align="left">LK Bodenseekreis</td>
+<td align="right">28</td>
+<td align="left">216,227</td>
+<td align="right">12.9</td>
+</tr>
+<tr>
+<td align="left">LK Borken</td>
+<td align="right">65</td>
+<td align="left">370,676</td>
+<td align="right">17.5</td>
+</tr>
+<tr>
+<td align="left">LK Breisgau-Hochschwarzwald</td>
+<td align="right">23</td>
+<td align="left">262,795</td>
+<td align="right">8.8</td>
+</tr>
+<tr>
+<td align="left">LK Burgenlandkreis</td>
+<td align="right">6</td>
+<td align="left">180,190</td>
+<td align="right">3.3</td>
+</tr>
+<tr>
+<td align="left">LK Böblingen</td>
+<td align="right">82</td>
+<td align="left">391,640</td>
+<td align="right">20.9</td>
+</tr>
+<tr>
+<td align="left">LK Börde</td>
+<td align="right">8</td>
+<td align="left">171,734</td>
+<td align="right">4.7</td>
+</tr>
+<tr>
+<td align="left">LK Calw</td>
+<td align="right">21</td>
+<td align="left">158,397</td>
+<td align="right">13.3</td>
+</tr>
+<tr>
+<td align="left">LK Celle</td>
+<td align="right">5</td>
+<td align="left">178,936</td>
+<td align="right">2.8</td>
+</tr>
+<tr>
+<td align="left">LK Cham</td>
+<td align="right">14</td>
+<td align="left">127,882</td>
+<td align="right">10.9</td>
+</tr>
+<tr>
+<td align="left">LK Cloppenburg</td>
+<td align="right">52</td>
+<td align="left">169,348</td>
+<td align="right">30.7</td>
+</tr>
+<tr>
+<td align="left">LK Coburg</td>
+<td align="right">18</td>
+<td align="left">86,906</td>
+<td align="right">20.7</td>
+</tr>
+<tr>
+<td align="left">LK Cochem-Zell</td>
+<td align="right">8</td>
+<td align="left">61,587</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td align="left">LK Coesfeld</td>
+<td align="right">12</td>
+<td align="left">219,929</td>
+<td align="right">5.5</td>
+</tr>
+<tr>
+<td align="left">LK Cuxhaven</td>
+<td align="right">8</td>
+<td align="left">198,213</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td align="left">LK Dachau</td>
+<td align="right">45</td>
+<td align="left">153,884</td>
+<td align="right">29.2</td>
+</tr>
+<tr>
+<td align="left">LK Dahme-Spreewald</td>
+<td align="right">5</td>
+<td align="left">169,067</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">LK Darmstadt-Dieburg</td>
+<td align="right">67</td>
+<td align="left">297,399</td>
+<td align="right">22.5</td>
+</tr>
+<tr>
+<td align="left">LK Deggendorf</td>
+<td align="right">34</td>
+<td align="left">119,326</td>
+<td align="right">28.5</td>
+</tr>
+<tr>
+<td align="left">LK Diepholz</td>
+<td align="right">26</td>
+<td align="left">216,886</td>
+<td align="right">12</td>
+</tr>
+<tr>
+<td align="left">LK Dillingen a.d.Donau</td>
+<td align="right">18</td>
+<td align="left">96,021</td>
+<td align="right">18.7</td>
+</tr>
+<tr>
+<td align="left">LK Dingolfing-Landau</td>
+<td align="right">118</td>
+<td align="left">96,217</td>
+<td align="right">122.6</td>
+</tr>
+<tr>
+<td align="left">LK Dithmarschen</td>
+<td align="right">19</td>
+<td align="left">133,210</td>
+<td align="right">14.3</td>
+</tr>
+<tr>
+<td align="left">LK Donau-Ries</td>
+<td align="right">17</td>
+<td align="left">133,496</td>
+<td align="right">12.7</td>
+</tr>
+<tr>
+<td align="left">LK Donnersbergkreis</td>
+<td align="right">13</td>
+<td align="left">75,101</td>
+<td align="right">17.3</td>
+</tr>
+<tr>
+<td align="left">LK Düren</td>
+<td align="right">72</td>
+<td align="left">263,722</td>
+<td align="right">27.3</td>
+</tr>
+<tr>
+<td align="left">LK Ebersberg</td>
+<td align="right">57</td>
+<td align="left">142,142</td>
+<td align="right">40.1</td>
+</tr>
+<tr>
+<td align="left">LK Eichsfeld</td>
+<td align="right">1</td>
+<td align="left">100,380</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">LK Eichstätt</td>
+<td align="right">27</td>
+<td align="left">132,341</td>
+<td align="right">20.4</td>
+</tr>
+<tr>
+<td align="left">LK Elbe-Elster</td>
+<td align="right">1</td>
+<td align="left">102,638</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">LK Emmendingen</td>
+<td align="right">11</td>
+<td align="left">165,383</td>
+<td align="right">6.7</td>
+</tr>
+<tr>
+<td align="left">LK Emsland</td>
+<td align="right">27</td>
+<td align="left">325,657</td>
+<td align="right">8.3</td>
+</tr>
+<tr>
+<td align="left">LK Ennepe-Ruhr-Kreis</td>
+<td align="right">76</td>
+<td align="left">324,296</td>
+<td align="right">23.4</td>
+</tr>
+<tr>
+<td align="left">LK Enzkreis</td>
+<td align="right">16</td>
+<td align="left">198,905</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="left">LK Erding</td>
+<td align="right">36</td>
+<td align="left">137,660</td>
+<td align="right">26.2</td>
+</tr>
+<tr>
+<td align="left">LK Erlangen-Höchstadt</td>
+<td align="right">22</td>
+<td align="left">136,271</td>
+<td align="right">16.1</td>
+</tr>
+<tr>
+<td align="left">LK Erzgebirgskreis</td>
+<td align="right">8</td>
+<td align="left">337,696</td>
+<td align="right">2.4</td>
+</tr>
+<tr>
+<td align="left">LK Esslingen</td>
+<td align="right">74</td>
+<td align="left">533,859</td>
+<td align="right">13.9</td>
+</tr>
+<tr>
+<td align="left">LK Euskirchen</td>
+<td align="right">31</td>
+<td align="left">192,840</td>
+<td align="right">16.1</td>
+</tr>
+<tr>
+<td align="left">LK Forchheim</td>
+<td align="right">18</td>
+<td align="left">116,099</td>
+<td align="right">15.5</td>
+</tr>
+<tr>
+<td align="left">LK Freising</td>
+<td align="right">59</td>
+<td align="left">179,116</td>
+<td align="right">32.9</td>
+</tr>
+<tr>
+<td align="left">LK Freudenstadt</td>
+<td align="right">14</td>
+<td align="left">117,935</td>
+<td align="right">11.9</td>
+</tr>
+<tr>
+<td align="left">LK Freyung-Grafenau</td>
+<td align="right">2</td>
+<td align="left">78,355</td>
+<td align="right">2.6</td>
+</tr>
+<tr>
+<td align="left">LK Friesland</td>
+<td align="right">5</td>
+<td align="left">98,460</td>
+<td align="right">5.1</td>
+</tr>
+<tr>
+<td align="left">LK Fulda</td>
+<td align="right">43</td>
+<td align="left">222,584</td>
+<td align="right">19.3</td>
+</tr>
+<tr>
+<td align="left">LK Fürstenfeldbruck</td>
+<td align="right">42</td>
+<td align="left">219,320</td>
+<td align="right">19.2</td>
+</tr>
+<tr>
+<td align="left">LK Fürth</td>
+<td align="right">10</td>
+<td align="left">117,387</td>
+<td align="right">8.5</td>
+</tr>
+<tr>
+<td align="left">LK Garmisch-Partenkirchen</td>
+<td align="right">10</td>
+<td align="left">88,467</td>
+<td align="right">11.3</td>
+</tr>
+<tr>
+<td align="left">LK Germersheim</td>
+<td align="right">36</td>
+<td align="left">129,075</td>
+<td align="right">27.9</td>
+</tr>
+<tr>
+<td align="left">LK Gießen</td>
+<td align="right">47</td>
+<td align="left">268,876</td>
+<td align="right">17.5</td>
+</tr>
+<tr>
+<td align="left">LK Gifhorn</td>
+<td align="right">14</td>
+<td align="left">175,920</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="left">LK Goslar</td>
+<td align="right">4</td>
+<td align="left">137,014</td>
+<td align="right">2.9</td>
+</tr>
+<tr>
+<td align="left">LK Gotha</td>
+<td align="right">8</td>
+<td align="left">135,452</td>
+<td align="right">5.9</td>
+</tr>
+<tr>
+<td align="left">LK Grafschaft Bentheim</td>
+<td align="right">9</td>
+<td align="left">136,511</td>
+<td align="right">6.6</td>
+</tr>
+<tr>
+<td align="left">LK Greiz</td>
+<td align="right">12</td>
+<td align="left">98,159</td>
+<td align="right">12.2</td>
+</tr>
+<tr>
+<td align="left">LK Groß-Gerau</td>
+<td align="right">134</td>
+<td align="left">274,526</td>
+<td align="right">48.8</td>
+</tr>
+<tr>
+<td align="left">LK Göppingen</td>
+<td align="right">61</td>
+<td align="left">257,253</td>
+<td align="right">23.7</td>
+</tr>
+<tr>
+<td align="left">LK Görlitz</td>
+<td align="right">24</td>
+<td align="left">254,894</td>
+<td align="right">9.4</td>
+</tr>
+<tr>
+<td align="left">LK Göttingen</td>
+<td align="right">36</td>
+<td align="left">328,074</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td align="left">LK Günzburg</td>
+<td align="right">32</td>
+<td align="left">125,747</td>
+<td align="right">25.4</td>
+</tr>
+<tr>
+<td align="left">LK Gütersloh</td>
+<td align="right">138</td>
+<td align="left">364,083</td>
+<td align="right">37.9</td>
+</tr>
+<tr>
+<td align="left">LK Hameln-Pyrmont</td>
+<td align="right">10</td>
+<td align="left">148,559</td>
+<td align="right">6.7</td>
+</tr>
+<tr>
+<td align="left">LK Harburg</td>
+<td align="right">14</td>
+<td align="left">252,776</td>
+<td align="right">5.5</td>
+</tr>
+<tr>
+<td align="left">LK Harz</td>
+<td align="right">6</td>
+<td align="left">214,446</td>
+<td align="right">2.8</td>
+</tr>
+<tr>
+<td align="left">LK Havelland</td>
+<td align="right">4</td>
+<td align="left">161,909</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="left">LK Haßberge</td>
+<td align="right">2</td>
+<td align="left">84,599</td>
+<td align="right">2.4</td>
+</tr>
+<tr>
+<td align="left">LK Heidekreis</td>
+<td align="right">12</td>
+<td align="left">139,755</td>
+<td align="right">8.6</td>
+</tr>
+<tr>
+<td align="left">LK Heidenheim</td>
+<td align="right">14</td>
+<td align="left">132,472</td>
+<td align="right">10.6</td>
+</tr>
+<tr>
+<td align="left">LK Heilbronn</td>
+<td align="right">50</td>
+<td align="left">343,068</td>
+<td align="right">14.6</td>
+</tr>
+<tr>
+<td align="left">LK Heinsberg</td>
+<td align="right">34</td>
+<td align="left">254,322</td>
+<td align="right">13.4</td>
+</tr>
+<tr>
+<td align="left">LK Helmstedt</td>
+<td align="right">9</td>
+<td align="left">91,307</td>
+<td align="right">9.9</td>
+</tr>
+<tr>
+<td align="left">LK Herford</td>
+<td align="right">79</td>
+<td align="left">250,783</td>
+<td align="right">31.5</td>
+</tr>
+<tr>
+<td align="left">LK Hersfeld-Rotenburg</td>
+<td align="right">10</td>
+<td align="left">120,829</td>
+<td align="right">8.3</td>
+</tr>
+<tr>
+<td align="left">LK Herzogtum Lauenburg</td>
+<td align="right">4</td>
+<td align="left">197,264</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">LK Hildburghausen</td>
+<td align="right">4</td>
+<td align="left">63,553</td>
+<td align="right">6.3</td>
+</tr>
+<tr>
+<td align="left">LK Hildesheim</td>
+<td align="right">17</td>
+<td align="left">276,594</td>
+<td align="right">6.1</td>
+</tr>
+<tr>
+<td align="left">LK Hochsauerlandkreis</td>
+<td align="right">64</td>
+<td align="left">260,475</td>
+<td align="right">24.6</td>
+</tr>
+<tr>
+<td align="left">LK Hochtaunuskreis</td>
+<td align="right">33</td>
+<td align="left">236,564</td>
+<td align="right">13.9</td>
+</tr>
+<tr>
+<td align="left">LK Hof</td>
+<td align="right">17</td>
+<td align="left">95,311</td>
+<td align="right">17.8</td>
+</tr>
+<tr>
+<td align="left">LK Hohenlohekreis</td>
+<td align="right">13</td>
+<td align="left">112,010</td>
+<td align="right">11.6</td>
+</tr>
+<tr>
+<td align="left">LK Holzminden</td>
+<td align="right">7</td>
+<td align="left">70,975</td>
+<td align="right">9.9</td>
+</tr>
+<tr>
+<td align="left">LK Höxter</td>
+<td align="right">17</td>
+<td align="left">140,667</td>
+<td align="right">12.1</td>
+</tr>
+<tr>
+<td align="left">LK Ilm-Kreis</td>
+<td align="right">7</td>
+<td align="left">108,742</td>
+<td align="right">6.4</td>
+</tr>
+<tr>
+<td align="left">LK Jerichower Land</td>
+<td align="right">1</td>
+<td align="left">89,928</td>
+<td align="right">1.1</td>
+</tr>
+<tr>
+<td align="left">LK Kaiserslautern</td>
+<td align="right">18</td>
+<td align="left">106,057</td>
+<td align="right">17</td>
+</tr>
+<tr>
+<td align="left">LK Karlsruhe</td>
+<td align="right">32</td>
+<td align="left">444,232</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="left">LK Kassel</td>
+<td align="right">37</td>
+<td align="left">236,633</td>
+<td align="right">15.6</td>
+</tr>
+<tr>
+<td align="left">LK Kelheim</td>
+<td align="right">50</td>
+<td align="left">122,258</td>
+<td align="right">40.9</td>
+</tr>
+<tr>
+<td align="left">LK Kitzingen</td>
+<td align="right">12</td>
+<td align="left">90,909</td>
+<td align="right">13.2</td>
+</tr>
+<tr>
+<td align="left">LK Kleve</td>
+<td align="right">71</td>
+<td align="left">310,974</td>
+<td align="right">22.8</td>
+</tr>
+<tr>
+<td align="left">LK Konstanz</td>
+<td align="right">38</td>
+<td align="left">285,325</td>
+<td align="right">13.3</td>
+</tr>
+<tr>
+<td align="left">LK Kronach</td>
+<td align="right">2</td>
+<td align="left">67,135</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">LK Kulmbach</td>
+<td align="right">7</td>
+<td align="left">71,845</td>
+<td align="right">9.7</td>
+</tr>
+<tr>
+<td align="left">LK Kusel</td>
+<td align="right">5</td>
+<td align="left">70,526</td>
+<td align="right">7.1</td>
+</tr>
+<tr>
+<td align="left">LK Kyffhäuserkreis</td>
+<td align="right">1</td>
+<td align="left">75,009</td>
+<td align="right">1.3</td>
+</tr>
+<tr>
+<td align="left">LK Lahn-Dill-Kreis</td>
+<td align="right">34</td>
+<td align="left">253,777</td>
+<td align="right">13.4</td>
+</tr>
+<tr>
+<td align="left">LK Landsberg a.Lech</td>
+<td align="right">20</td>
+<td align="left">120,071</td>
+<td align="right">16.7</td>
+</tr>
+<tr>
+<td align="left">LK Landshut</td>
+<td align="right">35</td>
+<td align="left">158,698</td>
+<td align="right">22.1</td>
+</tr>
+<tr>
+<td align="left">LK Leer</td>
+<td align="right">16</td>
+<td align="left">169,809</td>
+<td align="right">9.4</td>
+</tr>
+<tr>
+<td align="left">LK Leipzig</td>
+<td align="right">8</td>
+<td align="left">257,763</td>
+<td align="right">3.1</td>
+</tr>
+<tr>
+<td align="left">LK Lichtenfels</td>
+<td align="right">13</td>
+<td align="left">66,838</td>
+<td align="right">19.5</td>
+</tr>
+<tr>
+<td align="left">LK Limburg-Weilburg</td>
+<td align="right">49</td>
+<td align="left">172,083</td>
+<td align="right">28.5</td>
+</tr>
+<tr>
+<td align="left">LK Lindau</td>
+<td align="right">12</td>
+<td align="left">81,669</td>
+<td align="right">14.7</td>
+</tr>
+<tr>
+<td align="left">LK Lippe</td>
+<td align="right">56</td>
+<td align="left">348,391</td>
+<td align="right">16.1</td>
+</tr>
+<tr>
+<td align="left">LK Ludwigsburg</td>
+<td align="right">77</td>
+<td align="left">543,984</td>
+<td align="right">14.2</td>
+</tr>
+<tr>
+<td align="left">LK Ludwigslust-Parchim</td>
+<td align="right">7</td>
+<td align="left">212,618</td>
+<td align="right">3.3</td>
+</tr>
+<tr>
+<td align="left">LK Lörrach</td>
+<td align="right">39</td>
+<td align="left">228,639</td>
+<td align="right">17.1</td>
+</tr>
+<tr>
+<td align="left">LK Lüchow-Dannenberg</td>
+<td align="right">6</td>
+<td align="left">48,424</td>
+<td align="right">12.4</td>
+</tr>
+<tr>
+<td align="left">LK Lüneburg</td>
+<td align="right">14</td>
+<td align="left">183,372</td>
+<td align="right">7.6</td>
+</tr>
+<tr>
+<td align="left">LK Main-Kinzig-Kreis</td>
+<td align="right">132</td>
+<td align="left">418,950</td>
+<td align="right">31.5</td>
+</tr>
+<tr>
+<td align="left">LK Main-Spessart</td>
+<td align="right">15</td>
+<td align="left">126,365</td>
+<td align="right">11.9</td>
+</tr>
+<tr>
+<td align="left">LK Main-Tauber-Kreis</td>
+<td align="right">25</td>
+<td align="left">132,321</td>
+<td align="right">18.9</td>
+</tr>
+<tr>
+<td align="left">LK Main-Taunus-Kreis</td>
+<td align="right">75</td>
+<td align="left">237,735</td>
+<td align="right">31.5</td>
+</tr>
+<tr>
+<td align="left">LK Mainz-Bingen</td>
+<td align="right">48</td>
+<td align="left">210,889</td>
+<td align="right">22.8</td>
+</tr>
+<tr>
+<td align="left">LK Mansfeld-Südharz</td>
+<td align="right">2</td>
+<td align="left">136,249</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="left">LK Marburg-Biedenkopf</td>
+<td align="right">45</td>
+<td align="left">246,648</td>
+<td align="right">18.2</td>
+</tr>
+<tr>
+<td align="left">LK Mayen-Koblenz</td>
+<td align="right">25</td>
+<td align="left">214,259</td>
+<td align="right">11.7</td>
+</tr>
+<tr>
+<td align="left">LK Mecklenburgische Seenplatte</td>
+<td align="right">4</td>
+<td align="left">259,130</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="left">LK Meißen</td>
+<td align="right">10</td>
+<td align="left">242,165</td>
+<td align="right">4.1</td>
+</tr>
+<tr>
+<td align="left">LK Merzig-Wadern</td>
+<td align="right">19</td>
+<td align="left">103,366</td>
+<td align="right">18.4</td>
+</tr>
+<tr>
+<td align="left">LK Mettmann</td>
+<td align="right">174</td>
+<td align="left">485,684</td>
+<td align="right">35.8</td>
+</tr>
+<tr>
+<td align="left">LK Miesbach</td>
+<td align="right">31</td>
+<td align="left">99,726</td>
+<td align="right">31.1</td>
+</tr>
+<tr>
+<td align="left">LK Miltenberg</td>
+<td align="right">12</td>
+<td align="left">128,756</td>
+<td align="right">9.3</td>
+</tr>
+<tr>
+<td align="left">LK Minden-Lübbecke</td>
+<td align="right">89</td>
+<td align="left">310,710</td>
+<td align="right">28.6</td>
+</tr>
+<tr>
+<td align="left">LK Mittelsachsen</td>
+<td align="right">3</td>
+<td align="left">306,185</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">LK Märkisch-Oderland</td>
+<td align="right">5</td>
+<td align="left">194,328</td>
+<td align="right">2.6</td>
+</tr>
+<tr>
+<td align="left">LK Märkischer Kreis</td>
+<td align="right">114</td>
+<td align="left">412,120</td>
+<td align="right">27.7</td>
+</tr>
+<tr>
+<td align="left">LK Mühldorf a.Inn</td>
+<td align="right">32</td>
+<td align="left">115,250</td>
+<td align="right">27.8</td>
+</tr>
+<tr>
+<td align="left">LK München</td>
+<td align="right">77</td>
+<td align="left">348,871</td>
+<td align="right">22.1</td>
+</tr>
+<tr>
+<td align="left">LK Neckar-Odenwald-Kreis</td>
+<td align="right">9</td>
+<td align="left">143,535</td>
+<td align="right">6.3</td>
+</tr>
+<tr>
+<td align="left">LK Neu-Ulm</td>
+<td align="right">33</td>
+<td align="left">174,200</td>
+<td align="right">18.9</td>
+</tr>
+<tr>
+<td align="left">LK Neuburg-Schrobenhausen</td>
+<td align="right">23</td>
+<td align="left">96,680</td>
+<td align="right">23.8</td>
+</tr>
+<tr>
+<td align="left">LK Neumarkt i.d.OPf.</td>
+<td align="right">2</td>
+<td align="left">133,561</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="left">LK Neunkirchen</td>
+<td align="right">12</td>
+<td align="left">132,206</td>
+<td align="right">9.1</td>
+</tr>
+<tr>
+<td align="left">LK Neustadt a.d.Aisch-Bad Windsheim</td>
+<td align="right">8</td>
+<td align="left">100,364</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="left">LK Neustadt a.d.Waldnaab</td>
+<td align="right">5</td>
+<td align="left">94,352</td>
+<td align="right">5.3</td>
+</tr>
+<tr>
+<td align="left">LK Neuwied</td>
+<td align="right">38</td>
+<td align="left">181,941</td>
+<td align="right">20.9</td>
+</tr>
+<tr>
+<td align="left">LK Nienburg (Weser)</td>
+<td align="right">8</td>
+<td align="left">121,386</td>
+<td align="right">6.6</td>
+</tr>
+<tr>
+<td align="left">LK Nordfriesland</td>
+<td align="right">5</td>
+<td align="left">165,507</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">LK Nordhausen</td>
+<td align="right">6</td>
+<td align="left">83,822</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="left">LK Nordsachsen</td>
+<td align="right">3</td>
+<td align="left">197,673</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="left">LK Nordwestmecklenburg</td>
+<td align="right">11</td>
+<td align="left">156,729</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="left">LK Northeim</td>
+<td align="right">5</td>
+<td align="left">132,765</td>
+<td align="right">3.8</td>
+</tr>
+<tr>
+<td align="left">LK Nürnberger Land</td>
+<td align="right">14</td>
+<td align="left">170,365</td>
+<td align="right">8.2</td>
+</tr>
+<tr>
+<td align="left">LK Oberallgäu</td>
+<td align="right">15</td>
+<td align="left">155,362</td>
+<td align="right">9.7</td>
+</tr>
+<tr>
+<td align="left">LK Oberbergischer Kreis</td>
+<td align="right">51</td>
+<td align="left">272,471</td>
+<td align="right">18.7</td>
+</tr>
+<tr>
+<td align="left">LK Oberhavel</td>
+<td align="right">13</td>
+<td align="left">211,249</td>
+<td align="right">6.2</td>
+</tr>
+<tr>
+<td align="left">LK Oberspreewald-Lausitz</td>
+<td align="right">8</td>
+<td align="left">110,476</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="left">LK Odenwaldkreis</td>
+<td align="right">18</td>
+<td align="left">96,798</td>
+<td align="right">18.6</td>
+</tr>
+<tr>
+<td align="left">LK Oder-Spree</td>
+<td align="right">16</td>
+<td align="left">178,658</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td align="left">LK Offenbach</td>
+<td align="right">122</td>
+<td align="left">354,092</td>
+<td align="right">34.5</td>
+</tr>
+<tr>
+<td align="left">LK Oldenburg</td>
+<td align="right">39</td>
+<td align="left">130,144</td>
+<td align="right">30</td>
+</tr>
+<tr>
+<td align="left">LK Olpe</td>
+<td align="right">43</td>
+<td align="left">134,775</td>
+<td align="right">31.9</td>
+</tr>
+<tr>
+<td align="left">LK Ortenaukreis</td>
+<td align="right">45</td>
+<td align="left">429,479</td>
+<td align="right">10.5</td>
+</tr>
+<tr>
+<td align="left">LK Osnabrück</td>
+<td align="right">35</td>
+<td align="left">357,343</td>
+<td align="right">9.8</td>
+</tr>
+<tr>
+<td align="left">LK Ostalbkreis</td>
+<td align="right">36</td>
+<td align="left">314,002</td>
+<td align="right">11.5</td>
+</tr>
+<tr>
+<td align="left">LK Ostallgäu</td>
+<td align="right">16</td>
+<td align="left">140,316</td>
+<td align="right">11.4</td>
+</tr>
+<tr>
+<td align="left">LK Osterholz</td>
+<td align="right">10</td>
+<td align="left">113,517</td>
+<td align="right">8.8</td>
+</tr>
+<tr>
+<td align="left">LK Ostholstein</td>
+<td align="right">6</td>
+<td align="left">200,581</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">LK Paderborn</td>
+<td align="right">34</td>
+<td align="left">306,890</td>
+<td align="right">11.1</td>
+</tr>
+<tr>
+<td align="left">LK Passau</td>
+<td align="right">16</td>
+<td align="left">192,043</td>
+<td align="right">8.3</td>
+</tr>
+<tr>
+<td align="left">LK Peine</td>
+<td align="right">13</td>
+<td align="left">133,965</td>
+<td align="right">9.7</td>
+</tr>
+<tr>
+<td align="left">LK Pfaffenhofen a.d.Ilm</td>
+<td align="right">14</td>
+<td align="left">127,151</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td align="left">LK Pinneberg</td>
+<td align="right">52</td>
+<td align="left">314,391</td>
+<td align="right">16.5</td>
+</tr>
+<tr>
+<td align="left">LK Plön</td>
+<td align="right">13</td>
+<td align="left">128,647</td>
+<td align="right">10.1</td>
+</tr>
+<tr>
+<td align="left">LK Potsdam-Mittelmark</td>
+<td align="right">27</td>
+<td align="left">214,664</td>
+<td align="right">12.6</td>
+</tr>
+<tr>
+<td align="left">LK Prignitz</td>
+<td align="right">7</td>
+<td align="left">76,508</td>
+<td align="right">9.1</td>
+</tr>
+<tr>
+<td align="left">LK Rastatt</td>
+<td align="right">33</td>
+<td align="left">231,018</td>
+<td align="right">14.3</td>
+</tr>
+<tr>
+<td align="left">LK Ravensburg</td>
+<td align="right">56</td>
+<td align="left">284,285</td>
+<td align="right">19.7</td>
+</tr>
+<tr>
+<td align="left">LK Recklinghausen</td>
+<td align="right">166</td>
+<td align="left">615,261</td>
+<td align="right">27</td>
+</tr>
+<tr>
+<td align="left">LK Regen</td>
+<td align="right">1</td>
+<td align="left">77,656</td>
+<td align="right">1.3</td>
+</tr>
+<tr>
+<td align="left">LK Regensburg</td>
+<td align="right">26</td>
+<td align="left">193,572</td>
+<td align="right">13.4</td>
+</tr>
+<tr>
+<td align="left">LK Rems-Murr-Kreis</td>
+<td align="right">89</td>
+<td align="left">426,158</td>
+<td align="right">20.9</td>
+</tr>
+<tr>
+<td align="left">LK Rendsburg-Eckernförde</td>
+<td align="right">22</td>
+<td align="left">272,775</td>
+<td align="right">8.1</td>
+</tr>
+<tr>
+<td align="left">LK Reutlingen</td>
+<td align="right">32</td>
+<td align="left">286,748</td>
+<td align="right">11.2</td>
+</tr>
+<tr>
+<td align="left">LK Rhein-Erft-Kreis</td>
+<td align="right">119</td>
+<td align="left">470,089</td>
+<td align="right">25.3</td>
+</tr>
+<tr>
+<td align="left">LK Rhein-Hunsrück-Kreis</td>
+<td align="right">15</td>
+<td align="left">102,937</td>
+<td align="right">14.6</td>
+</tr>
+<tr>
+<td align="left">LK Rhein-Kreis Neuss</td>
+<td align="right">115</td>
+<td align="left">451,007</td>
+<td align="right">25.5</td>
+</tr>
+<tr>
+<td align="left">LK Rhein-Lahn-Kreis</td>
+<td align="right">13</td>
+<td align="left">122,308</td>
+<td align="right">10.6</td>
+</tr>
+<tr>
+<td align="left">LK Rhein-Neckar-Kreis</td>
+<td align="right">105</td>
+<td align="left">547,625</td>
+<td align="right">19.2</td>
+</tr>
+<tr>
+<td align="left">LK Rhein-Pfalz-Kreis</td>
+<td align="right">27</td>
+<td align="left">154,201</td>
+<td align="right">17.5</td>
+</tr>
+<tr>
+<td align="left">LK Rhein-Sieg-Kreis</td>
+<td align="right">115</td>
+<td align="left">599,780</td>
+<td align="right">19.2</td>
+</tr>
+<tr>
+<td align="left">LK Rheingau-Taunus-Kreis</td>
+<td align="right">35</td>
+<td align="left">187,157</td>
+<td align="right">18.7</td>
+</tr>
+<tr>
+<td align="left">LK Rheinisch-Bergischer Kreis</td>
+<td align="right">49</td>
+<td align="left">283,455</td>
+<td align="right">17.3</td>
+</tr>
+<tr>
+<td align="left">LK Rhön-Grabfeld</td>
+<td align="right">6</td>
+<td align="left">79,690</td>
+<td align="right">7.5</td>
+</tr>
+<tr>
+<td align="left">LK Rosenheim</td>
+<td align="right">37</td>
+<td align="left">260,983</td>
+<td align="right">14.2</td>
+</tr>
+<tr>
+<td align="left">LK Rostock</td>
+<td align="right">5</td>
+<td align="left">215,113</td>
+<td align="right">2.3</td>
+</tr>
+<tr>
+<td align="left">LK Rotenburg (Wümme)</td>
+<td align="right">48</td>
+<td align="left">163,455</td>
+<td align="right">29.4</td>
+</tr>
+<tr>
+<td align="left">LK Roth</td>
+<td align="right">18</td>
+<td align="left">126,958</td>
+<td align="right">14.2</td>
+</tr>
+<tr>
+<td align="left">LK Rottal-Inn</td>
+<td align="right">21</td>
+<td align="left">120,659</td>
+<td align="right">17.4</td>
+</tr>
+<tr>
+<td align="left">LK Rottweil</td>
+<td align="right">15</td>
+<td align="left">139,455</td>
+<td align="right">10.8</td>
+</tr>
+<tr>
+<td align="left">LK Saale-Holzland-Kreis</td>
+<td align="right">2</td>
+<td align="left">83,051</td>
+<td align="right">2.4</td>
+</tr>
+<tr>
+<td align="left">LK Saale-Orla-Kreis</td>
+<td align="right">4</td>
+<td align="left">80,868</td>
+<td align="right">4.9</td>
+</tr>
+<tr>
+<td align="left">LK Saalekreis</td>
+<td align="right">10</td>
+<td align="left">184,582</td>
+<td align="right">5.4</td>
+</tr>
+<tr>
+<td align="left">LK Saalfeld-Rudolstadt</td>
+<td align="right">3</td>
+<td align="left">106,356</td>
+<td align="right">2.8</td>
+</tr>
+<tr>
+<td align="left">LK Saar-Pfalz-Kreis</td>
+<td align="right">30</td>
+<td align="left">142,631</td>
+<td align="right">21</td>
+</tr>
+<tr>
+<td align="left">LK Saarlouis</td>
+<td align="right">30</td>
+<td align="left">195,201</td>
+<td align="right">15.4</td>
+</tr>
+<tr>
+<td align="left">LK Salzlandkreis</td>
+<td align="right">5</td>
+<td align="left">190,560</td>
+<td align="right">2.6</td>
+</tr>
+<tr>
+<td align="left">LK Sankt Wendel</td>
+<td align="right">5</td>
+<td align="left">87,397</td>
+<td align="right">5.7</td>
+</tr>
+<tr>
+<td align="left">LK Schaumburg</td>
+<td align="right">31</td>
+<td align="left">157,781</td>
+<td align="right">19.6</td>
+</tr>
+<tr>
+<td align="left">LK Schleswig-Flensburg</td>
+<td align="right">6</td>
+<td align="left">200,025</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">LK Schmalkalden-Meiningen</td>
+<td align="right">13</td>
+<td align="left">122,347</td>
+<td align="right">10.6</td>
+</tr>
+<tr>
+<td align="left">LK Schwalm-Eder-Kreis</td>
+<td align="right">23</td>
+<td align="left">180,222</td>
+<td align="right">12.8</td>
+</tr>
+<tr>
+<td align="left">LK Schwandorf</td>
+<td align="right">14</td>
+<td align="left">147,189</td>
+<td align="right">9.5</td>
+</tr>
+<tr>
+<td align="left">LK Schwarzwald-Baar-Kreis</td>
+<td align="right">24</td>
+<td align="left">212,381</td>
+<td align="right">11.3</td>
+</tr>
+<tr>
+<td align="left">LK Schweinfurt</td>
+<td align="right">15</td>
+<td align="left">115,106</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td align="left">LK Schwäbisch Hall</td>
+<td align="right">34</td>
+<td align="left">195,861</td>
+<td align="right">17.4</td>
+</tr>
+<tr>
+<td align="left">LK Segeberg</td>
+<td align="right">25</td>
+<td align="left">276,032</td>
+<td align="right">9.1</td>
+</tr>
+<tr>
+<td align="left">LK Siegen-Wittgenstein</td>
+<td align="right">80</td>
+<td align="left">278,210</td>
+<td align="right">28.8</td>
+</tr>
+<tr>
+<td align="left">LK Sigmaringen</td>
+<td align="right">27</td>
+<td align="left">130,873</td>
+<td align="right">20.6</td>
+</tr>
+<tr>
+<td align="left">LK Soest</td>
+<td align="right">30</td>
+<td align="left">301,902</td>
+<td align="right">9.9</td>
+</tr>
+<tr>
+<td align="left">LK Sonneberg</td>
+<td align="right">4</td>
+<td align="left">56,196</td>
+<td align="right">7.1</td>
+</tr>
+<tr>
+<td align="left">LK Stade</td>
+<td align="right">26</td>
+<td align="left">203,102</td>
+<td align="right">12.8</td>
+</tr>
+<tr>
+<td align="left">LK Stadtverband Saarbrücken</td>
+<td align="right">25</td>
+<td align="left">329,708</td>
+<td align="right">7.6</td>
+</tr>
+<tr>
+<td align="left">LK Starnberg</td>
+<td align="right">24</td>
+<td align="left">136,092</td>
+<td align="right">17.6</td>
+</tr>
+<tr>
+<td align="left">LK Steinburg</td>
+<td align="right">6</td>
+<td align="left">131,347</td>
+<td align="right">4.6</td>
+</tr>
+<tr>
+<td align="left">LK Steinfurt</td>
+<td align="right">80</td>
+<td align="left">447,614</td>
+<td align="right">17.9</td>
+</tr>
+<tr>
+<td align="left">LK Stendal</td>
+<td align="right">3</td>
+<td align="left">111,982</td>
+<td align="right">2.7</td>
+</tr>
+<tr>
+<td align="left">LK Stormarn</td>
+<td align="right">40</td>
+<td align="left">243,196</td>
+<td align="right">16.4</td>
+</tr>
+<tr>
+<td align="left">LK Straubing-Bogen</td>
+<td align="right">11</td>
+<td align="left">100,649</td>
+<td align="right">10.9</td>
+</tr>
+<tr>
+<td align="left">LK Sächsische Schweiz-Osterzgebirge</td>
+<td align="right">13</td>
+<td align="left">245,611</td>
+<td align="right">5.3</td>
+</tr>
+<tr>
+<td align="left">LK Sömmerda</td>
+<td align="right">3</td>
+<td align="left">69,655</td>
+<td align="right">4.3</td>
+</tr>
+<tr>
+<td align="left">LK Südliche Weinstraße</td>
+<td align="right">14</td>
+<td align="left">110,356</td>
+<td align="right">12.7</td>
+</tr>
+<tr>
+<td align="left">LK Südwestpfalz</td>
+<td align="right">13</td>
+<td align="left">95,113</td>
+<td align="right">13.7</td>
+</tr>
+<tr>
+<td align="left">LK Teltow-Fläming</td>
+<td align="right">11</td>
+<td align="left">168,296</td>
+<td align="right">6.5</td>
+</tr>
+<tr>
+<td align="left">LK Tirschenreuth</td>
+<td align="right">1</td>
+<td align="left">72,504</td>
+<td align="right">1.4</td>
+</tr>
+<tr>
+<td align="left">LK Traunstein</td>
+<td align="right">19</td>
+<td align="left">177,089</td>
+<td align="right">10.7</td>
+</tr>
+<tr>
+<td align="left">LK Trier-Saarburg</td>
+<td align="right">14</td>
+<td align="left">148,945</td>
+<td align="right">9.4</td>
+</tr>
+<tr>
+<td align="left">LK Tuttlingen</td>
+<td align="right">18</td>
+<td align="left">140,152</td>
+<td align="right">12.8</td>
+</tr>
+<tr>
+<td align="left">LK Tübingen</td>
+<td align="right">19</td>
+<td align="left">227,331</td>
+<td align="right">8.4</td>
+</tr>
+<tr>
+<td align="left">LK Uckermark</td>
+<td align="right">1</td>
+<td align="left">119,552</td>
+<td align="right">0.8</td>
+</tr>
+<tr>
+<td align="left">LK Uelzen</td>
+<td align="right">7</td>
+<td align="left">92,572</td>
+<td align="right">7.6</td>
+</tr>
+<tr>
+<td align="left">LK Unna</td>
+<td align="right">135</td>
+<td align="left">394,782</td>
+<td align="right">34.2</td>
+</tr>
+<tr>
+<td align="left">LK Unstrut-Hainich-Kreis</td>
+<td align="right">1</td>
+<td align="left">102,912</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">LK Unterallgäu</td>
+<td align="right">20</td>
+<td align="left">144,041</td>
+<td align="right">13.9</td>
+</tr>
+<tr>
+<td align="left">LK Vechta</td>
+<td align="right">48</td>
+<td align="left">141,598</td>
+<td align="right">33.9</td>
+</tr>
+<tr>
+<td align="left">LK Verden</td>
+<td align="right">4</td>
+<td align="left">136,792</td>
+<td align="right">2.9</td>
+</tr>
+<tr>
+<td align="left">LK Viersen</td>
+<td align="right">42</td>
+<td align="left">298,935</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td align="left">LK Vogelsbergkreis</td>
+<td align="right">5</td>
+<td align="left">105,878</td>
+<td align="right">4.7</td>
+</tr>
+<tr>
+<td align="left">LK Vogtlandkreis</td>
+<td align="right">9</td>
+<td align="left">227,796</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td align="left">LK Vorpommern-Greifswald</td>
+<td align="right">6</td>
+<td align="left">236,697</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="left">LK Vorpommern-Rügen</td>
+<td align="right">7</td>
+<td align="left">224,684</td>
+<td align="right">3.1</td>
+</tr>
+<tr>
+<td align="left">LK Vulkaneifel</td>
+<td align="right">2</td>
+<td align="left">60,603</td>
+<td align="right">3.3</td>
+</tr>
+<tr>
+<td align="left">LK Waldeck-Frankenberg</td>
+<td align="right">8</td>
+<td align="left">156,953</td>
+<td align="right">5.1</td>
+</tr>
+<tr>
+<td align="left">LK Waldshut</td>
+<td align="right">14</td>
+<td align="left">170,619</td>
+<td align="right">8.2</td>
+</tr>
+<tr>
+<td align="left">LK Warendorf</td>
+<td align="right">39</td>
+<td align="left">277,783</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td align="left">LK Wartburgkreis</td>
+<td align="right">3</td>
+<td align="left">123,025</td>
+<td align="right">2.4</td>
+</tr>
+<tr>
+<td align="left">LK Weilheim-Schongau</td>
+<td align="right">10</td>
+<td align="left">135,348</td>
+<td align="right">7.4</td>
+</tr>
+<tr>
+<td align="left">LK Weimarer Land</td>
+<td align="right">2</td>
+<td align="left">81,947</td>
+<td align="right">2.4</td>
+</tr>
+<tr>
+<td align="left">LK Weißenburg-Gunzenhausen</td>
+<td align="right">23</td>
+<td align="left">94,393</td>
+<td align="right">24.4</td>
+</tr>
+<tr>
+<td align="left">LK Werra-Meißner-Kreis</td>
+<td align="right">6</td>
+<td align="left">101,017</td>
+<td align="right">5.9</td>
+</tr>
+<tr>
+<td align="left">LK Wesel</td>
+<td align="right">109</td>
+<td align="left">459,809</td>
+<td align="right">23.7</td>
+</tr>
+<tr>
+<td align="left">LK Wesermarsch</td>
+<td align="right">27</td>
+<td align="left">88,624</td>
+<td align="right">30.5</td>
+</tr>
+<tr>
+<td align="left">LK Westerwaldkreis</td>
+<td align="right">46</td>
+<td align="left">201,597</td>
+<td align="right">22.8</td>
+</tr>
+<tr>
+<td align="left">LK Wetteraukreis</td>
+<td align="right">57</td>
+<td align="left">306,460</td>
+<td align="right">18.6</td>
+</tr>
+<tr>
+<td align="left">LK Wittenberg</td>
+<td align="right">5</td>
+<td align="left">125,840</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td align="left">LK Wittmund</td>
+<td align="right">5</td>
+<td align="left">56,882</td>
+<td align="right">8.8</td>
+</tr>
+<tr>
+<td align="left">LK Wolfenbüttel</td>
+<td align="right">15</td>
+<td align="left">119,960</td>
+<td align="right">12.5</td>
+</tr>
+<tr>
+<td align="left">LK Wunsiedel i.Fichtelgebirge</td>
+<td align="right">9</td>
+<td align="left">73,178</td>
+<td align="right">12.3</td>
+</tr>
+<tr>
+<td align="left">LK Würzburg</td>
+<td align="right">25</td>
+<td align="left">161,834</td>
+<td align="right">15.4</td>
+</tr>
+<tr>
+<td align="left">LK Zollernalbkreis</td>
+<td align="right">37</td>
+<td align="left">188,935</td>
+<td align="right">19.6</td>
+</tr>
+<tr>
+<td align="left">LK Zwickau</td>
+<td align="right">11</td>
+<td align="left">317,531</td>
+<td align="right">3.5</td>
+</tr>
+<tr>
+<td align="left">Region Hannover</td>
+<td align="right">232</td>
+<td align="left">1,157,624</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td align="left">SK Amberg</td>
+<td align="right">7</td>
+<td align="left">41,970</td>
+<td align="right">16.7</td>
+</tr>
+<tr>
+<td align="left">SK Aschaffenburg</td>
+<td align="right">9</td>
+<td align="left">70,527</td>
+<td align="right">12.8</td>
+</tr>
+<tr>
+<td align="left">SK Augsburg</td>
+<td align="right">73</td>
+<td align="left">295,135</td>
+<td align="right">24.7</td>
+</tr>
+<tr>
+<td align="left">SK Baden-Baden</td>
+<td align="right">5</td>
+<td align="left">55,123</td>
+<td align="right">9.1</td>
+</tr>
+<tr>
+<td align="left">SK Bamberg</td>
+<td align="right">11</td>
+<td align="left">77,592</td>
+<td align="right">14.2</td>
+</tr>
+<tr>
+<td align="left">SK Bayreuth</td>
+<td align="right">10</td>
+<td align="left">74,657</td>
+<td align="right">13.4</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Charlottenburg-Wilmersdorf</td>
+<td align="right">81</td>
+<td align="left">342,332</td>
+<td align="right">23.7</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Friedrichshain-Kreuzberg</td>
+<td align="right">113</td>
+<td align="left">289,762</td>
+<td align="right">39</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Lichtenberg</td>
+<td align="right">67</td>
+<td align="left">291,452</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Marzahn-Hellersdorf</td>
+<td align="right">28</td>
+<td align="left">268,548</td>
+<td align="right">10.4</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Mitte</td>
+<td align="right">199</td>
+<td align="left">384,172</td>
+<td align="right">51.8</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Neukölln</td>
+<td align="right">144</td>
+<td align="left">329,691</td>
+<td align="right">43.7</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Pankow</td>
+<td align="right">55</td>
+<td align="left">407,765</td>
+<td align="right">13.5</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Reinickendorf</td>
+<td align="right">76</td>
+<td align="left">265,225</td>
+<td align="right">28.7</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Spandau</td>
+<td align="right">42</td>
+<td align="left">243,977</td>
+<td align="right">17.2</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Steglitz-Zehlendorf</td>
+<td align="right">36</td>
+<td align="left">308,697</td>
+<td align="right">11.7</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Tempelhof-Schöneberg</td>
+<td align="right">77</td>
+<td align="left">351,644</td>
+<td align="right">21.9</td>
+</tr>
+<tr>
+<td align="left">SK Berlin Treptow-Köpenick</td>
+<td align="right">28</td>
+<td align="left">271,153</td>
+<td align="right">10.3</td>
+</tr>
+<tr>
+<td align="left">SK Bielefeld</td>
+<td align="right">87</td>
+<td align="left">333,786</td>
+<td align="right">26.1</td>
+</tr>
+<tr>
+<td align="left">SK Bochum</td>
+<td align="right">159</td>
+<td align="left">364,628</td>
+<td align="right">43.6</td>
+</tr>
+<tr>
+<td align="left">SK Bonn</td>
+<td align="right">94</td>
+<td align="left">327,258</td>
+<td align="right">28.7</td>
+</tr>
+<tr>
+<td align="left">SK Bottrop</td>
+<td align="right">17</td>
+<td align="left">117,383</td>
+<td align="right">14.5</td>
+</tr>
+<tr>
+<td align="left">SK Brandenburg a.d.Havel</td>
+<td align="right">3</td>
+<td align="left">72,124</td>
+<td align="right">4.2</td>
+</tr>
+<tr>
+<td align="left">SK Braunschweig</td>
+<td align="right">15</td>
+<td align="left">248,292</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td align="left">SK Bremen</td>
+<td align="right">76</td>
+<td align="left">569,352</td>
+<td align="right">13.3</td>
+</tr>
+<tr>
+<td align="left">SK Bremerhaven</td>
+<td align="right">11</td>
+<td align="left">113,634</td>
+<td align="right">9.7</td>
+</tr>
+<tr>
+<td align="left">SK Chemnitz</td>
+<td align="right">9</td>
+<td align="left">247,237</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="left">SK Coburg</td>
+<td align="right">6</td>
+<td align="left">41,249</td>
+<td align="right">14.5</td>
+</tr>
+<tr>
+<td align="left">SK Cottbus</td>
+<td align="right">2</td>
+<td align="left">100,219</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">SK Darmstadt</td>
+<td align="right">40</td>
+<td align="left">159,207</td>
+<td align="right">25.1</td>
+</tr>
+<tr>
+<td align="left">SK Delmenhorst</td>
+<td align="right">7</td>
+<td align="left">77,607</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td align="left">SK Dessau-Roßlau</td>
+<td align="right">5</td>
+<td align="left">81,237</td>
+<td align="right">6.2</td>
+</tr>
+<tr>
+<td align="left">SK Dortmund</td>
+<td align="right">194</td>
+<td align="left">587,010</td>
+<td align="right">33</td>
+</tr>
+<tr>
+<td align="left">SK Dresden</td>
+<td align="right">20</td>
+<td align="left">554,649</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="left">SK Duisburg</td>
+<td align="right">257</td>
+<td align="left">498,590</td>
+<td align="right">51.5</td>
+</tr>
+<tr>
+<td align="left">SK Düsseldorf</td>
+<td align="right">229</td>
+<td align="left">619,294</td>
+<td align="right">37</td>
+</tr>
+<tr>
+<td align="left">SK Emden</td>
+<td align="right">8</td>
+<td align="left">50,195</td>
+<td align="right">15.9</td>
+</tr>
+<tr>
+<td align="left">SK Erfurt</td>
+<td align="right">16</td>
+<td align="left">213,699</td>
+<td align="right">7.5</td>
+</tr>
+<tr>
+<td align="left">SK Erlangen</td>
+<td align="right">14</td>
+<td align="left">111,962</td>
+<td align="right">12.5</td>
+</tr>
+<tr>
+<td align="left">SK Essen</td>
+<td align="right">212</td>
+<td align="left">583,109</td>
+<td align="right">36.4</td>
+</tr>
+<tr>
+<td align="left">SK Flensburg</td>
+<td align="right">12</td>
+<td align="left">89,504</td>
+<td align="right">13.4</td>
+</tr>
+<tr>
+<td align="left">SK Frankenthal</td>
+<td align="right">12</td>
+<td align="left">48,561</td>
+<td align="right">24.7</td>
+</tr>
+<tr>
+<td align="left">SK Frankfurt (Oder)</td>
+<td align="right">18</td>
+<td align="left">57,873</td>
+<td align="right">31.1</td>
+</tr>
+<tr>
+<td align="left">SK Frankfurt am Main</td>
+<td align="right">351</td>
+<td align="left">753,056</td>
+<td align="right">46.6</td>
+</tr>
+<tr>
+<td align="left">SK Freiburg i.Breisgau</td>
+<td align="right">35</td>
+<td align="left">230,241</td>
+<td align="right">15.2</td>
+</tr>
+<tr>
+<td align="left">SK Fürth</td>
+<td align="right">23</td>
+<td align="left">127,748</td>
+<td align="right">18</td>
+</tr>
+<tr>
+<td align="left">SK Gelsenkirchen</td>
+<td align="right">103</td>
+<td align="left">260,654</td>
+<td align="right">39.5</td>
+</tr>
+<tr>
+<td align="left">SK Gera</td>
+<td align="right">7</td>
+<td align="left">94,152</td>
+<td align="right">7.4</td>
+</tr>
+<tr>
+<td align="left">SK Hagen</td>
+<td align="right">89</td>
+<td align="left">188,814</td>
+<td align="right">47.1</td>
+</tr>
+<tr>
+<td align="left">SK Halle</td>
+<td align="right">17</td>
+<td align="left">239,257</td>
+<td align="right">7.1</td>
+</tr>
+<tr>
+<td align="left">SK Hamburg</td>
+<td align="right">343</td>
+<td align="left">1,841,179</td>
+<td align="right">18.6</td>
+</tr>
+<tr>
+<td align="left">SK Hamm</td>
+<td align="right">61</td>
+<td align="left">179,111</td>
+<td align="right">34.1</td>
+</tr>
+<tr>
+<td align="left">SK Heidelberg</td>
+<td align="right">22</td>
+<td align="left">160,355</td>
+<td align="right">13.7</td>
+</tr>
+<tr>
+<td align="left">SK Heilbronn</td>
+<td align="right">37</td>
+<td align="left">125,960</td>
+<td align="right">29.4</td>
+</tr>
+<tr>
+<td align="left">SK Herne</td>
+<td align="right">82</td>
+<td align="left">156,374</td>
+<td align="right">52.4</td>
+</tr>
+<tr>
+<td align="left">SK Hof</td>
+<td align="right">12</td>
+<td align="left">45,930</td>
+<td align="right">26.1</td>
+</tr>
+<tr>
+<td align="left">SK Ingolstadt</td>
+<td align="right">64</td>
+<td align="left">136,981</td>
+<td align="right">46.7</td>
+</tr>
+<tr>
+<td align="left">SK Jena</td>
+<td align="right">5</td>
+<td align="left">111,407</td>
+<td align="right">4.5</td>
+</tr>
+<tr>
+<td align="left">SK Kaiserslautern</td>
+<td align="right">13</td>
+<td align="left">99,845</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td align="left">SK Karlsruhe</td>
+<td align="right">41</td>
+<td align="left">313,092</td>
+<td align="right">13.1</td>
+</tr>
+<tr>
+<td align="left">SK Kassel</td>
+<td align="right">73</td>
+<td align="left">201,585</td>
+<td align="right">36.2</td>
+</tr>
+<tr>
+<td align="left">SK Kaufbeuren</td>
+<td align="right">6</td>
+<td align="left">43,893</td>
+<td align="right">13.7</td>
+</tr>
+<tr>
+<td align="left">SK Kempten</td>
+<td align="right">11</td>
+<td align="left">68,907</td>
+<td align="right">16</td>
+</tr>
+<tr>
+<td align="left">SK Kiel</td>
+<td align="right">60</td>
+<td align="left">247,548</td>
+<td align="right">24.2</td>
+</tr>
+<tr>
+<td align="left">SK Koblenz</td>
+<td align="right">27</td>
+<td align="left">114,024</td>
+<td align="right">23.7</td>
+</tr>
+<tr>
+<td align="left">SK Krefeld</td>
+<td align="right">38</td>
+<td align="left">227,020</td>
+<td align="right">16.7</td>
+</tr>
+<tr>
+<td align="left">SK Köln</td>
+<td align="right">299</td>
+<td align="left">1,085,664</td>
+<td align="right">27.5</td>
+</tr>
+<tr>
+<td align="left">SK Landau i.d.Pfalz</td>
+<td align="right">6</td>
+<td align="left">46,677</td>
+<td align="right">12.9</td>
+</tr>
+<tr>
+<td align="left">SK Landshut</td>
+<td align="right">17</td>
+<td align="left">72,404</td>
+<td align="right">23.5</td>
+</tr>
+<tr>
+<td align="left">SK Leipzig</td>
+<td align="right">35</td>
+<td align="left">587,857</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td align="left">SK Leverkusen</td>
+<td align="right">55</td>
+<td align="left">163,838</td>
+<td align="right">33.6</td>
+</tr>
+<tr>
+<td align="left">SK Ludwigshafen</td>
+<td align="right">73</td>
+<td align="left">171,061</td>
+<td align="right">42.7</td>
+</tr>
+<tr>
+<td align="left">SK Lübeck</td>
+<td align="right">21</td>
+<td align="left">217,198</td>
+<td align="right">9.7</td>
+</tr>
+<tr>
+<td align="left">SK Magdeburg</td>
+<td align="right">28</td>
+<td align="left">238,697</td>
+<td align="right">11.7</td>
+</tr>
+<tr>
+<td align="left">SK Mainz</td>
+<td align="right">72</td>
+<td align="left">217,118</td>
+<td align="right">33.2</td>
+</tr>
+<tr>
+<td align="left">SK Mannheim</td>
+<td align="right">78</td>
+<td align="left">309,370</td>
+<td align="right">25.2</td>
+</tr>
+<tr>
+<td align="left">SK Memmingen</td>
+<td align="right">14</td>
+<td align="left">43,837</td>
+<td align="right">31.9</td>
+</tr>
+<tr>
+<td align="left">SK Mönchengladbach</td>
+<td align="right">79</td>
+<td align="left">261,454</td>
+<td align="right">30.2</td>
+</tr>
+<tr>
+<td align="left">SK Mülheim a.d.Ruhr</td>
+<td align="right">43</td>
+<td align="left">170,880</td>
+<td align="right">25.2</td>
+</tr>
+<tr>
+<td align="left">SK München</td>
+<td align="right">597</td>
+<td align="left">1,471,508</td>
+<td align="right">40.6</td>
+</tr>
+<tr>
+<td align="left">SK Münster</td>
+<td align="right">68</td>
+<td align="left">314,319</td>
+<td align="right">21.6</td>
+</tr>
+<tr>
+<td align="left">SK Neumünster</td>
+<td align="right">11</td>
+<td align="left">79,487</td>
+<td align="right">13.8</td>
+</tr>
+<tr>
+<td align="left">SK Neustadt a.d.Weinstraße</td>
+<td align="right">12</td>
+<td align="left">53,148</td>
+<td align="right">22.6</td>
+</tr>
+<tr>
+<td align="left">SK Nürnberg</td>
+<td align="right">136</td>
+<td align="left">518,365</td>
+<td align="right">26.2</td>
+</tr>
+<tr>
+<td align="left">SK Oberhausen</td>
+<td align="right">50</td>
+<td align="left">210,829</td>
+<td align="right">23.7</td>
+</tr>
+<tr>
+<td align="left">SK Offenbach</td>
+<td align="right">102</td>
+<td align="left">128,744</td>
+<td align="right">79.2</td>
+</tr>
+<tr>
+<td align="left">SK Oldenburg</td>
+<td align="right">15</td>
+<td align="left">168,210</td>
+<td align="right">8.9</td>
+</tr>
+<tr>
+<td align="left">SK Osnabrück</td>
+<td align="right">43</td>
+<td align="left">164,748</td>
+<td align="right">26.1</td>
+</tr>
+<tr>
+<td align="left">SK Passau</td>
+<td align="right">8</td>
+<td align="left">52,469</td>
+<td align="right">15.2</td>
+</tr>
+<tr>
+<td align="left">SK Pforzheim</td>
+<td align="right">30</td>
+<td align="left">125,542</td>
+<td align="right">23.9</td>
+</tr>
+<tr>
+<td align="left">SK Pirmasens</td>
+<td align="right">2</td>
+<td align="left">40,403</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td align="left">SK Potsdam</td>
+<td align="right">12</td>
+<td align="left">178,089</td>
+<td align="right">6.7</td>
+</tr>
+<tr>
+<td align="left">SK Regensburg</td>
+<td align="right">22</td>
+<td align="left">152,610</td>
+<td align="right">14.4</td>
+</tr>
+<tr>
+<td align="left">SK Remscheid</td>
+<td align="right">32</td>
+<td align="left">110,994</td>
+<td align="right">28.8</td>
+</tr>
+<tr>
+<td align="left">SK Rosenheim</td>
+<td align="right">28</td>
+<td align="left">63,324</td>
+<td align="right">44.2</td>
+</tr>
+<tr>
+<td align="left">SK Rostock</td>
+<td align="right">15</td>
+<td align="left">208,886</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="left">SK Salzgitter</td>
+<td align="right">25</td>
+<td align="left">104,948</td>
+<td align="right">23.8</td>
+</tr>
+<tr>
+<td align="left">SK Schwabach</td>
+<td align="right">2</td>
+<td align="left">40,792</td>
+<td align="right">4.9</td>
+</tr>
+<tr>
+<td align="left">SK Schweinfurt</td>
+<td align="right">5</td>
+<td align="left">54,032</td>
+<td align="right">9.3</td>
+</tr>
+<tr>
+<td align="left">SK Schwerin</td>
+<td align="right">3</td>
+<td align="left">95,818</td>
+<td align="right">3.1</td>
+</tr>
+<tr>
+<td align="left">SK Solingen</td>
+<td align="right">33</td>
+<td align="left">159,360</td>
+<td align="right">20.7</td>
+</tr>
+<tr>
+<td align="left">SK Speyer</td>
+<td align="right">19</td>
+<td align="left">50,378</td>
+<td align="right">37.7</td>
+</tr>
+<tr>
+<td align="left">SK Straubing</td>
+<td align="right">12</td>
+<td align="left">47,794</td>
+<td align="right">25.1</td>
+</tr>
+<tr>
+<td align="left">SK Stuttgart</td>
+<td align="right">160</td>
+<td align="left">634,830</td>
+<td align="right">25.2</td>
+</tr>
+<tr>
+<td align="left">SK Suhl</td>
+<td align="right">5</td>
+<td align="left">34,835</td>
+<td align="right">14.4</td>
+</tr>
+<tr>
+<td align="left">SK Trier</td>
+<td align="right">22</td>
+<td align="left">110,636</td>
+<td align="right">19.9</td>
+</tr>
+<tr>
+<td align="left">SK Ulm</td>
+<td align="right">44</td>
+<td align="left">126,329</td>
+<td align="right">34.8</td>
+</tr>
+<tr>
+<td align="left">SK Weiden i.d.OPf.</td>
+<td align="right">5</td>
+<td align="left">42,520</td>
+<td align="right">11.8</td>
+</tr>
+<tr>
+<td align="left">SK Weimar</td>
+<td align="right">5</td>
+<td align="left">65,090</td>
+<td align="right">7.7</td>
+</tr>
+<tr>
+<td align="left">SK Wiesbaden</td>
+<td align="right">124</td>
+<td align="left">278,342</td>
+<td align="right">44.5</td>
+</tr>
+<tr>
+<td align="left">SK Wolfsburg</td>
+<td align="right">26</td>
+<td align="left">124,151</td>
+<td align="right">20.9</td>
+</tr>
+<tr>
+<td align="left">SK Worms</td>
+<td align="right">22</td>
+<td align="left">83,330</td>
+<td align="right">26.4</td>
+</tr>
+<tr>
+<td align="left">SK Wuppertal</td>
+<td align="right">165</td>
+<td align="left">354,382</td>
+<td align="right">46.6</td>
+</tr>
+<tr>
+<td align="left">SK Würzburg</td>
+<td align="right">7</td>
+<td align="left">127,880</td>
+<td align="right">5.5</td>
+</tr>
+<tr>
+<td align="left">SK Zweibrücken</td>
+<td align="right">2</td>
+<td align="left">34,209</td>
+<td align="right">5.8</td>
+</tr>
+<tr>
+<td align="left">StadtRegion Aachen</td>
+<td align="right">109</td>
+<td align="left">555,465</td>
+<td align="right">19.6</td>
+</tr>
+<tr>
+<td align="left"><a href="./data-sources.html">Data sources </a></td>
+<td align="right"></td>
+<td align="left"></td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+  </div>
+
+
+
+        </div>
+
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2020-08-22T00:49:00+02:00"><i class="fa fa-calendar"></i> Sat 22 August 2020</abbr></p>
+
+
+    <hr/>
+
+      <p>
+              <a href="./category-all.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="29 articles in this category">All</a>
+            <a href="/tag-data.html" data-toggle="tooltip"
+      class="label label-default"
+      title="21 articles with this tag">Data</a>
+            <a href="/tag-plots.html" data-toggle="tooltip"
+      class="label label-default"
+      title="11 articles with this tag">Plots</a>
+            <a href="/tag-14-day-incidence-rates-germany.html" data-toggle="tooltip"
+      class="label label-default"
+      title="1 article with this tag">14 Day Incidence Rates:  Germany</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://twitter.com/OSCOVIDAproject">
+      <i class="fa fa-twitter"></i>
+    Open Science COVID Analysis
+  </a></li>
+                  <li>  <a href="https://twitter.com/Panosc_eu">
+      <i class="fa fa-twitter"></i>
+    PaNOSC
+  </a></li>
+                  <li>  <a href="https://twitter.com/ProfCompMod">
+      <i class="fa fa-twitter"></i>
+    ProfCompMod
+  </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="http://oscovida.github.io">
+      <i class="fa fa-external-link"></i>
+    OSCOVIDA project
+  </a></li>
+                  <li>  <a href="http://www.panosc.eu">
+      <i class="fa fa-external-link"></i>
+    PaNOSC project
+  </a></li>
+                  <li>  <a href="mailto:oscovidaproject@gmail.com">
+      <i class="fa fa-envelope"></i>
+    OSCOVIDA
+  </a></li>
+                </ul>
+            </div>
+
+          <div class="col-md-2">
+            <h5>Browse content by</h5>
+            <ul class="list-unstyled">
+                <li><a href="./archives-index.html"><i class="fa fa-calendar"></i> Dates</a></li>
+                <li><a href="./tags-index.html"><i class="fa fa-tag"></i> Tags</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2020 OSCOVIDA team.</p>
+              <p>Unless contrary mentioned, the content of this site is published under a <a rel='license'
+href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons
+Attribution 4.0 International license</a>. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Disclaimer</h5>
+              <p>Plots, data and software here are provided <a href="https://github.com/oscovida/oscovida/blob/master/LICENSE#L20">as-is without any warranties</a> by volunteers. Use the material at your own risk. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>
+          </div>
+
+          <div class="col-md-2">
+              <h5>Feeds</h5>
+              <ul class="list-unstyled">
+                  <li><small><a href="https://oscovida.github.io/feeds/all.atom.xml"><i class="fa fa-rss"></i> All posts (Atom)</a></small></li>
+              </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <h5 class="text-right"><a href="#"><i class="fa fa-arrow-up"></i> Back to top</a></h5>
+
+      <div class="container">
+        <div class="row col-md-12 text-muted text-center">
+          Site generated by <a href="https://getpelican.com"> Pelican</a>.<br/>
+          <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="https://kevin.deldycke.com">Kevin Deldycke</a>.
+        </div>
+      </div>
+
+    </footer>
+
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-163845056-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="./theme/js/jquery.mglass.js"></script>
+    <script src="./theme/js/application.js"></script>
+
+    <script>
+      document.getElementsByTagName("table")[0].setAttribute("id", "data_table");
+    </script>
+
+  </body>
+</html>

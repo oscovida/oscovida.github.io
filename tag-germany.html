@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>  Germany
+    <title>  germany
  | OSCOVIDA: Open Science COVID Analysis</title>
 
     <meta name="author" content="OSCOVIDA team"/>
@@ -25,7 +25,20 @@
     <script type="text/javascript" class="init">
       $(document).ready(function() {
           $('#data_table').DataTable( {
-              "order": [[ 3, "desc" ]]
+              "rowCallback": function( row, data, index ) {
+                  if ( data[4] == "True" ) // 4th column is a flag to set the colour red
+                  {
+                      $('td', row).css('background-color', 'LightPink');
+                  }
+              },
+              "order": [[ 3, "desc" ]],
+              "lengthMenu": [[10, 25, 50, 500, -1], [10, 25, 50, 500, "All"]],
+              "pageLength": -1,
+              "columnDefs": [
+                { "type": "string", "targets": 0 },
+                { "type": "num-fmt", "targets": "_all" },
+                { "visible": false,  "targets": [ 4 ] } // hide flag column
+              ]
           } );
       } );
     </script>
@@ -114,7 +127,7 @@
       <div class="row">
         <div class=" col-md-12  ">
   <h1>
-    <a  href="./tag-germany.html" rel="bookmark" title="Permalink to Germany articles">Germany articles</a>
+    <a  href="./tag-germany.html" rel="bookmark" title="Permalink to germany articles">germany articles</a>
   </h1>
         </div>
       </div>
@@ -124,7 +137,9 @@
 
         <div class=" col-md-12 " id="content" role="main">
   <dl class="dl-horizontal">
-      <dt><abbr class="published" title="2020-04-30T10:00:00+02:00">Thu 30 April 2020</abbr></dt>
+      <dt>Sun 23 August 2020</dt>
+      <dd><a href="./2020-are-summer-holidays-causing-increased-infections.html">Are the summer holidays in Germany creating an increase in infections?</a></dd>
+      <dt>Thu 30 April 2020</dt>
       <dd><a href="./2020-04-30-news-report-germanys-daily-cases-increasing.html">BBC news reports "Germany's daily cases increasing"</a></dd>
   </dl>
         </div>

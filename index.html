@@ -25,7 +25,20 @@
     <script type="text/javascript" class="init">
       $(document).ready(function() {
           $('#data_table').DataTable( {
-              "order": [[ 3, "desc" ]]
+              "rowCallback": function( row, data, index ) {
+                  if ( data[4] == "True" ) // 4th column is a flag to set the colour red
+                  {
+                      $('td', row).css('background-color', 'LightPink');
+                  }
+              },
+              "order": [[ 3, "desc" ]],
+              "lengthMenu": [[10, 25, 50, 500, -1], [10, 25, 50, 500, "All"]],
+              "pageLength": -1,
+              "columnDefs": [
+                { "type": "string", "targets": 0 },
+                { "type": "num-fmt", "targets": "_all" },
+                { "visible": false,  "targets": [ 4 ] } // hide flag column
+              ]
           } );
       } );
     </script>
@@ -144,7 +157,7 @@ social distancing and support for other containment measures.</p>
 <p>Occasionally, we try to provide <a class="reference external" href="tag-analysis.html">additional discussion COVID19 related news and numbers</a>.</p>
 <p>You can <a class="reference external" href="https://mybinder.org/v2/gh/oscovida/binder/master?filepath=ipynb">fire up your own analysis environment in the cloud, select the relevant analysis notebook yourself, re-execute or extend the analysis</a>. See also our (growing) <a class="reference external" href="tag-tutorial.html">set of tutorials</a>.</p>
 <hr class="docutils" />
-<a href="html/Peru.html"><img class="noZoom img-responsive" src="./fig-homepage-example-plot.svg"></a><hr class="docutils" />
+<a href="html/Russia.html"><img class="noZoom img-responsive" src="./fig-homepage-example-plot.svg"></a><hr class="docutils" />
 <p>If you want to <a class="reference external" href="contribute.html">contribute</a>, please either join our <a class="reference external" href="https://oscovida.zulipchat.com">Zulip
 chat instance here</a> or <a class="reference external" href="mailto:oscovidaproject&#64;gmail.com">get in
 touch</a>. Ideas, suggestions and

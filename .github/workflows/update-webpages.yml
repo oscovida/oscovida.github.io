@@ -1,0 +1,71 @@
+name: Update Webpages
+
+on:
+  schedule:
+    - cron:  '0 7,19 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-webpage:
+    runs-on: self-hosted
+    steps:
+
+        #  Broken on self-hosted runner for some reason
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Checkout oscovida
+        uses: actions/checkout@v2
+        with:
+          repository: oscovida/oscovida
+
+      - name: Checkout oscovida.github.io
+        uses: actions/checkout@v2
+        with:
+          path: tools/wwwroot
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+
+      - name: Set up oscovida
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install .
+
+      - name: Run pre-generate hook
+        run: |
+          source .venv/bin/activate
+          ./tools/oscovida.github.io/pre-generate.sh
+
+      - name: Generate new reports
+        run: |
+          source .venv/bin/activate
+          cd tools
+          python3 -m report_generators.cli --regions=all --force --workers=max --log-level=INFO --log-file=./wwwroot/report-gen.log
+
+      - name: Run post-generate hook
+        run: |
+          source .venv/bin/activate
+          ./tools/oscovida.github.io/post-generate.sh
+
+      - name: Update HTML pages
+        run: |
+          source .venv/bin/activate
+          cd tools/pelican
+          make publish
+
+      - name: Commit files
+        run: |
+          cd tools/wwwroot
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add * --all
+          git commit -m "Update $(date)" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: tools/wwwroot

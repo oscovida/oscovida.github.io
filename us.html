@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>  Tracking plots: United States
+ | OSCOVIDA: Open Science COVID Analysis</title>
+
+    <meta name="author" content="OSCOVIDA team"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="./theme/css/pygment-solarized-dark.css"/>
+    <!-- <link rel="stylesheet" href="./theme/css/style.css"/> -->
+    <link rel="stylesheet" href="./theme/css/minimalist-style.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" class="init">
+      $(document).ready(function() {
+          $('#data_table').DataTable( {
+              "rowCallback": function( row, data, index ) {
+                  if ( data[4] == "True" ) // 4th column is a flag to set the colour red
+                  {
+                      $('td', row).css('background-color', 'LightPink');
+                  }
+              },
+              "order": [[ 3, "desc" ]],
+              "lengthMenu": [[10, 25, 50, 500, -1], [10, 25, 50, 500, "All"]],
+              "pageLength": -1,
+              "columnDefs": [
+                { "type": "string", "targets": 0 },
+                { "type": "num-fmt", "targets": "_all" },
+                { "visible": false,  "targets": [ 4 ] } // hide flag column
+              ]
+          } );
+      } );
+    </script>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+      <link href="https://oscovida.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="OSCOVIDA: Open Science COVID Analysis - All posts - Atom Feed"/>
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><a href=".">OSCOVIDA: Open Science COVID Analysis</a> <small></small></h1>
+      </div>
+
+      <nav class="navbar navbar-default">
+
+        <!-- Hamburger menu for mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#plumage-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="." title="">OSCOVIDA: Open Science COVID Analysis</a>
+        </div>
+
+        <!-- Menus and search forms -->
+        <div class="collapse navbar-collapse" id="plumage-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+<li >
+                <a href="index.html">Home</a>
+              </li>
+<li >
+                <a href="all-regions.html">All regions</a>
+              </li>
+<li >
+                <a href="countries.html">Countries</a>
+              </li>
+<li >
+                <a href="germany.html">Germany</a>
+              </li>
+<li >
+                <a href="us.html">US</a>
+              </li>
+<li >
+                <a href="hungary.html">Hungary</a>
+              </li>
+<li >
+                <a href="category-all.html">Articles</a>
+              </li>
+<li >
+                <a href="tag-analysis">Analysis</a>
+              </li>
+<li >
+                <a href="tag-about.html">About</a>
+              </li>
+          </ul>
+
+
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="container main">
+
+
+      <div class="row">
+        <div class=" col-md-9  ">
+  <h1>
+    <a href="./us.html" rel="bookmark" title="Permalink to Tracking plots: United States">Tracking plots:  United States</a>
+  </h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <table>
+<thead>
+<tr>
+<th align="left">Location</th>
+<th align="left">Total cases</th>
+<th align="left">Total deaths</th>
+<th align="left">New cases last week</th>
+<th align="left">FLAG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="html/US-Florida.html">US: Florida</a></td>
+<td align="left">1,676,171</td>
+<td align="left">25,833</td>
+<td align="left">75,160</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Louisiana.html">US: Louisiana</a></td>
+<td align="left">392,416</td>
+<td align="left">8,688</td>
+<td align="left">17,834</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Diamond-Princess.html">US: Diamond Princess</a></td>
+<td align="left">49</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Mississippi.html">US: Mississippi</a></td>
+<td align="left">268,672</td>
+<td align="left">5,917</td>
+<td align="left">11,845</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Michigan.html">US: Michigan</a></td>
+<td align="left">604,233</td>
+<td align="left">15,314</td>
+<td align="left">14,364</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Connecticut.html">US: Connecticut</a></td>
+<td align="left">247,339</td>
+<td align="left">6,976</td>
+<td align="left">13,205</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Wisconsin.html">US: Wisconsin</a></td>
+<td align="left">585,600</td>
+<td align="left">6,302</td>
+<td align="left">12,481</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Wyoming.html">US: Wyoming</a></td>
+<td align="left">51,368</td>
+<td align="left">596</td>
+<td align="left">1,244</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Nebraska.html">US: Nebraska</a></td>
+<td align="left">188,784</td>
+<td align="left">1,917</td>
+<td align="left">4,302</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-South-Carolina.html">US: South Carolina</a></td>
+<td align="left">427,231</td>
+<td align="left">6,673</td>
+<td align="left">27,388</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Grand-Princess.html">US: Grand Princess</a></td>
+<td align="left">103</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Kansas.html">US: Kansas</a></td>
+<td align="left">274,746</td>
+<td align="left">3,707</td>
+<td align="left">9,224</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Illinois.html">US: Illinois</a></td>
+<td align="left">1,112,181</td>
+<td align="left">20,949</td>
+<td align="left">30,827</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Georgia.html">US: Georgia</a></td>
+<td align="left">885,605</td>
+<td align="left">13,643</td>
+<td align="left">48,956</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Kentucky.html">US: Kentucky</a></td>
+<td align="left">352,934</td>
+<td align="left">3,542</td>
+<td align="left">18,614</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Rhode-Island.html">US: Rhode Island</a></td>
+<td align="left">113,009</td>
+<td align="left">2,135</td>
+<td align="left">5,133</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-New-Hampshire.html">US: New Hampshire</a></td>
+<td align="left">63,563</td>
+<td align="left">1,006</td>
+<td align="left">4,126</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Hawaii.html">US: Hawaii</a></td>
+<td align="left">25,652</td>
+<td align="left">403</td>
+<td align="left">815</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Nevada.html">US: Nevada</a></td>
+<td align="left">273,873</td>
+<td align="left">4,134</td>
+<td align="left">8,730</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Missouri.html">US: Missouri</a></td>
+<td align="left">467,531</td>
+<td align="left">6,988</td>
+<td align="left">11,706</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-New-Mexico.html">US: New Mexico</a></td>
+<td align="left">171,047</td>
+<td align="left">3,198</td>
+<td align="left">5,212</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Guam.html">US: Guam</a></td>
+<td align="left">7,568</td>
+<td align="left">129</td>
+<td align="left">47</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Massachusetts.html">US: Massachusetts</a></td>
+<td align="left">509,503</td>
+<td align="left">14,304</td>
+<td align="left">28,463</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Arkansas.html">US: Arkansas</a></td>
+<td align="left">288,964</td>
+<td align="left">4,742</td>
+<td align="left">12,850</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-New-York.html">US: New York</a></td>
+<td align="left">1,369,072</td>
+<td align="left">42,887</td>
+<td align="left">89,261</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Northern-Mariana-Islands.html">US: Northern Mariana Islands</a></td>
+<td align="left">132</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Colorado.html">US: Colorado</a></td>
+<td align="left">390,296</td>
+<td align="left">5,552</td>
+<td align="left">11,069</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Arizona.html">US: Arizona</a></td>
+<td align="left">738,561</td>
+<td align="left">12,643</td>
+<td align="left">48,017</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Maine.html">US: Maine</a></td>
+<td align="left">38,170</td>
+<td align="left">562</td>
+<td align="left">3,207</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Washington.html">US: Washington</a></td>
+<td align="left">305,289</td>
+<td align="left">4,211</td>
+<td align="left">11,272</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-District-of-Columbia.html">US: District of Columbia</a></td>
+<td align="left">35,865</td>
+<td align="left">895</td>
+<td align="left">1,462</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Idaho.html">US: Idaho</a></td>
+<td align="left">161,212</td>
+<td align="left">1,714</td>
+<td align="left">3,624</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Delaware.html">US: Delaware</a></td>
+<td align="left">75,832</td>
+<td align="left">1,072</td>
+<td align="left">4,057</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Iowa.html">US: Iowa</a></td>
+<td align="left">316,114</td>
+<td align="left">4,500</td>
+<td align="left">7,327</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Tennessee.html">US: Tennessee</a></td>
+<td align="left">715,806</td>
+<td align="left">9,316</td>
+<td align="left">21,515</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Minnesota.html">US: Minnesota</a></td>
+<td align="left">457,317</td>
+<td align="left">6,192</td>
+<td align="left">7,825</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Montana.html">US: Montana</a></td>
+<td align="left">92,531</td>
+<td align="left">1,201</td>
+<td align="left">2,276</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-New-Jersey.html">US: New Jersey</a></td>
+<td align="left">676,537</td>
+<td align="left">21,220</td>
+<td align="left">35,397</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-North-Dakota.html">US: North Dakota</a></td>
+<td align="left">97,160</td>
+<td align="left">1,441</td>
+<td align="left">938</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Pennsylvania.html">US: Pennsylvania</a></td>
+<td align="left">822,582</td>
+<td align="left">21,032</td>
+<td align="left">34,998</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Virgin-Islands.html">US: Virgin Islands</a></td>
+<td align="left">2,373</td>
+<td align="left">24</td>
+<td align="left">68</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Ohio.html">US: Ohio</a></td>
+<td align="left">878,284</td>
+<td align="left">10,931</td>
+<td align="left">35,851</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Alabama.html">US: Alabama</a></td>
+<td align="left">449,086</td>
+<td align="left">7,172</td>
+<td align="left">19,431</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-West-Virginia.html">US: West Virginia</a></td>
+<td align="left">117,775</td>
+<td align="left">1,953</td>
+<td align="left">6,098</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Indiana.html">US: Indiana</a></td>
+<td align="left">617,176</td>
+<td align="left">9,845</td>
+<td align="left">18,863</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Alaska.html">US: Alaska</a></td>
+<td align="left">53,670</td>
+<td align="left">261</td>
+<td align="left">1,277</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-California.html">US: California</a></td>
+<td align="left">3,250,649</td>
+<td align="left">38,817</td>
+<td align="left">153,017</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Texas.html">US: Texas</a></td>
+<td align="left">2,309,220</td>
+<td align="left">35,877</td>
+<td align="left">123,666</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Utah.html">US: Utah</a></td>
+<td align="left">340,684</td>
+<td align="left">1,620</td>
+<td align="left">12,304</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Virginia.html">US: Virginia</a></td>
+<td align="left">488,553</td>
+<td align="left">6,228</td>
+<td align="left">32,962</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-American-Samoa.html">US: American Samoa</a></td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-South-Dakota.html">US: South Dakota</a></td>
+<td align="left">107,608</td>
+<td align="left">1,739</td>
+<td align="left">1,545</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Oklahoma.html">US: Oklahoma</a></td>
+<td align="left">379,110</td>
+<td align="left">3,388</td>
+<td align="left">18,750</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Maryland.html">US: Maryland</a></td>
+<td align="left">346,559</td>
+<td align="left">6,996</td>
+<td align="left">14,206</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Vermont.html">US: Vermont</a></td>
+<td align="left">11,379</td>
+<td align="left">172</td>
+<td align="left">908</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Oregon.html">US: Oregon</a></td>
+<td align="left">140,063</td>
+<td align="left">1,924</td>
+<td align="left">4,921</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-Puerto-Rico.html">US: Puerto Rico</a></td>
+<td align="left">92,244</td>
+<td align="left">1,794</td>
+<td align="left">3,731</td>
+<td align="left">False</td>
+</tr>
+<tr>
+<td align="left"><a href="html/US-North-Carolina.html">US: North Carolina</a></td>
+<td align="left">733,010</td>
+<td align="left">8,915</td>
+<td align="left">42,098</td>
+<td align="left">False</td>
+</tr>
+</tbody>
+</table>
+  </div>
+
+
+
+        </div>
+
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2021-01-28T10:16:00+01:00"><i class="fa fa-calendar"></i> Thu 28 January 2021</abbr></p>
+
+
+    <hr/>
+
+      <p>
+              <a href="./category-all.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="37 articles in this category">All</a>
+            <a href="/tag-data.html" data-toggle="tooltip"
+      class="label label-default"
+      title="22 articles with this tag">data</a>
+            <a href="/tag-plots.html" data-toggle="tooltip"
+      class="label label-default"
+      title="9 articles with this tag">plots</a>
+            <a href="/tag-tracking.html" data-toggle="tooltip"
+      class="label label-default"
+      title="7 articles with this tag">tracking</a>
+            <a href="/tag-us.html" data-toggle="tooltip"
+      class="label label-default"
+      title="2 articles with this tag">us</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://twitter.com/OSCOVIDAproject">
+      <i class="fa fa-twitter"></i>
+    Open Science COVID Analysis
+  </a></li>
+                  <li>  <a href="https://twitter.com/Panosc_eu">
+      <i class="fa fa-twitter"></i>
+    PaNOSC
+  </a></li>
+                  <li>  <a href="https://twitter.com/ProfCompMod">
+      <i class="fa fa-twitter"></i>
+    ProfCompMod
+  </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="http://oscovida.github.io">
+      <i class="fa fa-external-link"></i>
+    OSCOVIDA project
+  </a></li>
+                  <li>  <a href="http://www.panosc.eu">
+      <i class="fa fa-external-link"></i>
+    PaNOSC project
+  </a></li>
+                  <li>  <a href="mailto:oscovidaproject@gmail.com">
+      <i class="fa fa-envelope"></i>
+    OSCOVIDA
+  </a></li>
+                </ul>
+            </div>
+
+          <div class="col-md-2">
+            <h5>Browse content by</h5>
+            <ul class="list-unstyled">
+                <li><a href="./archives-index.html"><i class="fa fa-calendar"></i> Dates</a></li>
+                <li><a href="./tags-index.html"><i class="fa fa-tag"></i> Tags</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2020-2021 OSCOVIDA team.</p>
+              <p>Unless contrary mentioned, the content of this site is published under a <a rel='license'
+href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons
+Attribution 4.0 International license</a>. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Disclaimer</h5>
+              <p>Plots, data and software here are provided <a href="https://github.com/oscovida/oscovida/blob/master/LICENSE#L20">as-is without any warranties</a> by volunteers. Use the material at your own risk. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>
+          </div>
+
+          <div class="col-md-2">
+              <h5>Feeds</h5>
+              <ul class="list-unstyled">
+                  <li><small><a href="https://oscovida.github.io/feeds/all.atom.xml"><i class="fa fa-rss"></i> All posts (Atom)</a></small></li>
+              </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <h5 class="text-right"><a href="#"><i class="fa fa-arrow-up"></i> Back to top</a></h5>
+
+      <div class="container">
+        <div class="row col-md-12 text-muted text-center">
+          Site generated by <a href="https://getpelican.com"> Pelican</a>.<br/>
+          <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="https://kevin.deldycke.com">Kevin Deldycke</a>.
+        </div>
+      </div>
+
+    </footer>
+
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-163845056-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="./theme/js/jquery.mglass.js"></script>
+    <script src="./theme/js/application.js"></script>
+
+    <script>
+      document.getElementsByTagName("table")[0].setAttribute("id", "data_table");
+    </script>
+
+  </body>
+</html>

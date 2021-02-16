@@ -58,6 +58,8 @@ jobs:
 
       - name: Commit files
         run: |
+          tar -zcvf report-gen-log.tar.gz report-gen.log
+          rm -f ./report-gen.log
           cd tools/wwwroot
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"

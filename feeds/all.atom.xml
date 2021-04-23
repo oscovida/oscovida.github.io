@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>OSCOVIDA: Open Science COVID Analysis</title><link href="https://oscovida.github.io/" rel="alternate"></link><link href="https://oscovida.github.io/feeds/all.atom.xml" rel="self"></link><id>https://oscovida.github.io/</id><updated>2021-04-23T10:05:00+02:00</updated><entry><title>Tracking plots: All regions and countries</title><link href="https://oscovida.github.io/all-regions.html" rel="alternate"></link><published>2021-04-23T10:05:00+02:00</published><updated>2021-04-23T10:05:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/all-regions.html</id><summary type="html">&lt;table&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OSCOVIDA: Open Science COVID Analysis</title><link href="https://oscovida.github.io/" rel="alternate"></link><link href="https://oscovida.github.io/feeds/all.atom.xml" rel="self"></link><id>https://oscovida.github.io/</id><updated>2021-04-23T22:05:00+02:00</updated><entry><title>Tracking plots: All regions and countries</title><link href="https://oscovida.github.io/all-regions.html" rel="alternate"></link><published>2021-04-23T22:05:00+02:00</published><updated>2021-04-23T22:05:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/all-regions.html</id><summary type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Location&lt;/th&gt;
@@ -3455,9 +3455,9 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;&lt;a href="html/US.html"&gt;US&lt;/a&gt;&lt;/td&gt;
-&lt;td align="left"&gt;31,928,507&lt;/td&gt;
-&lt;td align="left"&gt;570,321&lt;/td&gt;
-&lt;td align="left"&gt;432,858&lt;/td&gt;
+&lt;td align="left"&gt;31,929,351&lt;/td&gt;
+&lt;td align="left"&gt;570,345&lt;/td&gt;
+&lt;td align="left"&gt;433,702&lt;/td&gt;
 &lt;td align="left"&gt;False&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -4826,7 +4826,7 @@
 &lt;td align="left"&gt;False&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="all-regions"></category></entry><entry><title>Tracking plots: Hungary</title><link href="https://oscovida.github.io/hungary.html" rel="alternate"></link><published>2021-04-23T10:05:00+02:00</published><updated>2021-04-23T10:05:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/hungary.html</id><summary type="html">&lt;table&gt;
+&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="all-regions"></category></entry><entry><title>Tracking plots: Hungary</title><link href="https://oscovida.github.io/hungary.html" rel="alternate"></link><published>2021-04-23T22:05:00+02:00</published><updated>2021-04-23T22:05:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/hungary.html</id><summary type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Location&lt;/th&gt;
@@ -5025,7 +5025,7 @@
 &lt;td align="left"&gt;False&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="hungary"></category></entry><entry><title>Tracking plots: United States</title><link href="https://oscovida.github.io/us.html" rel="alternate"></link><published>2021-04-23T10:05:00+02:00</published><updated>2021-04-23T10:05:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/us.html</id><summary type="html">&lt;table&gt;
+&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="hungary"></category></entry><entry><title>Tracking plots: United States</title><link href="https://oscovida.github.io/us.html" rel="alternate"></link><published>2021-04-23T22:05:00+02:00</published><updated>2021-04-23T22:05:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/us.html</id><summary type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Location&lt;/th&gt;
@@ -5485,7 +5485,7 @@
 &lt;td align="left"&gt;False&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="us"></category></entry><entry><title>Tracking plots: Germany</title><link href="https://oscovida.github.io/germany.html" rel="alternate"></link><published>2021-04-23T10:04:00+02:00</published><updated>2021-04-23T10:04:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/germany.html</id><summary type="html">&lt;p&gt;A list of districts (Landkreise) for Germany ordered according to &lt;a href="germany-incidence-rate.html"&gt;7-day incidence is available&lt;/a&gt;.&lt;/p&gt;
+&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="us"></category></entry><entry><title>Tracking plots: Germany</title><link href="https://oscovida.github.io/germany.html" rel="alternate"></link><published>2021-04-23T22:04:00+02:00</published><updated>2021-04-23T22:04:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/germany.html</id><summary type="html">&lt;p&gt;A list of districts (Landkreise) for Germany ordered according to &lt;a href="germany-incidence-rate.html"&gt;7-day incidence is available&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -8412,7 +8412,7 @@
 &lt;td align="left"&gt;False&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="germany"></category></entry><entry><title>7 Day Incidence Rates: Districts (Landkreise) in Germany</title><link href="https://oscovida.github.io/germany-incidence-rate-7day-50cases.html" rel="alternate"></link><published>2021-04-23T10:04:00+02:00</published><updated>2021-04-23T10:04:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/germany-incidence-rate-7day-50cases.html</id><summary type="html">&lt;p&gt;The searchable table below shows 7-day incidence
+&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="germany"></category></entry><entry><title>7 Day Incidence Rates: Districts (Landkreise) in Germany</title><link href="https://oscovida.github.io/germany-incidence-rate-7day-50cases.html" rel="alternate"></link><published>2021-04-23T22:04:00+02:00</published><updated>2021-04-23T22:04:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/germany-incidence-rate-7day-50cases.html</id><summary type="html">&lt;p&gt;The searchable table below shows 7-day incidence
 rate per 100,000. (&lt;a href="./14-day-incidence-rate.html"&gt;An explanation of the calculation is
 available&lt;/a&gt;), entries with this incidence rate
 greater than 50 are highlighted.&lt;/p&gt;
@@ -11341,7 +11341,7 @@ greater than 50 are highlighted.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;You can view our data sources &lt;a href="./data-sources.html"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="incidence"></category><category term="germany"></category></entry><entry><title>Tracking plots: Countries of the world</title><link href="https://oscovida.github.io/countries.html" rel="alternate"></link><published>2021-04-23T09:17:00+02:00</published><updated>2021-04-23T09:17:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/countries.html</id><summary type="html">&lt;p&gt;A list of countries ordered according to &lt;a href="countries-incidence-rate.html"&gt;7-day incidence is available&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can view our data sources &lt;a href="./data-sources.html"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="incidence"></category><category term="germany"></category></entry><entry><title>Tracking plots: Countries of the world</title><link href="https://oscovida.github.io/countries.html" rel="alternate"></link><published>2021-04-23T21:17:00+02:00</published><updated>2021-04-23T21:17:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/countries.html</id><summary type="html">&lt;p&gt;A list of countries ordered according to &lt;a href="countries-incidence-rate.html"&gt;7-day incidence is available&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -12379,9 +12379,9 @@ greater than 50 are highlighted.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;&lt;a href="html/US.html"&gt;US&lt;/a&gt;&lt;/td&gt;
-&lt;td align="left"&gt;31,928,507&lt;/td&gt;
-&lt;td align="left"&gt;570,321&lt;/td&gt;
-&lt;td align="left"&gt;432,858&lt;/td&gt;
+&lt;td align="left"&gt;31,929,351&lt;/td&gt;
+&lt;td align="left"&gt;570,345&lt;/td&gt;
+&lt;td align="left"&gt;433,702&lt;/td&gt;
 &lt;td align="left"&gt;False&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -12735,7 +12735,7 @@ greater than 50 are highlighted.&lt;/p&gt;
 &lt;td align="left"&gt;False&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="countries"></category></entry><entry><title>7 Day Incidence Rates: Countries of the world</title><link href="https://oscovida.github.io/countries-incidence-rate-7day-50cases.html" rel="alternate"></link><published>2021-04-23T09:17:00+02:00</published><updated>2021-04-23T09:17:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/countries-incidence-rate-7day-50cases.html</id><summary type="html">&lt;p&gt;The searchable table below shows 7-day incidence
+&lt;/table&gt;</content><category term="All"></category><category term="data"></category><category term="plots"></category><category term="tracking"></category><category term="countries"></category></entry><entry><title>7 Day Incidence Rates: Countries of the world</title><link href="https://oscovida.github.io/countries-incidence-rate-7day-50cases.html" rel="alternate"></link><published>2021-04-23T21:17:00+02:00</published><updated>2021-04-23T21:17:00+02:00</updated><author><name>OSCOVIDA team</name></author><id>tag:oscovida.github.io,2021-04-23:/countries-incidence-rate-7day-50cases.html</id><summary type="html">&lt;p&gt;The searchable table below shows 7-day incidence
 rate per 100,000. (&lt;a href="./14-day-incidence-rate.html"&gt;An explanation of the calculation is
 available&lt;/a&gt;), entries with this incidence rate
 greater than 50 are highlighted.&lt;/p&gt;
@@ -14027,8 +14027,8 @@ greater than 50 are highlighted.&lt;/p&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;&lt;a href="html/US.html"&gt;US&lt;/a&gt;&lt;/td&gt;
 &lt;td align="left"&gt;329,466,283&lt;/td&gt;
-&lt;td align="left"&gt;432,858&lt;/td&gt;
-&lt;td align="right"&gt;131.4&lt;/td&gt;
+&lt;td align="left"&gt;433,702&lt;/td&gt;
+&lt;td align="right"&gt;131.6&lt;/td&gt;
 &lt;td align="left"&gt;True&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

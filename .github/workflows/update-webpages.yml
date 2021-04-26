@@ -28,7 +28,7 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
-      - name: Set up oscovida
+      - name: Set up oscovida html builder venv
         run: |
           python -m venv .venv
           source .venv/bin/activate
@@ -50,9 +50,15 @@ jobs:
           source .venv/bin/activate
           ./tools/oscovida.github.io/post-generate.sh
 
+      - name: Set up pelican venv
+        run: |
+          python -m venv .venv_pelican
+          source .venv_pelican/bin/activate
+          pip install -r requirements_pelican.txt
+
       - name: Update HTML pages
         run: |
-          source .venv/bin/activate
+          source .venv_pelican/bin/activate
           cd tools/pelican
           make publish
 

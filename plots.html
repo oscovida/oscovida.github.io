@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>  Explanation of plots
+ | OSCOVIDA: Open Science COVID Analysis</title>
+
+    <meta name="author" content="OSCOVIDA team"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="./theme/css/pygment-solarized-dark.css"/>
+    <!-- <link rel="stylesheet" href="./theme/css/style.css"/> -->
+    <link rel="stylesheet" href="./theme/css/minimalist-style.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" class="init">
+      $(document).ready(function() {
+          $('#data_table').DataTable( {
+              "rowCallback": function( row, data, index ) {
+                  if ( data[4] == "True" ) // 4th column is a flag to set the colour red
+                  {
+                      $('td', row).css('background-color', 'LightPink');
+                  }
+              },
+              "order": [[ 3, "desc" ]],
+              "lengthMenu": [[10, 25, 50, 500, -1], [10, 25, 50, 500, "All"]],
+              "pageLength": -1,
+              "columnDefs": [
+                { "type": "string", "targets": 0 },
+                { "type": "num-fmt", "targets": "_all" },
+                { "visible": false,  "targets": [ 4 ] } // hide flag column
+              ]
+          } );
+      } );
+    </script>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+      <link href="https://oscovida.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="OSCOVIDA: Open Science COVID Analysis - All posts - Atom Feed"/>
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><a href=".">OSCOVIDA: Open Science COVID Analysis</a> <small></small></h1>
+      </div>
+
+      <nav class="navbar navbar-default">
+
+        <!-- Hamburger menu for mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#plumage-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="." title="">OSCOVIDA: Open Science COVID Analysis</a>
+        </div>
+
+        <!-- Menus and search forms -->
+        <div class="collapse navbar-collapse" id="plumage-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+<li >
+                <a href="index.html">Home</a>
+              </li>
+<li >
+                <a href="all-regions.html">All regions</a>
+              </li>
+<li >
+                <a href="countries.html">Countries</a>
+              </li>
+<li >
+                <a href="germany.html">Germany</a>
+              </li>
+<li >
+                <a href="us.html">US</a>
+              </li>
+<li >
+                <a href="hungary.html">Hungary</a>
+              </li>
+<li >
+                <a href="category-all.html">Articles</a>
+              </li>
+<li >
+                <a href="tag-analysis">Analysis</a>
+              </li>
+<li >
+                <a href="tag-about.html">About</a>
+              </li>
+          </ul>
+
+
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="container main">
+
+
+      <div class="row">
+        <div class=" col-md-9  ">
+  <h1>
+    <a href="./plots.html" rel="bookmark" title="Permalink to Explanation of plots">Explanation of plots</a>
+  </h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#plot-1-7-day-incidence-rate" id="toc-entry-1">Plot 1: 7-day incidence rate</a></li>
+<li><a class="reference internal" href="#plot-2-daily-changes-in-cases" id="toc-entry-2">Plot 2: daily changes in cases</a></li>
+<li><a class="reference internal" href="#plot-3-daily-changes-in-deaths" id="toc-entry-3">Plot 3: daily changes in deaths</a></li>
+<li><a class="reference internal" href="#plot-4-r-growth-factor-based-on-cases" id="toc-entry-4">Plot 4: R &amp; growth factor based on cases</a><ul>
+<li><a class="reference internal" href="#reproduction-number-r" id="toc-entry-5">Reproduction number R</a></li>
+<li><a class="reference internal" href="#daily-growth-factor" id="toc-entry-6">Daily growth factor</a></li>
+<li><a class="reference internal" href="#assessing-success-for-containment-measures" id="toc-entry-7">Assessing success for containment measures</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#plot-5-r-growth-factor-based-on-deaths" id="toc-entry-8">Plot 5: R &amp; growth factor based on deaths</a></li>
+<li><a class="reference internal" href="#plot-6-doubling-times" id="toc-entry-9">Plot 6: Doubling times</a></li>
+<li><a class="reference internal" href="#plot-7-comparison-of-daily-new-cases-with-other-countries" id="toc-entry-10">Plot 7: Comparison of daily new cases with other countries</a></li>
+<li><a class="reference internal" href="#plot-8-comparison-of-daily-new-deaths-with-other-countries" id="toc-entry-11">Plot 8: Comparison of daily new deaths with other countries</a></li>
+<li><a class="reference internal" href="#the-role-of-dashed-lines" id="toc-entry-12">The role of dashed lines</a></li>
+</ul>
+</div>
+<p>We discuss the plots from the top (number 1) to the bottom (number 8)
+that are available for <a class="reference external" href="all-regions.html">all regions</a>.</p>
+<div class="section" id="plot-1-7-day-incidence-rate">
+<h2><a class="toc-backref" href="#toc-entry-1">Plot 1: 7-day incidence rate</a></h2>
+<img src="./fig-uk-incidence.svg" alt="United Kingdom data"><ul class="simple">
+<li>Shows how many people have been confirmed to be infected
+during the last seven days prior to a date, per 100 thousand of inhabitants.</li>
+<li>This is a cumulative normalised metric, and it is possible to use it for
+comparison of different regions.</li>
+<li>For low rates (around zero) the graph is green, and with the grows of the rate
+it gradually becomes yellow, then red, then maroon.</li>
+<li>The number near the cross on the right edge of the graph shows the latest value.</li>
+<li>This number is generally reported in the media as <em>incidence rate</em>.</li>
+<li>The interesting question is: how fast do they grow?</li>
+</ul>
+</div>
+<div class="section" id="plot-2-daily-changes-in-cases">
+<h2><a class="toc-backref" href="#toc-entry-2">Plot 2: daily changes in cases</a></h2>
+<img src="./fig-south-korea2.svg" alt="South Korea data"><ul class="simple">
+<li>Shows how many new confirmed cases are reported per day, shown as
+blue bars.</li>
+<li>Blue lines show a seven day (rolling) average over the bar data
+(using a Gaussian window with a standard deviation of 3 days) - this
+produces smoother data. It also helps to remove the effect of the
+weekend (in some countries reported numbers drop during and just
+after the weekend)</li>
+<li>We would like to see these numbers of daily changes decrease from day
+to day. The faster they go down the better. Ideally their reach 0.</li>
+<li>For the data of South Korea, we can see that the peak of new
+infections was around 1st March 2020, and following that the number
+of new infections decreased to around 100 per day for the second half
+of March, before the numbers started to decrease further.</li>
+</ul>
+</div>
+<div class="section" id="plot-3-daily-changes-in-deaths">
+<h2><a class="toc-backref" href="#toc-entry-3">Plot 3: daily changes in deaths</a></h2>
+<img src="./fig-south-korea3.svg" alt="South Korea data"><ul class="simple">
+<li>Red bars shows how many new deaths were reported for each day.</li>
+<li>Red line shows a seven day (rolling) average over the bar data.</li>
+<li>The number of deaths is expected to follow the number of infections
+with some time delay, and reduced by a fraction (the <a class="reference external" href="https://en.wikipedia.org/wiki/Case_fatality_rate">case fatality
+rate</a>).</li>
+</ul>
+</div>
+<div class="section" id="plot-4-r-growth-factor-based-on-cases">
+<h2><a class="toc-backref" href="#toc-entry-4">Plot 4: R &amp; growth factor based on cases</a></h2>
+<img src="./fig-south-korea4.svg" alt="South Korea data"><div class="section" id="reproduction-number-r">
+<h3><a class="toc-backref" href="#toc-entry-5">Reproduction number R</a></h3>
+<ul class="simple">
+<li>The <a class="reference external" href="https://en.wikipedia.org/wiki/Basic_reproduction_number">Reproduction number R (Wikipedia)</a> expresses how
+many people are infected from one person with COVID19.</li>
+<li>If we assume an average infectious period, we can estimate R from the reported
+new cases. This estimate of R is shown as the green line. The estimate of R
+will be affected by inaccuracies in the reported numbers.</li>
+<li>Following the Robert Koch Institute, we assume an average infectious period of
+4 days. This means, for example, for a reproduction number R=2, that on
+average each infected person will infect 2 other people after 4 days.</li>
+<li>R needs to be below 1.0 for the total number of infections to
+shrink. A value of R above 1 will lead to exponential growth.</li>
+<li>See <a class="reference external" href="r-value.html">this page</a> for more details.</li>
+</ul>
+</div>
+<div class="section" id="daily-growth-factor">
+<h3><a class="toc-backref" href="#toc-entry-6">Daily growth factor</a></h3>
+<ul class="simple">
+<li>The growth factor is the ratio of new cases today
+relative to new cases yesterday</li>
+<li>Blue dots show these ratios for cases, and are
+computed based on the smoothed data shown in plot 2 and 3.</li>
+<li>The solid line is a 7-day rolling mean over these points to provide
+smoother data.</li>
+<li>As long as the growth value is greater than 1.0, the number of new
+infections is increasing.</li>
+<li>If the growth value is exactly 1.0, then we have the same number of
+new infections every day.</li>
+<li>The growth factor needs to be below 1.0 for the spread to slow down.</li>
+</ul>
+</div>
+<div class="section" id="assessing-success-for-containment-measures">
+<h3><a class="toc-backref" href="#toc-entry-7">Assessing success for containment measures</a></h3>
+<ul>
+<li><p class="first"><strong>The reproduction number R and the growth factors are measures of success for
+the virus containment</strong>: as long as they are below 1.0, the spread
+is slowing down. If the growth factor is greater than one, the number of newly
+infected people is increasing from day to day; this must be avoided.</p>
+</li>
+<li><p class="first">What is the difference between R and the growth factor? They are computed
+differently. The growth factor is simpler and more direct: it describes
+changes in new infections from day to day.</p>
+<p>The reproduction number R is used in epidemiology, and by politicians. It is
+<a class="reference external" href="r-value.html">harder to estimate</a> than the daily growth factor.
+The daily growth factor and
+R cannot be compared directly, but both are qualitatively similar: they need
+to stay under 1.0 for the infections to become fewer over time.</p>
+</li>
+<li><p class="first">Growth factor and R do not depend on the total number of new cases (but only
+on the relative change over time). For that reason we can get high
+fluctuations where the numbers of new cases is small (imagine there
+was 1 case yesterday, and 7 cases today, this would give a growth factor of
+7). In short: where the number of daily new cases is small, the growth
+factor can appear to change quickly. For the same reason, R and the growth
+factor are good indicators to assess changes in spread even with small case
+numbers.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="plot-5-r-growth-factor-based-on-deaths">
+<h2><a class="toc-backref" href="#toc-entry-8">Plot 5: R &amp; growth factor based on deaths</a></h2>
+<img src="./fig-south-korea5.svg" alt="South Korea data"><p>Conventionally, the R number is computed on infections (here shown in plot 4 and
+referred to as &quot;R based on cases&quot;). Assuming a fixed mortality rate, we can also
+use the reported deaths to estimate R (as R depends not on the total numbers but
+their change over time). This is done in plot 5, and the estimated R is shown in
+yellow. See discussion of plot 4 above for details.</p>
+<p>This computation of R based on deaths can be of interest, for example, for the
+case of the <a class="reference external" href="html/United-Kingdom.html">United Kingdom</a>, where the daily new
+infections remained approximately constant from about 10 April to about 10 May,
+but at the same time the daily number of deaths shows a slow but persistent
+reduction from day to day. A possible explanation for the situation would be
+that the nearly constant number of daily infections results from a saturation of
+the testing capacity, and that actually the spread is reducing (which is
+reflected in the deaths, which may be more accurately captured and reported). In
+that case, the R based on deaths may provide a more accurate estimate.</p>
+<p>If deaths and infections are similarly captured and reported, both entities
+should point to the same value, although the R based on deaths could be trailing
+the estimate of R based on infections by several weeks; reflecting the duration
+of the illness.</p>
+</div>
+<div class="section" id="plot-6-doubling-times">
+<h2><a class="toc-backref" href="#toc-entry-9">Plot 6: Doubling times</a></h2>
+<img src="./fig-south-korea6.svg" alt="South Korea data"><ul>
+<li><p class="first">This plot computes the doubling time of the cases (blue) and deaths
+(red), assuming that the growth of cases and deaths as shown in plot
+1 is exponential.</p>
+<ul>
+<li><p class="first">In more detail, we compute the doubling period from one day to the
+next and show this as transparent dots.</p>
+<p>If a value of 3 is shown, this means that at that point in time,
+it took 3 days for the numbers of cases (or deaths) to double.</p>
+</li>
+<li><p class="first">The solid line is a 7-day rolling mean over these data points and
+provides more robust guidance.</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Looking at the doubling time shown by the solid lines, we get another
+indicator to assess the spread of the virus.</p>
+<ul class="simple">
+<li>For many countries, in the early stages of the outbreak, this
+doubling time for confirmed infections (blue line) is somewhere
+around 2 to 3 days.</li>
+<li>As the spread of infections is reduced (by schools closing, people
+exercising social distancing, staying at home, etc), the growth
+rate of the exponential function becomes smaller, and
+correspondingly the doubling time increases.</li>
+<li><dl class="first docutils">
+<dt>We would like to see the doubling time to get larger, as this an indication</dt>
+<dd>that the growth of infections and deaths is decreasing (ideally infinitely
+large, when no new infections occur).</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li><p class="first">The example data for South Korea shows that</p>
+<ul class="simple">
+<li>the doubling time for cases grows from around 3 days in the early stages</li>
+<li>to reach a plateau with a doubling time of around 60 days from 15 March to 1
+April 2020. During this time, the number of daily new infections (plot 2)
+stabilises around 100, and the growth factor (blue line in plot 4) is approximately 1.0.</li>
+<li>In April, the doubling time increases further, which corresonds to a
+further reduction of daily new infections (plot 2), and a growth factor
+(blue line in plot 4) below 1.0.</li>
+</ul>
+</li>
+<li><p class="first">Occasionally, the solid lines are omitted if there are not enough data points.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="plot-7-comparison-of-daily-new-cases-with-other-countries">
+<h2><a class="toc-backref" href="#toc-entry-10">Plot 7: Comparison of daily new cases with other countries</a></h2>
+<img src="./fig-south-korea7.svg" alt="South Korea data"><ul class="simple">
+<li>The x-axis shows the number of days since a particular number of new
+cases per day (such as 10) have occurred in that country, and the
+y-axis the number of new cases for that day.</li>
+<li>We see that countries follow similar paths, with the common
+properties that the curve increases until the number of cases per day
+peaks, and then the curve comes down again.</li>
+<li>The y-axis is logarithmic.</li>
+<li>Due to the logarithmic y-axis, this visualisation can help to
+understand at what stage in the outbreak an area is (despite the
+different size of the countries and numbers of cases).</li>
+<li>The curve shows as 7-day rolling mean to provide a smoother line than
+the noisier individual data points (in particular with fewer cases
+per day). This leads to non-integer values.</li>
+<li>[The curve for China starts at a higher value than 10, as the first recorded
+value was 548. We could manually correct this.]</li>
+</ul>
+</div>
+<div class="section" id="plot-8-comparison-of-daily-new-deaths-with-other-countries">
+<h2><a class="toc-backref" href="#toc-entry-11">Plot 8: Comparison of daily new deaths with other countries</a></h2>
+<img src="./fig-south-korea8.svg" alt="South Korea data"><ul class="simple">
+<li>As Plot 7, but for deaths not cases.</li>
+</ul>
+</div>
+<div class="section" id="the-role-of-dashed-lines">
+<h2><a class="toc-backref" href="#toc-entry-12">The role of dashed lines</a></h2>
+<p>We use a dashed line to indicate where the data is inaccurate (for some reason).</p>
+<ol class="arabic">
+<li><p class="first">Example 1: Last days in incidence, deaths and cases:</p>
+<a href="https://oscovida.github.io/html/United-Kingdom.html"> United Kingdom
+     <img src="./plots-dashed-line-example-uk.png" alt="Plot from UK, JHU data">
+</a><p>The most recent 7 days in incidence, and new cases and new deaths are shown as a dashed line.</p>
+<p>See the bitmap above as an example. Here the dashed line is chosen because we
+need a 7-day rolling average over the raw data to average out weekly
+fluctuations. (Some additional Gaussian smoothing is applied to help the eye
+which needs another 3 days). See function <tt class="docutils literal">compute_daily_change</tt> in
+<a class="reference external" href="https://github.com/oscovida/oscovida/blob/master/oscovida/oscovida.py">https://github.com/oscovida/oscovida/blob/master/oscovida/oscovida.py</a> if you
+care for the details).</p>
+<p>In more detail: For the 7-day average for today, we need to sum the reported new cases from
+the last 3 days, today, and the next 3 days and divide this by 7 (and we need
+another 3 days in either direction for visual smoothing). For the most recent
+7 days, we cannot do this (because we don't know the data from the future
+yet). Instead, we compute a rolling average using the 7 previous(!) days.
+Using this method, we can compute the averaged data up to day with the last
+known data point.</p>
+<p>However, the computation is different (and at times it might be possible to
+note a step in the data as the line [and/or its slope] as it changes from
+solid to dashed). This is highlighted through using a dashed line.</p>
+</li>
+<li><p class="first">Example 2: Deaths in German districts</p>
+<a href="https://oscovida.github.io/html/Germany-Nordrhein-Westfalen-SK-Köln.html">
+     <img src="./plots-dashed-line-example-german-district.png" alt="Plot from Germany, Hamburg, RKI data">
+</a><p>For the data on deaths for districts within Germany that is reported by the
+RKI, we dash the most recent 6 weeks. The reason here is that the RKI reports
+deaths with the date at which the infection took place, not the date on which
+the person died. Before vaccinations were available, it was reasonable to
+assume that COVID-related deaths would die within 6 weeks of the infection
+taking place.</p>
+<p>We have a detailed investigation of this phenomenon at <a class="reference external" href="https://oscovida.github.io/2020-germany-reporting-delay-meldeverzug.html">https://oscovida.github.io/2020-germany-reporting-delay-meldeverzug.html</a> .</p>
+<p>We thought it is important to understand this when interpreting the data, and
+have thus dashed the line in the plots for deaths in Germany for the most
+recent 6 weeks.</p>
+<p>[This six week period should be reviewed as the larger fraction of vaccinated
+and older people changes this: younger and healthier patients may stay
+significantly longer in medical and intensive care before they die from
+COVID.]</p>
+</li>
+</ol>
+</div>
+
+  </div>
+
+
+
+        </div>
+
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2021-03-24T10:00:00+01:00"><i class="fa fa-calendar"></i> Wed 24 March 2021</abbr></p>
+
+
+    <hr/>
+
+      <p>
+              <a href="./category-all.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="37 articles in this category">All</a>
+            <a href="/tag-data.html" data-toggle="tooltip"
+      class="label label-default"
+      title="22 articles with this tag">data</a>
+            <a href="/tag-about.html" data-toggle="tooltip"
+      class="label label-default"
+      title="11 articles with this tag">about</a>
+            <a href="/tag-tutorial.html" data-toggle="tooltip"
+      class="label label-default"
+      title="10 articles with this tag">tutorial</a>
+            <a href="/tag-plots.html" data-toggle="tooltip"
+      class="label label-default"
+      title="9 articles with this tag">plots</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://twitter.com/OSCOVIDAproject">
+      <i class="fa fa-twitter"></i>
+    Open Science COVID Analysis
+  </a></li>
+                  <li>  <a href="https://twitter.com/Panosc_eu">
+      <i class="fa fa-twitter"></i>
+    PaNOSC
+  </a></li>
+                  <li>  <a href="https://twitter.com/ProfCompMod">
+      <i class="fa fa-twitter"></i>
+    ProfCompMod
+  </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="http://oscovida.github.io">
+      <i class="fa fa-external-link"></i>
+    OSCOVIDA project
+  </a></li>
+                  <li>  <a href="http://www.panosc.eu">
+      <i class="fa fa-external-link"></i>
+    PaNOSC project
+  </a></li>
+                  <li>  <a href="mailto:oscovidaproject@gmail.com">
+      <i class="fa fa-envelope"></i>
+    OSCOVIDA
+  </a></li>
+                </ul>
+            </div>
+
+          <div class="col-md-2">
+            <h5>Browse content by</h5>
+            <ul class="list-unstyled">
+                <li><a href="./archives-index.html"><i class="fa fa-calendar"></i> Dates</a></li>
+                <li><a href="./tags-index.html"><i class="fa fa-tag"></i> Tags</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2020-2021 OSCOVIDA team.</p>
+              <p>Unless contrary mentioned, the content of this site is published under a <a rel='license'
+href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons
+Attribution 4.0 International license</a>. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Disclaimer</h5>
+              <p>Plots, data and software here are provided <a href="https://github.com/oscovida/oscovida/blob/master/LICENSE#L20">as-is without any warranties</a> by volunteers. Use the material at your own risk. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>
+          </div>
+
+          <div class="col-md-2">
+              <h5>Feeds</h5>
+              <ul class="list-unstyled">
+                  <li><small><a href="https://oscovida.github.io/feeds/all.atom.xml"><i class="fa fa-rss"></i> All posts (Atom)</a></small></li>
+              </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <h5 class="text-right"><a href="#"><i class="fa fa-arrow-up"></i> Back to top</a></h5>
+
+      <div class="container">
+        <div class="row col-md-12 text-muted text-center">
+          Site generated by <a href="https://getpelican.com"> Pelican</a>.<br/>
+          <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="https://kevin.deldycke.com">Kevin Deldycke</a>.
+        </div>
+      </div>
+
+    </footer>
+
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-163845056-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="./theme/js/jquery.mglass.js"></script>
+    <script src="./theme/js/application.js"></script>
+
+    <script>
+      document.getElementsByTagName("table")[0].setAttribute("id", "data_table");
+    </script>
+
+  </body>
+</html>

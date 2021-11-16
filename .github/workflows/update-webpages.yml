@@ -30,9 +30,10 @@ jobs:
 
       - name: Set up oscovida html builder venv
         run: |
-          python -m venv .venv
+          python3 -m venv .venv
           source .venv/bin/activate
-          pip install .
+          python3 -m pip install --upgrade pip
+          python3 -m pip install .
 
       - name: Run pre-generate hook
         run: |

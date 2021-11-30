@@ -68,6 +68,7 @@ jobs:
           cd tools/wwwroot
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git status
           git add -u
           git commit -m "Update $(date)" -a
 

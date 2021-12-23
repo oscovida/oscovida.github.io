@@ -58,7 +58,7 @@ jobs:
 
       - name: Set up pelican venv
         run: |
-          python -m venv .venv_pelican
+          python3 -m venv .venv_pelican
           source .venv_pelican/bin/activate
           pip install -r requirements_pelican.txt
 

@@ -15,11 +15,11 @@ jobs:
     runs-on: [self-hosted, mpsd]
     steps:
 
-        #  Broken on self-hosted runner for some reason
-      - name: Set up Python 3.9.2
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9.2
+      #  #  Broken on self-hosted runner for some reason
+      #- name: Set up Python 3.9.2
+      #  uses: actions/setup-python@v2
+      #  with:
+      #    python-version: 3.9.2
 
       - name: Checkout oscovida
         uses: actions/checkout@v2

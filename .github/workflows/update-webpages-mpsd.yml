@@ -1,20 +1,25 @@
-name: Update Webpages
+name: Update Webpages (MPSD)
 
 on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
   schedule:
     - cron:  '0 7,19 * * *'
   workflow_dispatch:
 
 jobs:
   update-webpage:
-    runs-on: [self-hosted, singularity]
+    runs-on: [self-hosted, mpsd]
     steps:
 
-        #  Broken on self-hosted runner for some reason
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
+      #  #  Broken on self-hosted runner for some reason
+      #- name: Set up Python 3.9.2
+      #  uses: actions/setup-python@v2
+      #  with:
+      #    python-version: 3.9.2
 
       - name: Checkout oscovida
         uses: actions/checkout@v2
@@ -53,7 +58,7 @@ jobs:
 
       - name: Set up pelican venv
         run: |
-          python -m venv .venv_pelican
+          python3 -m venv .venv_pelican
           source .venv_pelican/bin/activate
           pip install -r requirements_pelican.txt
 
@@ -67,7 +72,7 @@ jobs:
         run: |
           cd tools/wwwroot
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "GitHub Action (mpsd)"
           git status
           git add -u
           git commit -m "Update $(date)" -a

@@ -8,6 +8,7 @@ on:
 jobs:
   update-webpage:
     runs-on: [self-hosted, mpsd]
+    timeout-minutes: 720
     steps:
 
       #  #  Broken on self-hosted runner for some reason

@@ -3847,7 +3847,7 @@ dtype: float64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fake_growth</span><span class="p">(</span><span class="n">delta_t</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">tau</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">N0</span><span class="p">:</span><span class="nb">int</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">debug</span><span class="p">:</span><span class="nb">bool</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Expect </span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Expect </span>
 <span class="sd">    - delta_t: a vector with ints: each int indicates for how many days</span>
 <span class="sd">         R should be constant</span>
 <span class="sd">    - Rs: a vector with the corresponding values for R</span>
@@ -3867,7 +3867,7 @@ dtype: float64</pre>
 <span class="sd">    </span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">R_</span><span class="p">,</span> <span class="n">t_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Exponential growth &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Exponential growth &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">c</span> <span class="o">*</span> <span class="n">R_</span><span class="o">**</span><span class="p">(</span><span class="n">t_</span><span class="o">/</span><span class="n">tau</span><span class="p">)</span>
     
     <span class="c1"># check assumptions</span>
@@ -4039,7 +4039,7 @@ dtype: float64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test_fake_growth</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot; Assume constant growth rate, and expect exponential growth.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Assume constant growth rate, and expect exponential growth.&quot;&quot;&quot;</span>
     <span class="n">R_number</span> <span class="o">=</span> <span class="mf">2.1</span>
     <span class="n">tau</span> <span class="o">=</span> <span class="mf">4.5</span>
     <span class="n">N0</span> <span class="o">=</span> <span class="mf">1.3</span>
@@ -35605,7 +35605,7 @@ L 673.92075 233.848
 
           <div class="col-md-2 text-muted">
             <h5>Copyright notice</h5>
-            <p>© Copyright 2020-2022 OSCOVIDA team.</p>
+            <p>© Copyright 2020-2023 OSCOVIDA team.</p>
               <p>Unless contrary mentioned, the content of this site is published under a <a rel='license'
 href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons
 Attribution 4.0 International license</a>. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>

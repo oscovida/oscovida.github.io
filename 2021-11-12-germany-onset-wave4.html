@@ -1365,7 +1365,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="c1"># results (please ignor the code)</span>
 
 <span class="k">def</span> <span class="nf">daily_growth_to_incidence</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="s1">&#39;Germany&#39;</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Given a time series g of new infections per day, </span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Given a time series g of new infections per day, </span>
 <span class="sd">    return the corresponding incidence (for country)&quot;&quot;&quot;</span>
     <span class="n">pop</span> <span class="o">=</span> <span class="n">ov</span><span class="o">.</span><span class="n">population</span><span class="p">(</span><span class="n">country</span><span class="p">)</span>
     
@@ -1377,7 +1377,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="k">assert</span> <span class="nb">abs</span><span class="p">(</span><span class="n">daily_growth_to_incidence</span><span class="p">(</span><span class="mi">33000</span><span class="p">)</span> <span class="o">-</span> <span class="mi">278</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">5</span>
 
 <span class="k">def</span> <span class="nf">plot_predictions</span><span class="p">(</span><span class="n">series</span> <span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Expect series to be series with daily </span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Expect series to be series with daily </span>
 <span class="sd">    new cases and date as index.&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)</span>
     
@@ -5569,7 +5569,7 @@ death rate : 1.93%
 
           <div class="col-md-2 text-muted">
             <h5>Copyright notice</h5>
-            <p>© Copyright 2020-2022 OSCOVIDA team.</p>
+            <p>© Copyright 2020-2023 OSCOVIDA team.</p>
               <p>Unless contrary mentioned, the content of this site is published under a <a rel='license'
 href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons
 Attribution 4.0 International license</a>. See <a href="http://oscovida.github.io/license.html">license</a> for details.</p>
